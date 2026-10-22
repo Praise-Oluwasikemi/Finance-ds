@@ -1,44 +1,71 @@
 # Finance-ds
-This repository contains four projects that answers practical business questions and my approach to answering them as a data scientist
 
-Each project starts from a question a bank or investment team would actually ask, builds a model or analysis to answer it, and ends with a number someone could act on. The data is synthetic (generated in `data/generate_data.py`) so everything runs offline and is reproducible, but it is built with realistic relationships between variables.
+This repository contains four projects that answer practical business questions in finance and banking, and my approach to answering them as a data scientist. It also has a graded set of practice exercises.
+Every project starts with a business question and ends with a decision and a naira (₦) figure, not just a model score.
+All data is set in a Nigerian retail-banking context: incomes, loans, card spend and portfolio values are in naira.
 
-## Projects
+| # | Project | Business question | Key techniques | Headline result |
+|---|---------|-------------------|----------------|-----------------|
+| 1 | [Credit risk PD model](projects/p01_credit_risk.py) | Which loans should we approve? | IV screening, logistic regression vs gradient boosting, AUC/Gini/KS, profit-based cut-off | AUC 0.73 · cut-off at PD 0.16 turns a **-₦55.8m** book into **+₦244.4m** |
+| 2 | [Portfolio & market risk](projects/p02_portfolio_risk.py) | Best risk-adjusted mix, and how much can we lose? | Sharpe, drawdown, efficient frontier, historical/parametric VaR & CVaR, VaR backtest | Best mix earns 31.5% vs 15.9% T-bills (Sharpe 0.52) · 1-day 95% VaR ₦2.96m on ₦100m · backtest breach rate 5.6% vs 5% target |
+| 3 | [Card fraud detection](projects/p03_fraud_detection.py) | Which transactions do analysts review? | Leak-free behavioural features, time-ordered split, imbalanced learning, capacity-based threshold | 3 alerts/day → **75% of fraud caught at 65% precision** (₦28.8m of ₦31.1m intercepted) |
+| 4 | [Customer segmentation](projects/p04_customer_segmentation.py) | Who do we target with which offer? | RFM, scaling, K-Means, silhouette selection, segment profiling | 4 segments; 51% of customers drive 78% of spend |
 
-| # | Project | Business question | Methods | Headline result |
-|---|---------|-------------------|---------|-----------------|
-| 01 | [Credit risk](projects/p01_credit_risk/) | Which loan applicants are likely to default, and where should we set the approval cut-off? | Logistic regression scorecard, gradient boosting, AUC / Gini / KS, expected loss | AUC 0.76, Gini 0.51. A 10% PD cut-off approves 46% of applicants with a 5.6% bad rate, versus 14.7% overall |
-| 02 | [Portfolio risk](projects/p02_portfolio_risk/) | How much could this portfolio lose on a bad day, and can we build a better one? | Mean-variance optimization, historical and parametric VaR, Expected Shortfall, drawdown, VaR backtest | Min-variance portfolio cuts volatility from 18% to 12% and 95% VaR from 1.8% to 1.2% a day. VaR backtest breaches 5.7% of days (target 5%) |
-| 03 | [Fraud detection](projects/p03_fraud_detection/) | Which transactions should a fraud team with limited capacity review first? | Class-weighted logistic regression and random forest, precision-recall, precision at k | With 2% fraud, reviewing the top 50 alerts is 78% precise. Average precision 0.49, about 24x the base rate |
-| 04 | [Customer segmentation](projects/p04_customer_segmentation/) | What distinct groups of customers does the bank have, and how should we treat them? | Feature scaling, K-means, silhouette analysis, PCA, segment profiling | Three actionable segments: digital everyday bankers, retired savers, and affluent multi-product customers |
+<p>
+<img src="reports/figures/credit_profit_curve.png" width="49%">
+<img src="reports/figures/portfolio_frontier.png" width="49%">
+<img src="reports/figures/portfolio_var_backtest.png" width="49%">
+<img src="reports/figures/fraud_pr_curve.png" width="49%">
+</p>
 
-## Repository layout
+## Practising with this repo
 
-```
-data/generate_data.py      synthetic loans, prices, transactions and customers
-fintools/metrics.py        returns, Sharpe, Sortino, drawdown, VaR, CVaR, beta, KS, Gini, PSI
-fintools/plotting.py       shared charts (ROC, PR curve, drawdown, correlation heatmap)
-projects/p01..p04/         one analysis.py and README.md per project
-exercises/practice.py      Python, pandas and numpy practice problems for finance
-exercises/solutions.py     worked answers
-tests/                     pytest suite for the tools, data, projects and exercises
-```
+Start with **[PRACTICE.md](PRACTICE.md)**: 12 sessions of 60–90 minutes covering Python, statistical thinking and BI. Record each session in [`journal/LEARNING_LOG.md`](journal/LEARNING_LOG.md).
 
-## Getting started
+## Quick start
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
-python -m data.generate_data                     # optional: write CSVs to data/raw/
-python -m projects.p01_credit_risk.analysis      # each project prints results and saves charts to outputs/
-python -m pytest                                 # run the test suite
+python data/generate_data.py                 # reproducible synthetic data (no API keys)
+python projects/p01_credit_risk.py           # each project prints results + saves charts to reports/figures/
+pytest                                       # library tests + exercise grader
 ```
 
-## Practice exercises
+## Layout
 
-`exercises/practice.py` has stub functions covering compound interest, loan amortization, resampling prices to monthly returns, rolling volatility, cleaning messy transaction data, groupby default rates and Monte Carlo price simulation. Fill them in and grade yourself with:
+```
+data/generate_data.py   seeded synthetic (₦) loans, prices (correlated GBM) and card transactions
+fintools/               reusable library: TVM (loan payment, NPV, IRR), returns, Sharpe, drawdown,
+                        VaR/CVaR, KS, Gini, Information Value, naira formatting + shared chart style
+projects/               the four portfolio projects
+exercises/practice.py   20 exercises to complete (Levels 1-5)
+exercises/solutions.py  reference answers
+tests/                  unit tests for fintools + auto-grader for exercises
+PRACTICE.md             session-by-session practice guide
+journal/                learning log
+```
+
+## Practice mode
+
+`exercises/practice.py` has 20 stub functions in five levels: finance maths, pandas wrangling, risk, statistical thinking and business intelligence (including SQL).
+Fill them in and run the grader:
 
 ```bash
-python -m pytest tests/test_exercises.py --practice
+pytest tests/test_exercises.py -x                    # stops at your first failing exercise
+EXERCISES=solutions pytest tests/test_exercises.py   # confirms the reference answers
 ```
+
+## Practice roadmap (to strengthen the portfolio)
+
+1. **Solve all 20 exercises** without looking at solutions, then compare your answers with them.
+2. **Extend each project** (good interview talking points):
+   - Credit: build a points-based scorecard (WoE binning → 600 + 20·log2 odds), add SHAP explanations, and check the model for fairness across groups.
+   - Portfolio: replace random sampling with `scipy.optimize`, add a monthly rebalanced backtest, and stress test against a 2008-style shock.
+   - Fraud: add rolling 1h/24h velocity features and compare with Isolation Forest (unsupervised).
+   - Segmentation: map segments to products and estimate the uplift of a campaign.
+3. **Swap in real data**: Kaggle *Give Me Some Credit* / *Lending Club* (credit), `yfinance` (prices),
+   Kaggle *Credit Card Fraud* (fraud). The pipelines need few changes.
+4. **Ship one as an app**, such as a Streamlit loan-decision demo, and link it at the top of this README.
+5. **Write one short blog post per project** focused on the business decision, not the algorithm.
+
+> Data is synthetic and generated with known risk drivers, so you can check that the models recover them.

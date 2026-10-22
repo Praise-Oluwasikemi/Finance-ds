@@ -1,191 +1,118 @@
-"""Synthetic datasets for the four portfolio projects.
+"""Generate realistic synthetic banking & market datasets (all money in Nigerian naira, NGN).
 
-Every generator takes a ``seed`` so results are reproducible. The data is
-made up, but the relationships between columns are realistic enough that the
-models in ``projects/`` have real signal to find.
+Everything is seeded, so results are reproducible and no external data or
+API keys are needed. Swap in real data later (e.g. Kaggle "Give Me Some
+Credit", yfinance prices) once the pipeline works.
 
-Run ``python -m data.generate_data`` to write CSVs to ``data/raw/``.
+Usage:  python data/generate_data.py
 """
-
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-RAW_DIR = Path(__file__).resolve().parent / "raw"
+DATA_DIR = Path(__file__).resolve().parent
+RNG = np.random.default_rng(42)
 
 
-def _sigmoid(x):
-    return 1.0 / (1.0 + np.exp(-x))
-
-
-def make_loans(n=5000, seed=42):
-    """Loan applications with a binary ``default`` target."""
-    rng = np.random.default_rng(seed)
-    age = rng.integers(21, 70, n)
-    income = np.round(rng.lognormal(mean=10.8, sigma=0.5, size=n), -2)
-    loan_amount = np.round(income * rng.uniform(0.1, 0.8, n), -2)
-    term_months = rng.choice([12, 24, 36, 48, 60], n)
-    credit_score = np.clip(rng.normal(660, 70, n), 300, 850).round().astype(int)
-    employment_years = np.clip(rng.exponential(5, n), 0, 40).round(1)
-    debt_to_income = np.clip(rng.beta(2, 5, n) * 0.8, 0.01, 0.8).round(3)
-    num_delinquencies = rng.poisson(0.4, n)
-    home_ownership = rng.choice(["RENT", "MORTGAGE", "OWN"], n, p=[0.45, 0.40, 0.15])
-    purpose = rng.choice(
-        ["debt_consolidation", "credit_card", "home_improvement", "business", "car"], n
+def make_loans(n: int = 20_000) -> pd.DataFrame:
+    """Loan applications with a default flag driven by plausible risk factors."""
+    age = RNG.integers(21, 70, n)
+    income = np.round(RNG.lognormal(mean=15.1, sigma=0.5, size=n), -3)    # median ~N3.6m a year
+    loan_amount = np.round(income * RNG.uniform(0.1, 0.8, n), -3)
+    term_months = RNG.choice([12, 24, 36, 48, 60], n, p=[0.1, 0.2, 0.35, 0.15, 0.2])
+    credit_score = np.clip(RNG.normal(680, 70, n), 300, 850).round()
+    dti = np.clip(RNG.normal(0.32, 0.12, n), 0.01, 0.95).round(3)
+    employment_years = np.clip(RNG.exponential(6, n), 0, 40).round(1)
+    num_delinquencies = RNG.poisson(0.4, n)
+    home = RNG.choice(["RENT", "MORTGAGE", "OWN"], n, p=[0.45, 0.4, 0.15])
+    purpose = RNG.choice(
+        ["debt_consolidation", "credit_card", "home_improvement", "business", "car", "other"],
+        n, p=[0.4, 0.2, 0.12, 0.08, 0.1, 0.1],
     )
 
+    # Latent log-odds of default
     logit = (
         -2.2
-        - 0.012 * (credit_score - 660)
-        + 3.0 * (debt_to_income - 0.23)
-        + 0.45 * num_delinquencies
-        - 0.04 * employment_years
+        - 0.012 * (credit_score - 680)
+        + 3.0 * (dti - 0.32)
         + 0.9 * (loan_amount / income - 0.45)
+        + 0.35 * num_delinquencies
+        - 0.03 * employment_years
         + 0.01 * (term_months - 36)
-        + 0.25 * (home_ownership == "RENT")
-        + 0.30 * (purpose == "business")
+        + np.where(home == "RENT", 0.25, 0.0)
+        + np.where(purpose == "business", 0.4, 0.0)
+        + RNG.normal(0, 0.5, n)
     )
-    default = (rng.uniform(size=n) < _sigmoid(logit)).astype(int)
+    default = RNG.random(n) < 1 / (1 + np.exp(-logit))
 
-    return pd.DataFrame(
-        {
-            "loan_id": np.arange(1, n + 1),
-            "age": age,
-            "income": income,
-            "loan_amount": loan_amount,
-            "term_months": term_months,
-            "credit_score": credit_score,
-            "employment_years": employment_years,
-            "debt_to_income": debt_to_income,
-            "num_delinquencies": num_delinquencies,
-            "home_ownership": home_ownership,
-            "purpose": purpose,
-            "default": default,
-        }
-    )
-
-
-def make_prices(n_days=756, seed=42):
-    """Daily closing prices for five assets plus a market index.
-
-    Returns are drawn from a multivariate normal with a one-factor structure,
-    so assets are correlated with the market and with each other.
-    """
-    rng = np.random.default_rng(seed)
-    tickers = ["BANK_A", "BANK_B", "INSURER", "FINTECH", "BOND_ETF"]
-    betas = np.array([1.1, 1.0, 0.8, 1.5, 0.1])
-    alphas = np.array([0.0002, 0.0001, 0.0002, 0.0003, 0.0001])
-    idio_vol = np.array([0.010, 0.011, 0.009, 0.020, 0.003])
-
-    market = rng.normal(0.0003, 0.011, n_days)
-    noise = rng.normal(0.0, 1.0, (n_days, len(tickers))) * idio_vol
-    returns = alphas + market[:, None] * betas + noise
-
-    dates = pd.bdate_range("2022-01-03", periods=n_days)
-    start = np.array([50.0, 35.0, 80.0, 25.0, 100.0])
-    prices = start * np.exp(np.cumsum(returns, axis=0))
-    market_price = 4000.0 * np.exp(np.cumsum(market))
-
-    df = pd.DataFrame(prices, index=dates, columns=tickers).round(2)
-    df["MARKET"] = market_price.round(2)
-    df.index.name = "date"
+    df = pd.DataFrame({
+        "loan_id": np.arange(1, n + 1),
+        "age": age, "annual_income": income, "loan_amount": loan_amount,
+        "term_months": term_months, "credit_score": credit_score, "dti": dti,
+        "employment_years": employment_years, "num_delinquencies": num_delinquencies,
+        "home_ownership": home, "purpose": purpose, "default": default.astype(int),
+    })
+    # Real data is messy: inject ~3% missing values in two columns
+    for col in ["employment_years", "annual_income"]:
+        df.loc[RNG.random(n) < 0.03, col] = np.nan
     return df
 
 
-def make_transactions(n=20000, fraud_rate=0.02, seed=42):
-    """Card transactions with a rare ``is_fraud`` target."""
+def make_prices(start: str = "2019-01-01", years: int = 6, seed: int = 5) -> pd.DataFrame:
+    """Daily close prices (NGN) for 6 assets via correlated geometric Brownian motion."""
+    tickers = ["BANK_A", "BANK_B", "TECH", "ENERGY", "FGN_BOND", "GOLD"]
+    # Nominal naira returns: inflation and FX moves keep NGN asset returns high
+    mu = np.array([0.28, 0.25, 0.30, 0.22, 0.17, 0.24])      # annual drift
+    sigma = np.array([0.30, 0.32, 0.38, 0.33, 0.08, 0.20])  # annual vol
+    corr = np.array([
+        [1.0, 0.8, 0.5, 0.4, -0.1, 0.0],
+        [0.8, 1.0, 0.5, 0.4, -0.1, 0.0],
+        [0.5, 0.5, 1.0, 0.3, -0.2, 0.0],
+        [0.4, 0.4, 0.3, 1.0, -0.1, 0.2],
+        [-0.1, -0.1, -0.2, -0.1, 1.0, 0.3],
+        [0.0, 0.0, 0.0, 0.2, 0.3, 1.0],
+    ])
+    dates = pd.bdate_range(start, periods=252 * years)
     rng = np.random.default_rng(seed)
-    n_fraud = int(n * fraud_rate)
-    is_fraud = np.zeros(n, dtype=int)
-    is_fraud[rng.choice(n, n_fraud, replace=False)] = 1
-    fraud = is_fraud == 1
+    dt = 1 / 252
+    cov = np.outer(sigma, sigma) * corr * dt
+    shocks = rng.multivariate_normal(np.zeros(len(tickers)), cov, len(dates))
+    log_ret = (mu - 0.5 * sigma**2) * dt + shocks
+    prices = 100 * np.exp(np.cumsum(log_ret, axis=0))
+    return pd.DataFrame(prices.round(2), index=pd.Index(dates, name="date"), columns=tickers)
 
-    amount = np.where(
-        fraud, rng.lognormal(4.3, 1.1, n), rng.lognormal(3.6, 1.0, n)
-    ).round(2)
-    hour = np.where(
-        fraud, rng.choice(24, n, p=_hour_weights(night_heavy=True)),
-        rng.choice(24, n, p=_hour_weights(night_heavy=False)),
+
+def make_transactions(n_customers: int = 3_000, n_tx: int = 120_000) -> pd.DataFrame:
+    """Card transactions with ~0.8% fraud that behaves differently from normal spend."""
+    customer_id = RNG.integers(1, n_customers + 1, n_tx)
+    ts = pd.Timestamp("2025-01-01") + pd.to_timedelta(RNG.uniform(0, 365 * 24 * 3600, n_tx), unit="s")
+    category = RNG.choice(
+        ["grocery", "fuel", "restaurant", "online_retail", "travel", "electronics", "atm"],
+        n_tx, p=[0.3, 0.15, 0.2, 0.15, 0.05, 0.05, 0.1],
     )
-    distance_from_home_km = np.where(
-        fraud, rng.exponential(60, n), rng.exponential(20, n)
-    ).round(1)
-    merchant_category = np.where(
-        fraud,
-        rng.choice(["electronics", "online", "travel", "grocery", "fuel"], n,
-                   p=[0.2, 0.35, 0.15, 0.2, 0.1]),
-        rng.choice(["electronics", "online", "travel", "grocery", "fuel"], n,
-                   p=[0.08, 0.25, 0.07, 0.4, 0.2]),
-    )
-    is_foreign = (rng.uniform(size=n) < np.where(fraud, 0.2, 0.05)).astype(int)
-    txns_last_24h = np.where(fraud, rng.poisson(3.5, n), rng.poisson(2, n))
-    card_present = (rng.uniform(size=n) < np.where(fraud, 0.4, 0.65)).astype(int)
+    amount = np.round(RNG.lognormal(9.3, 0.9, n_tx), 2)                   # median ~N11,000
+    is_foreign = RNG.random(n_tx) < 0.04
+    is_fraud = RNG.random(n_tx) < 0.008
 
-    return pd.DataFrame(
-        {
-            "txn_id": np.arange(1, n + 1),
-            "amount": amount,
-            "hour": hour,
-            "distance_from_home_km": distance_from_home_km,
-            "merchant_category": merchant_category,
-            "is_foreign": is_foreign,
-            "txns_last_24h": txns_last_24h,
-            "card_present": card_present,
-            "is_fraud": is_fraud,
-        }
-    )
+    # Fraud: larger amounts, odd hours, foreign, electronics/online
+    amount[is_fraud] = np.round(RNG.lognormal(11.3, 1.0, is_fraud.sum()), 2)
+    is_foreign[is_fraud] = RNG.random(is_fraud.sum()) < 0.45
+    category[is_fraud] = RNG.choice(["online_retail", "electronics", "atm", "travel"], is_fraud.sum())
+    night = pd.to_timedelta(RNG.integers(0, 5, is_fraud.sum()), unit="h")
+    ts = pd.Series(ts)
+    ts[is_fraud] = ts[is_fraud].dt.normalize() + night.values
 
-
-def _hour_weights(night_heavy):
-    hours = np.arange(24)
-    if night_heavy:
-        w = np.where((hours < 6) | (hours >= 22), 1.8, 1.0)
-    else:
-        w = np.exp(-((hours - 14) ** 2) / 30.0) + 0.05
-    return w / w.sum()
-
-
-def make_customers(n=3000, seed=42):
-    """Retail bank customers drawn from four latent segments."""
-    rng = np.random.default_rng(seed)
-    # (age, income, balance, products, txns/month, digital share, tenure)
-    profiles = {
-        "young_digital": (27, 35000, 2500, 2, 60, 0.9, 2),
-        "mass_market": (42, 45000, 6000, 3, 30, 0.5, 8),
-        "affluent": (50, 140000, 85000, 5, 25, 0.6, 12),
-        "retired_saver": (68, 30000, 40000, 3, 12, 0.15, 25),
-    }
-    names = list(profiles)
-    segment = rng.choice(names, n, p=[0.3, 0.4, 0.15, 0.15])
-    p = np.array([profiles[s] for s in segment], dtype=float)
-
-    def jitter(col, scale):
-        return p[:, col] * rng.lognormal(0, scale, n)
-
-    return pd.DataFrame(
-        {
-            "customer_id": np.arange(1, n + 1),
-            "age": np.clip(p[:, 0] + rng.normal(0, 8, n), 18, 95).round().astype(int),
-            "income": jitter(1, 0.35).round(-2),
-            "avg_balance": jitter(2, 0.7).round(2),
-            "num_products": np.clip(p[:, 3] + rng.integers(-1, 2, n), 1, 8).astype(int),
-            "monthly_txns": np.clip(jitter(4, 0.45), 1, None).round().astype(int),
-            "digital_share": np.clip(p[:, 5] + rng.normal(0, 0.15, n), 0, 1).round(2),
-            "tenure_years": np.clip(p[:, 6] + rng.normal(0, 5, n), 0, 60).round(1),
-            "true_segment": segment,
-        }
-    )
-
-
-def main():
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    make_loans().to_csv(RAW_DIR / "loans.csv", index=False)
-    make_prices().to_csv(RAW_DIR / "prices.csv")
-    make_transactions().to_csv(RAW_DIR / "transactions.csv", index=False)
-    make_customers().to_csv(RAW_DIR / "customers.csv", index=False)
-    print(f"Wrote datasets to {RAW_DIR}")
+    df = pd.DataFrame({
+        "tx_id": np.arange(1, n_tx + 1), "customer_id": customer_id, "timestamp": ts,
+        "amount": amount, "category": category, "is_foreign": is_foreign.astype(int),
+        "is_fraud": is_fraud.astype(int),
+    })
+    return df.sort_values("timestamp").reset_index(drop=True)
 
 
 if __name__ == "__main__":
-    main()
+    make_loans().to_csv(DATA_DIR / "loans.csv", index=False)
+    make_prices().to_csv(DATA_DIR / "prices.csv")
+    make_transactions().to_csv(DATA_DIR / "transactions.csv", index=False)
+    print("Wrote loans.csv, prices.csv, transactions.csv to", DATA_DIR)
