@@ -1,142 +1,161 @@
-# Practice Guide: one session at a time
+# Practice Guide
 
-This guide is for working through the repo slowly, one sitting at a time, and building real skill and confidence.
-There are **12 sessions of about 60–90 minutes each**. At two or three sessions a week, that is about a month.
-Each session builds on the last, so do them in order. Stopping in the middle of one is fine, because Git saves your progress.
+**Goal:** write the code yourself, think like a statistician, communicate like a business analyst, and become confident enough to show your work.
 
-What you'll practise and be able to show at the end:
-
-| Skill | Where it shows up |
-|---|---|
-| **Python fluency** | 20 graded exercises, from simple maths to SQL |
-| **Statistical thinking** | Confidence intervals, hypothesis tests, bootstrap, risk quantiles, and saying how sure you are |
-| **Business intelligence** | KPIs, month-on-month trends, SQL, a dashboard, decision memos written for managers |
-| **Confidence** | A learning log of what you can now do that you couldn't before |
+You've already been through the whole TS Academy curriculum once. This guide takes you through it a second time with **you at the keyboard**. Each build matches one or more TS modules and is set in a Nigerian bank. The last build moves outside finance, to show that your skills transfer.
 
 ---
 
-## Session 0: Set up your machine (about 30 min, do this once)
+## Where does the work happen?
 
-1. Install **Python 3.12+** from [python.org](https://www.python.org/downloads/). On Windows, tick **"Add python.exe to PATH"**.
-2. Install **Git** ([git-scm.com](https://git-scm.com/downloads)) and **VS Code** with the **Python** and **Jupyter** extensions.
-3. Open a terminal (Git Bash on Windows) and run:
+| Place | What happens there |
+|---|---|
+| **Your laptop: Anaconda + Jupyter Notebook** | Where you **write and run all your code**. This is the main place. |
+| **GitHub (this repo)** | Where your work is **saved and shown**. You push after every session, and the commit history becomes your public track record. |
+| **Chat with Claude** | Your **tutor and reviewer**: explanations, hints, reviews of code you wrote, and help when you're stuck. Not where code gets written for you. |
+
+VS Code is optional. Jupyter Notebook is all you need. You can try VS Code later, once you're comfortable.
+
+---
+
+## Using AI the right way: tutor, not ghostwriter
+
+At first, having AI write your code feels like progress, but you can't defend that code in an interview or reuse it at work. These rules make sure the skill ends up in **your** head.
+
+**Never ask for the code itself.** Ask for one of these three kinds of help, in this order:
+
+| Level | When | Example prompt |
+|---|---|---|
+| 1. **Hint** | Stuck for 20+ minutes | *"I'm doing Build 1, step 4. I want the default rate per purpose. Don't give me code. Which pandas method should I look at?"* |
+| 2. **Explain a concept** | You don't understand *why* | *"Explain the chi-square test as if I were a bank manager. When would I use it instead of a t-test?"* |
+| 3. **Review my code** | After you have something that runs | *"Here's my code for step 5. Don't rewrite it. Tell me what's wrong or could be better, and why."* |
+
+Paste this at the start of a chat to set the rule:
+
+> I'm practising data science. Act as my tutor. Don't write solution code for me. Give hints, ask me guiding questions, explain concepts, and review code I've written. If I ask for code, remind me of this rule.
+
+**Be honest about credit.** In interviews, say what you built yourself and where you had help. "I wrote it, then had it reviewed and improved X" is a strong answer.
+
+---
+
+## Session 0: Set up your laptop (about 45 min, once)
+
+You already have Anaconda, so you need three more things.
+
+**1. Install GitHub Desktop** ([desktop.github.com](https://desktop.github.com)) and sign in with your GitHub account. It's the easiest way to save work to GitHub without typing Git commands.
+
+**2. Clone this repo.** In GitHub Desktop, choose **File → Clone repository**, select `Praise-Oluwasikemi/Finance-ds`, and pick a folder (e.g. `Documents\GitHub\Finance-ds`).
+
+**3. Create a clean Python environment.** Open **Anaconda Prompt** and run:
 
 ```bash
-git clone https://github.com/Praise-Oluwasikemi/Finance-ds.git
-cd Finance-ds
-python -m venv .venv
-source .venv/Scripts/activate      # Windows Git Bash   (Mac/Linux: source .venv/bin/activate)
-pip install -r requirements.txt
-pytest tests/test_exercises.py     # you should see "20 failed": that's your to-do list
+conda create -n finance-ds python=3.12 pandas numpy scipy scikit-learn matplotlib seaborn statsmodels notebook pytest -y
+conda activate finance-ds
+pip install imbalanced-learn streamlit shap
 ```
 
-4. Open the folder in VS Code (`code .`). Pick the `.venv` interpreter when VS Code asks.
+**4. Open Jupyter in the repo folder:**
 
-> **No laptop handy?** In Google Colab, run `!git clone https://github.com/Praise-Oluwasikemi/Finance-ds.git`,
-> then `%cd Finance-ds`, `!pip install -r requirements.txt` and `!pytest tests/test_exercises.py -k compound`.
-> Edit `exercises/practice.py` in Colab's file panel. Colab doesn't save back to GitHub, so treat it as a backup option.
+```bash
+conda activate finance-ds
+cd Documents\GitHub\Finance-ds
+jupyter notebook
+```
+
+From now on, these three lines start every session.
+
+**5.** In Jupyter, open **`notebooks/00_start_here.ipynb`** and run every cell. It checks your setup and teaches you the grader.
+
+**Saving to GitHub after each session:** open GitHub Desktop. It lists the files you changed. Type a short summary (e.g. *"Workbook 1: finance maths done"*), click **Commit to main**, then **Push origin**.
+
+> Before committing a notebook, run **Kernel → Restart & Run All** so the saved outputs are clean and in order.
 
 ---
 
-## How every session runs
+## The rhythm of every session (60–90 min)
 
 | Step | Time | What you do |
 |---|---|---|
-| 1. Warm up | 5 min | Read your last entry in [`journal/LEARNING_LOG.md`](journal/LEARNING_LOG.md) |
-| 2. Exercises | 30–40 min | Solve the session's exercises in `exercises/practice.py` and grade **one at a time**: `pytest tests/test_exercises.py -k npv` |
-| 3. Explore | 20 min | Run a project, change **one** thing, and note what happens |
-| 4. Think | 10 min | Answer the session's statistics or business question in your log, in plain English |
-| 5. Save | 5 min | Commit and push (commands below) |
+| 1. Warm up | 5 min | Read your last [learning-log](journal/LEARNING_LOG.md) entry. Redo one exercise from memory. |
+| 2. Write code | 40–60 min | Work through the next workbook exercises or build steps. |
+| 3. Think | 10 min | Answer the ✍️ questions in your own words. |
+| 4. Log & push | 5–10 min | Add a log entry, tick off skills in the [checklist](journal/SKILLS_CHECKLIST.md), commit and push. |
 
-```bash
-git add -A
-git commit -m "Session 3: credit band default rates"
-git push
-```
-
-Your commit history becomes public proof that you practise steadily, and recruiters do look at it.
+Two or three sessions a week is plenty. Being consistent matters more than doing a lot in one go.
 
 ### When you're stuck (in this order)
-1. Read the error **from the bottom up**, because the last line says what went wrong.
-2. `print()` the intermediate values. Most bugs are a wrong shape or type, or a NaN.
-3. Re-read the docstring hint.
-4. Give it **20 honest minutes**. Struggling is when the learning happens.
-5. Peek at `exercises/solutions.py`, **close it**, then write the answer yourself. Do that exercise again from memory next session.
-6. Ask an AI tutor for a **hint**, not the answer: *"Don't give me code. What concept am I missing?"*
+1. Read the error **from the bottom up**. The last line tells you what went wrong.
+2. `print()` the intermediate values. Check `.shape`, `.dtypes` and `.head()`.
+3. Search the error message, or read the docs for the function.
+4. Give it **20 honest minutes**.
+5. Ask Claude for a **level 1 hint**.
+6. Only then look at `exercises/solutions.py` (for workbooks). Close it, write the answer yourself, and redo it next session.
 
 ---
 
-## The 12 sessions
+## The roadmap
 
-### Part A: Python foundations (Sessions 1–5)
+### Phase 1: Fluency (Sessions 1–6)
+Five workbooks in `notebooks/exercises/`. Each has short functions to write and a `check()` cell that grades you instantly.
 
-**Session 1: The maths of money**
-- Exercises: `compound_interest`, `monthly_payment`, `npv`
-- Explore: in a notebook, run `from fintools import amortization_schedule` and then `amortization_schedule(5_000_000, 0.24, 36)`. How much interest is paid in total? Plot the balance over time.
-- Think: *A customer asks for 60 months instead of 36. What happens to the monthly payment, and to the bank's total interest income? Why might the bank still say no?*
+| Session | Workbook | TS module |
+|---|---|---|
+| 1 | `1_finance_maths`: interest, loan instalments, NPV | 1 |
+| 2–3 | `2_pandas_wrangling`: cleaning, pivots, grouping | 1 |
+| 4 | `3_market_credit_risk`: returns, volatility, VaR, expected loss | 1–2 |
+| 5 | `4_statistical_thinking`: confidence intervals, z-test, bootstrap | 2 |
+| 6 | `5_business_intelligence`: KPIs, growth, SQL | 4 |
 
-**Session 2: Cleaning real-world banking data**
-- Exercises: `clean_transactions`, `monthly_spend`
-- Explore: `pd.read_csv("data/transactions.csv")`, then `.info()`, `.describe()`, and `value_counts()` on `category`.
-- Think: *Card spend has a long right tail. Compare its mean and median. Which one would you report to a manager as the "typical" transaction, and why?*
+### Phase 2: Builds (one portfolio project at a time)
+Each build takes 2–4 sessions. B1 and B2 have guided notebooks ready in `notebooks/builds/`. For the others, start a new notebook from the brief below, or ask Claude to create a guided notebook in the same style (questions and blank cells, no solutions).
 
-**Session 3: Customers and credit bands**
-- Exercises: `top_customers`, `default_rate_by_band`
-- Explore: run `python projects/p01_credit_risk.py` and read the Information Value table. Plot default rate by credit band as a bar chart.
-- Think: *Default rate climbs as credit score falls. Is that proof that a low score **causes** default? What else could explain it?*
+**B1: Who defaults? EDA & statistics** · TS 1–2 · ready
+Clean the data, explore it, run chi-square, Mann-Whitney and z-tests with confidence intervals, and write an executive summary.
 
-**Session 4: Returns and volatility**
-- Exercises: `daily_returns`, `cumulative_return`, `rolling_volatility`
-- Explore: run `projects/p02_portfolio_risk.py` and open `reports/figures/portfolio_growth.png`.
-- Think: *Why is +10% followed by -10% a loss? What does that mean for a customer whose savings swing up and down?*
+**B2: Card spending with SQL + pandas** · TS 4 · ready
+Use SELECT, GROUP BY/HAVING, INNER and LEFT JOINs, subqueries and time trends. Find when fraud happens, then write a memo to the Head of Cards.
 
-**Session 5: Measuring risk**
-- Exercises: `max_drawdown`, `historical_var`, `expected_loss`, `misclassification_cost`
-- Explore: in `p02`, change VaR from 95% to 99% (`historical_var(pr, 0.99)`). How much bigger is the worst-day loss?
-- Think: *Explain "1-day 95% VaR of ₦2.96m" to a non-technical board member in two sentences. What does VaR NOT tell them?*
+**B3: Credit default model** · TS 3, 5, 7
+- Baseline logistic regression, then a decision tree, then a random forest, all inside a scikit-learn `Pipeline`.
+- 5-fold cross-validation and `GridSearchCV`. Use a learning curve to discuss bias versus variance.
+- Metrics: confusion matrix, ROC-AUC and F1. Then the business metric: **₦ profit at each approval cut-off**.
+- *Deliverable:* a recommended cut-off with its ₦ impact.
 
-### Part B: Statistical thinking (Sessions 6–7)
+**B4: Fraud detection** · TS 6
+- Fraud is only 0.8% of transactions. Show why accuracy is misleading.
+- Compare KNN, logistic regression and random forest, then class weights versus SMOTE.
+- Use a precision-recall curve to choose an alert threshold that matches the team's review capacity.
+- *Deliverable:* "with N alerts a day we catch X% of fraud, ₦Y saved".
 
-**Session 6: Is the difference real?**
-- Exercises: `mean_confidence_interval`, `two_proportion_ztest`
-- Explore: in `data/loans.csv`, compare the default rate of RENT and MORTGAGE customers using your z-test. Is the gap statistically significant?
-- Think: *Statistically significant is not the same as important for the business. With 20,000 loans even tiny gaps come out "significant", so how big would a gap need to be before you changed lending policy?*
+**B5: Customer segmentation** · TS 8
+- Build customer features (recency, frequency, monetary value, category mix, state, app use).
+- Run K-Means and hierarchical clustering. Choose k with the elbow method and silhouette scores. Visualise with PCA.
+- *Deliverable:* named personas, each with a recommended product offer.
 
-**Session 7: Uncertainty without formulas**
-- Exercises: `bootstrap_ci`, `loan_book_kpis`
-- Explore: bootstrap the **median** income of defaulters and of non-defaulters. Do the two intervals overlap?
-- Think: *A manager wants one number. Why is "median income ₦3.63m (95% CI ₦3.60m–₦3.67m)" a better answer than "₦3.63m"?*
+**B6: Spending forecast** · TS 9
+- Daily or weekly card volume: trend, seasonality and residuals.
+- Lag and rolling features, then ARIMA.
+- Beat a naive baseline on MAE/RMSE.
+- *Deliverable:* next quarter's forecast with an uncertainty band.
 
-### Part C: Business intelligence (Sessions 8–9)
+**B7: Explainable & fair credit model** · TS 11
+- SHAP (global and per-applicant) and LIME on your B3 model.
+- Check approval rates across age groups and discuss fairness.
+- *Deliverable:* a one-page model card (purpose, data, performance, limits, fairness).
 
-**Session 8: SQL and trends**
-- Exercises: `month_over_month_growth`, `category_share_sql`
-- Explore: load `transactions.csv` into SQLite as you did in your TS Academy capstone, then write **three SQL queries of your own**. Example: fraud rate by hour of day.
-- Think: *December spend is up 12% month on month. Is that good news? What would you compare it with first? (Hint: seasonality, last year.)*
+**B8: Loan decision app** · TS 10
+- Save the B3 pipeline with `joblib`.
+- A Streamlit app: enter applicant details and see the probability of default, the decision, and the top reasons.
+- Deploy it free on Streamlit Community Cloud and link it in the README.
+- This is also your **dashboard** skill: add a second page of loan-book KPI charts.
 
-**Session 9: Build a dashboard**
-- Build a one-page dashboard from `loans.csv` and `transactions.csv` in **Power BI, Excel, or Streamlit** (whichever you know best).
-- It needs 4 KPI cards (loans, ₦ disbursed, default rate, NPL ratio), default rate by credit band, monthly spend trend, and a filter for `purpose`.
-- Save a screenshot to `reports/figures/` and link it in the README.
+**B9: HR attrition, solo rebuild** · TS 12
+Rebuild your capstone **alone, from a blank notebook**, using the IBM HR dataset. You know the problem; now prove you can solve it yourself. Then compare it with the group version. It shows employers your skills work outside finance too.
 
-### Part D: Think like a data scientist in a bank (Sessions 10–12)
+### After each build
+1. Run **Restart & Run All**, then commit and push.
+2. Compare your work with the matching file in `worked_examples/` (B3 → `p01`, B4 → `p03`, B5 → `p04`). Note one thing you did better and one thing worth adopting.
+3. Update the status column in the README (⬜ → ✅).
+4. Every second build, write a short LinkedIn post: the problem, what you did, the ₦ result, and one lesson.
 
-**Session 10: Own the credit project**
-- Re-read `projects/p01_credit_risk.py` and write a comment in your own words above each block.
-- Change `LGD` (0.45 → 0.60) and `MARGIN` (0.08 → 0.12). How does the best cut-off move? Make a small table.
-- Write a **half-page decision memo** in `journal/`: what you recommend, the ₦ impact, the risks, and what you'd test next.
-
-**Session 11: Trade-offs in fraud**
-- In `p03`, change `DAILY_REVIEW_CAPACITY` to 1, 3, 5 and 10. Record precision, recall and ₦ intercepted each time.
-- Think: *Each analyst costs ₦X a month. At what point does hiring another analyst pay for itself?* Make a reasonable estimate and show your working.
-
-**Session 12: Ship it and tell people**
-- Pick your favourite project and write a 150-word LinkedIn post: the problem, what you did, the ₦ result, and one lesson.
-- Pin `Finance-ds` on your GitHub profile. Then apply the same polish to your capstone README by adding the results and metrics your group achieved.
-
----
-
-## After session 12
-
-Pick the next items from the "Practice roadmap" in the [README](README.md). Swapping in real data and building a scorecard are good next steps.
-Then repeat the exercises you had to peek at. When you can solve all 20 without the solutions, you know this material.
+At two or three sessions a week, the whole roadmap takes about **4 months**. That isn't slow. It's about how long it takes to genuinely learn this material.

@@ -1,71 +1,58 @@
 # Finance-ds
 
-This repository contains four projects that answer practical business questions in finance and banking, and my approach to answering them as a data scientist. It also has a graded set of practice exercises.
-Every project starts with a business question and ends with a decision and a naira (₦) figure, not just a model score.
-All data is set in a Nigerian retail-banking context: incomes, loans, card spend and portfolio values are in naira.
+This repository contains projects that answer practical business questions in finance and banking, and my approach to answering them as a data scientist.
 
-| # | Project | Business question | Key techniques | Headline result |
-|---|---------|-------------------|----------------|-----------------|
-| 1 | [Credit risk PD model](projects/p01_credit_risk.py) | Which loans should we approve? | IV screening, logistic regression vs gradient boosting, AUC/Gini/KS, profit-based cut-off | AUC 0.73 · cut-off at PD 0.16 turns a **-₦55.8m** book into **+₦244.4m** |
-| 2 | [Portfolio & market risk](projects/p02_portfolio_risk.py) | Best risk-adjusted mix, and how much can we lose? | Sharpe, drawdown, efficient frontier, historical/parametric VaR & CVaR, VaR backtest | Best mix earns 31.5% vs 15.9% T-bills (Sharpe 0.52) · 1-day 95% VaR ₦2.96m on ₦100m · backtest breach rate 5.6% vs 5% target |
-| 3 | [Card fraud detection](projects/p03_fraud_detection.py) | Which transactions do analysts review? | Leak-free behavioural features, time-ordered split, imbalanced learning, capacity-based threshold | 3 alerts/day → **75% of fraud caught at 65% precision** (₦28.8m of ₦31.1m intercepted) |
-| 4 | [Customer segmentation](projects/p04_customer_segmentation.py) | Who do we target with which offer? | RFM, scaling, K-Means, silhouette selection, segment profiling | 4 segments; 51% of customers drive 78% of spend |
+It is also my training ground. After completing the TS Academy Data Science programme, I'm rebuilding every skill from the course by **writing the code myself**, applied to realistic Nigerian banking problems (all money in ₦).
+
+## My builds
+
+Each build is a project I write from a blank notebook. The progress table below shows where I am.
+
+| # | Build | Business question | Skills (TS module) | Status |
+|---|-------|-------------------|--------------------|--------|
+| B1 | [Who defaults?](notebooks/builds/B1_loan_default_eda_statistics.ipynb) | What do defaulters have in common, and which differences are real? | EDA, Seaborn, hypothesis tests, confidence intervals (1–2) | ⬜ Not started |
+| B2 | [Card spending with SQL](notebooks/builds/B2_card_spending_sql.ipynb) | Where do customers spend, and when does fraud happen? | SQL joins, subqueries, SQL + pandas (4) | ⬜ |
+| B3 | Credit default model | Which loans should we approve? | Logistic regression, trees, random forest, CV, tuning (3, 5, 7) | ⬜ |
+| B4 | Fraud detection | Which transactions should analysts review? | Imbalanced classes, SMOTE, precision-recall (6) | ⬜ |
+| B5 | Customer segmentation | Which offer for which customer? | K-Means, hierarchical, PCA (8) | ⬜ |
+| B6 | Spending forecast | What will next quarter's card volume be? | Time series, lags, ARIMA (9) | ⬜ |
+| B7 | Explainable & fair credit model | Why was this applicant declined, and is the model fair? | SHAP, LIME, fairness (11) | ⬜ |
+| B8 | Loan decision app | Can a loan officer use the model? | joblib, Streamlit, deployment (10) | ⬜ |
+| B9 | HR attrition, solo rebuild | Who is about to resign? | End-to-end project outside finance (12) | ⬜ |
+
+Practice workbooks (20 graded exercises): `notebooks/exercises/`, with progress kept in my [learning log](journal/LEARNING_LOG.md).
+
+## How I practise
+
+See **[PRACTICE.md](PRACTICE.md)**. It covers where the work happens, how I use AI as a tutor rather than a ghostwriter, and the session-by-session roadmap.
+
+## Worked examples (reference)
+
+Finished reference implementations that I study **after** making my own attempt:
+
+| Example | Headline result |
+|---------|-----------------|
+| [Credit risk PD model](worked_examples/p01_credit_risk.py) | AUC 0.73 · a PD cut-off at 0.16 turns a **-₦55.8m** book into **+₦244.4m** |
+| [Portfolio & market risk](worked_examples/p02_portfolio_risk.py) | Best mix earns 31.5% vs 15.9% T-bills (Sharpe 0.52) · 1-day 95% VaR ₦2.96m on ₦100m |
+| [Card fraud detection](worked_examples/p03_fraud_detection.py) | 3 alerts/day catch 75% of fraud at 65% precision (₦28.8m of ₦31.1m) |
+| [Customer segmentation](worked_examples/p04_customer_segmentation.py) | 4 segments; 51% of customers drive 78% of spend |
 
 <p>
 <img src="reports/figures/credit_profit_curve.png" width="49%">
 <img src="reports/figures/portfolio_frontier.png" width="49%">
-<img src="reports/figures/portfolio_var_backtest.png" width="49%">
-<img src="reports/figures/fraud_pr_curve.png" width="49%">
 </p>
-
-## Practising with this repo
-
-Start with **[PRACTICE.md](PRACTICE.md)**: 12 sessions of 60–90 minutes covering Python, statistical thinking and BI. Record each session in [`journal/LEARNING_LOG.md`](journal/LEARNING_LOG.md).
-
-## Quick start
-
-```bash
-pip install -r requirements.txt
-python data/generate_data.py                 # reproducible synthetic data (no API keys)
-python projects/p01_credit_risk.py           # each project prints results + saves charts to reports/figures/
-pytest                                       # library tests + exercise grader
-```
 
 ## Layout
 
 ```
-data/generate_data.py   seeded synthetic (₦) loans, prices (correlated GBM) and card transactions
-fintools/               reusable library: TVM (loan payment, NPV, IRR), returns, Sharpe, drawdown,
-                        VaR/CVaR, KS, Gini, Information Value, naira formatting + shared chart style
-projects/               the four portfolio projects
-exercises/practice.py   20 exercises to complete (Levels 1-5)
-exercises/solutions.py  reference answers
-tests/                  unit tests for fintools + auto-grader for exercises
-PRACTICE.md             session-by-session practice guide
-journal/                learning log
+notebooks/00_start_here.ipynb   setup check and tour (start here)
+notebooks/exercises/            5 workbooks, 20 graded exercises (check(...) in each notebook)
+notebooks/builds/               my from-scratch projects (B1, B2 ready, more added as I progress)
+journal/                        learning log + skills checklist
+data/                           synthetic Nigerian banking data (₦): loans, transactions, customers, prices
+worked_examples/                reference projects
+fintools/                       helper library: finance metrics, naira formatting, chart style
+exercises/, tests/              exercise stubs, solutions and the grader
 ```
 
-## Practice mode
-
-`exercises/practice.py` has 20 stub functions in five levels: finance maths, pandas wrangling, risk, statistical thinking and business intelligence (including SQL).
-Fill them in and run the grader:
-
-```bash
-pytest tests/test_exercises.py -x                    # stops at your first failing exercise
-EXERCISES=solutions pytest tests/test_exercises.py   # confirms the reference answers
-```
-
-## Practice roadmap (to strengthen the portfolio)
-
-1. **Solve all 20 exercises** without looking at solutions, then compare your answers with them.
-2. **Extend each project** (good interview talking points):
-   - Credit: build a points-based scorecard (WoE binning → 600 + 20·log2 odds), add SHAP explanations, and check the model for fairness across groups.
-   - Portfolio: replace random sampling with `scipy.optimize`, add a monthly rebalanced backtest, and stress test against a 2008-style shock.
-   - Fraud: add rolling 1h/24h velocity features and compare with Isolation Forest (unsupervised).
-   - Segmentation: map segments to products and estimate the uplift of a campaign.
-3. **Swap in real data**: Kaggle *Give Me Some Credit* / *Lending Club* (credit), `yfinance` (prices),
-   Kaggle *Credit Card Fraud* (fraud). The pipelines need few changes.
-4. **Ship one as an app**, such as a Streamlit loan-decision demo, and link it at the top of this README.
-5. **Write one short blog post per project** focused on the business decision, not the algorithm.
-
-> Data is synthetic and generated with known risk drivers, so you can check that the models recover them.
+All data is synthetic and generated by `data/generate_data.py` with known risk drivers. That makes it safe to share, and it lets me check whether my analysis finds the real patterns.

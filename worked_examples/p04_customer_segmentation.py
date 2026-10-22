@@ -1,4 +1,4 @@
-"""Project 4 - Customer Segmentation (RFM + K-Means) for a retail bank.
+"""Worked example - Project 4 - Customer Segmentation (RFM + K-Means) for a retail bank.
 
 Business question: how do we group cardholders so marketing can target
 offers (premium card upgrade, re-activation, retention)?

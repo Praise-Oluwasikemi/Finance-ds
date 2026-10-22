@@ -111,8 +111,23 @@ def make_transactions(n_customers: int = 3_000, n_tx: int = 120_000) -> pd.DataF
     return df.sort_values("timestamp").reset_index(drop=True)
 
 
+def make_customers(n_customers: int = 3_000, seed: int = 99) -> pd.DataFrame:
+    """Customer master table (joins to transactions on customer_id) for SQL practice."""
+    rng = np.random.default_rng(seed)
+    states = ["Lagos", "FCT Abuja", "Rivers", "Oyo", "Kano", "Enugu", "Kaduna", "Delta", "Ogun", "Anambra"]
+    return pd.DataFrame({
+        "customer_id": np.arange(1, n_customers + 1),
+        "state": rng.choice(states, n_customers, p=[0.32, 0.14, 0.09, 0.08, 0.08, 0.06, 0.06, 0.06, 0.06, 0.05]),
+        "segment": rng.choice(["Retail", "Premium", "SME"], n_customers, p=[0.75, 0.1, 0.15]),
+        "age": rng.integers(18, 75, n_customers),
+        "join_date": pd.Timestamp("2015-01-01") + pd.to_timedelta(rng.integers(0, 3650, n_customers), unit="D"),
+        "has_mobile_app": (rng.random(n_customers) < 0.7).astype(int),
+    })
+
+
 if __name__ == "__main__":
     make_loans().to_csv(DATA_DIR / "loans.csv", index=False)
     make_prices().to_csv(DATA_DIR / "prices.csv")
     make_transactions().to_csv(DATA_DIR / "transactions.csv", index=False)
-    print("Wrote loans.csv, prices.csv, transactions.csv to", DATA_DIR)
+    make_customers().to_csv(DATA_DIR / "customers.csv", index=False)
+    print("Wrote loans.csv, prices.csv, transactions.csv, customers.csv to", DATA_DIR)

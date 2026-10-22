@@ -1,4 +1,4 @@
-"""Project 2 - Portfolio Analytics & Market Risk.
+"""Worked example - Project 2 - Portfolio Analytics & Market Risk.
 
 Business question: how have our six holdings performed on a risk-adjusted
 basis, what is the optimal (max-Sharpe) mix, and how much could we lose on a

@@ -1,4 +1,4 @@
-"""Project 1 - Credit Risk: Probability-of-Default model for a retail loan book.
+"""Worked example - Project 1 - Credit Risk: Probability-of-Default model for a retail loan book.
 
 Business question: which applicants are likely to default, and what cut-off
 score balances approval volume against expected credit losses?

@@ -13,8 +13,7 @@ import pytest
 ex = importlib.import_module(f"exercises.{os.environ.get('EXERCISES', 'practice')}")
 
 
-@pytest.fixture
-def raw_tx():
+def make_raw_tx():
     return pd.DataFrame({
         "tx_id": [3, 1, 2, 2, 4],
         "customer_id": [10, 10, 20, 20, 20],
@@ -22,6 +21,11 @@ def raw_tx():
         "amount": [5_000.0, np.nan, 3_000.0, 3_000.0, 7_000.0],
         "category": ["grocery", "grocery", "fuel", "fuel", "grocery"],
     })
+
+
+@pytest.fixture
+def raw_tx():
+    return make_raw_tx()
 
 
 # ---- Level 1

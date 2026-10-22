@@ -1,4 +1,4 @@
-"""Project 3 - Card Fraud Detection on imbalanced transaction data.
+"""Worked example - Project 3 - Card Fraud Detection on imbalanced transaction data.
 
 Business question: which transactions should we block or send for review,
 given that fraud is <1% of volume and analyst time is limited?

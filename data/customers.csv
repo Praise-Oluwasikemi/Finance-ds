@@ -1,0 +1,3001 @@
+customer_id,state,segment,age,join_date,has_mobile_app
+1,Rivers,SME,70,2016-12-05,1
+2,Oyo,SME,41,2015-11-06,1
+3,Rivers,SME,65,2017-12-05,1
+4,Anambra,SME,30,2018-10-08,0
+5,Oyo,Retail,46,2023-02-21,0
+6,Oyo,Retail,27,2024-02-16,0
+7,Lagos,Retail,74,2015-01-30,1
+8,Oyo,Retail,59,2020-09-23,1
+9,Rivers,Retail,25,2021-11-11,0
+10,Oyo,SME,36,2018-10-30,1
+11,Ogun,Retail,71,2021-02-02,1
+12,Lagos,Retail,41,2016-02-04,1
+13,Lagos,Retail,55,2016-02-19,1
+14,FCT Abuja,Retail,58,2019-10-03,0
+15,Lagos,SME,28,2017-04-01,1
+16,FCT Abuja,Retail,21,2015-06-01,0
+17,Ogun,Premium,67,2016-05-08,0
+18,FCT Abuja,Retail,42,2017-08-16,1
+19,Kaduna,SME,72,2018-12-21,1
+20,Lagos,Retail,18,2021-01-08,1
+21,Lagos,Retail,59,2020-07-20,1
+22,Kano,Retail,39,2019-11-20,0
+23,FCT Abuja,SME,56,2015-11-26,1
+24,Delta,Retail,67,2015-01-24,1
+25,FCT Abuja,Retail,39,2020-07-29,1
+26,Oyo,SME,53,2024-09-07,1
+27,Oyo,Retail,28,2015-02-05,1
+28,Oyo,SME,37,2016-09-02,0
+29,Kano,Retail,27,2021-05-28,1
+30,Rivers,Retail,64,2022-04-29,0
+31,Lagos,Retail,26,2015-08-28,1
+32,Lagos,Retail,34,2018-01-20,1
+33,Lagos,Retail,50,2023-04-23,1
+34,Lagos,Retail,49,2015-12-17,1
+35,Lagos,Retail,33,2017-09-09,0
+36,Lagos,SME,30,2024-11-05,1
+37,Oyo,Retail,24,2020-12-14,1
+38,FCT Abuja,Retail,46,2017-12-08,1
+39,Kaduna,Retail,56,2018-08-20,1
+40,Anambra,Retail,68,2021-08-09,1
+41,FCT Abuja,Retail,47,2023-01-02,1
+42,Lagos,Retail,20,2021-07-09,0
+43,Kano,Retail,21,2019-12-31,1
+44,Oyo,SME,52,2015-05-02,1
+45,Enugu,SME,57,2019-12-03,1
+46,Oyo,Retail,64,2024-10-19,1
+47,Lagos,Retail,25,2020-11-12,1
+48,Ogun,SME,24,2023-07-24,1
+49,Oyo,Retail,27,2023-06-14,0
+50,Enugu,Retail,55,2018-12-28,1
+51,Kano,Retail,48,2019-06-20,1
+52,Enugu,Retail,64,2015-03-27,0
+53,Enugu,Retail,34,2016-01-22,1
+54,FCT Abuja,Retail,39,2020-01-28,1
+55,Lagos,Retail,60,2018-02-13,1
+56,Rivers,SME,43,2016-12-05,1
+57,Ogun,Retail,32,2015-11-17,0
+58,Lagos,Retail,24,2020-11-24,1
+59,Kaduna,Premium,53,2016-01-22,1
+60,Kano,Retail,66,2015-12-11,1
+61,Kano,Retail,52,2021-05-11,1
+62,Lagos,Retail,70,2018-01-31,0
+63,Lagos,Premium,37,2019-12-11,1
+64,Lagos,Retail,37,2024-02-07,0
+65,Oyo,Retail,68,2021-08-19,1
+66,FCT Abuja,SME,70,2015-02-06,1
+67,Lagos,Retail,69,2023-04-18,1
+68,FCT Abuja,Premium,50,2024-02-27,1
+69,Enugu,Retail,50,2023-05-25,1
+70,Lagos,Retail,24,2023-06-16,1
+71,Rivers,Retail,34,2018-01-12,0
+72,FCT Abuja,Retail,32,2016-09-14,1
+73,Anambra,Premium,18,2020-06-24,1
+74,Delta,Retail,43,2018-06-25,1
+75,Enugu,Retail,61,2020-07-09,1
+76,Oyo,Retail,20,2018-12-02,1
+77,FCT Abuja,Retail,72,2019-03-16,1
+78,Kano,Premium,39,2018-05-11,1
+79,Delta,SME,55,2021-09-15,1
+80,Lagos,Retail,37,2020-05-03,1
+81,Lagos,Retail,73,2020-11-02,1
+82,FCT Abuja,Retail,23,2017-04-08,0
+83,Lagos,Retail,70,2018-11-03,1
+84,Delta,Retail,53,2024-09-20,1
+85,Lagos,Retail,22,2017-09-12,1
+86,Ogun,Retail,72,2019-08-03,1
+87,Rivers,Premium,50,2017-01-02,0
+88,Delta,Retail,38,2024-03-27,0
+89,FCT Abuja,Premium,37,2023-09-18,1
+90,Enugu,Premium,20,2024-03-30,0
+91,Anambra,Retail,60,2020-06-01,0
+92,Lagos,Retail,59,2015-10-06,1
+93,Lagos,Retail,36,2015-10-12,0
+94,Rivers,Premium,63,2024-10-03,1
+95,FCT Abuja,Retail,22,2020-07-15,0
+96,Kaduna,Retail,73,2016-02-18,0
+97,Ogun,Retail,56,2023-07-11,1
+98,Oyo,SME,68,2023-04-30,1
+99,Lagos,Retail,38,2021-03-19,1
+100,FCT Abuja,Retail,61,2019-03-27,1
+101,Lagos,Retail,26,2018-10-03,0
+102,Kano,Retail,49,2022-01-13,0
+103,Lagos,Retail,22,2020-04-19,1
+104,Lagos,Premium,20,2015-05-13,1
+105,Rivers,Retail,22,2017-02-02,1
+106,Lagos,Retail,21,2022-03-17,0
+107,Rivers,Retail,37,2019-04-07,0
+108,FCT Abuja,Retail,44,2016-10-30,1
+109,Enugu,Retail,74,2015-05-03,1
+110,Lagos,Retail,37,2024-08-26,0
+111,Enugu,Retail,34,2021-02-14,1
+112,Lagos,SME,45,2019-02-27,1
+113,Kaduna,SME,39,2018-02-13,1
+114,Anambra,Retail,62,2019-04-28,0
+115,Lagos,Retail,32,2018-09-22,1
+116,Anambra,Retail,19,2023-09-10,1
+117,Oyo,Premium,43,2021-09-26,1
+118,Oyo,Retail,32,2020-06-19,0
+119,Lagos,Retail,25,2022-01-14,0
+120,Kano,Retail,26,2018-10-09,0
+121,FCT Abuja,Retail,57,2021-08-28,1
+122,Oyo,SME,19,2017-12-30,1
+123,Rivers,Retail,68,2016-05-01,0
+124,Kaduna,SME,72,2021-05-03,1
+125,Rivers,Retail,47,2016-12-13,1
+126,FCT Abuja,Premium,30,2015-08-02,1
+127,Lagos,Retail,58,2015-08-02,1
+128,Oyo,Retail,39,2019-12-07,0
+129,Anambra,Retail,26,2018-01-13,1
+130,Lagos,Retail,34,2024-12-13,1
+131,Lagos,Retail,59,2018-12-11,1
+132,FCT Abuja,Retail,49,2020-12-31,1
+133,Lagos,Retail,34,2022-04-12,1
+134,Ogun,Retail,70,2019-05-30,1
+135,Oyo,Retail,31,2022-01-06,1
+136,Kaduna,Retail,39,2019-02-13,1
+137,Kaduna,Retail,62,2022-08-21,1
+138,Lagos,Retail,55,2019-07-09,1
+139,Delta,Retail,51,2024-07-20,0
+140,FCT Abuja,Retail,42,2021-12-09,1
+141,Lagos,Retail,50,2024-02-17,1
+142,Delta,Retail,20,2024-08-22,1
+143,Delta,Retail,66,2024-07-09,1
+144,Delta,Retail,49,2024-06-28,1
+145,Delta,Retail,70,2018-08-11,1
+146,Anambra,Retail,65,2021-08-22,1
+147,Lagos,Retail,61,2016-02-03,1
+148,Lagos,SME,55,2019-03-08,1
+149,Lagos,Premium,19,2021-02-04,0
+150,Enugu,Retail,29,2018-12-10,1
+151,FCT Abuja,Retail,50,2019-02-14,1
+152,Kano,Retail,51,2024-04-04,1
+153,Kaduna,SME,33,2020-07-14,1
+154,Lagos,Retail,39,2015-02-17,1
+155,Anambra,Retail,72,2016-10-30,1
+156,Oyo,Retail,65,2023-04-30,1
+157,Ogun,Retail,62,2016-11-14,1
+158,Rivers,SME,48,2017-12-14,1
+159,Ogun,Retail,26,2018-03-18,1
+160,Rivers,Retail,65,2018-12-07,0
+161,Kaduna,Retail,65,2020-12-02,1
+162,FCT Abuja,SME,23,2020-09-19,0
+163,Lagos,Retail,58,2024-03-14,1
+164,Enugu,Retail,45,2021-03-06,1
+165,Lagos,Retail,39,2018-03-25,0
+166,Ogun,Retail,25,2018-02-24,1
+167,Oyo,Retail,35,2018-05-03,1
+168,FCT Abuja,Retail,19,2016-08-22,1
+169,Kaduna,Retail,18,2017-03-16,1
+170,Anambra,Retail,25,2017-09-21,1
+171,FCT Abuja,Retail,38,2023-10-08,1
+172,Kano,Retail,61,2017-08-02,1
+173,FCT Abuja,Retail,48,2017-11-28,0
+174,Lagos,Retail,36,2021-03-10,0
+175,Lagos,Retail,20,2020-03-24,1
+176,Delta,Premium,60,2024-02-19,1
+177,FCT Abuja,Retail,24,2020-03-13,1
+178,FCT Abuja,Retail,64,2021-04-06,1
+179,FCT Abuja,Premium,55,2018-06-26,1
+180,FCT Abuja,SME,64,2022-08-08,0
+181,Lagos,Retail,67,2020-05-03,0
+182,Kaduna,Retail,40,2023-02-17,0
+183,Kano,Retail,58,2021-04-29,1
+184,Oyo,Retail,30,2018-03-13,1
+185,Kaduna,Retail,33,2020-02-15,1
+186,Lagos,Retail,38,2017-09-10,1
+187,Delta,Premium,71,2023-08-23,1
+188,Lagos,Retail,23,2024-09-13,1
+189,Lagos,Retail,29,2022-03-28,1
+190,Rivers,Retail,35,2022-10-21,0
+191,FCT Abuja,SME,45,2023-12-26,1
+192,Enugu,Retail,30,2024-04-24,1
+193,Enugu,Retail,46,2015-05-06,1
+194,Delta,Retail,24,2018-11-22,1
+195,Lagos,SME,54,2015-05-28,1
+196,Kano,Retail,40,2022-03-16,0
+197,FCT Abuja,SME,55,2022-07-19,1
+198,Kano,Retail,24,2022-03-08,1
+199,Enugu,Retail,73,2020-12-09,1
+200,Kaduna,SME,27,2019-07-08,1
+201,FCT Abuja,SME,25,2023-07-15,0
+202,Rivers,Retail,33,2015-09-06,1
+203,Oyo,Retail,64,2017-06-11,0
+204,Rivers,Premium,45,2015-06-16,1
+205,Kaduna,Retail,71,2018-08-30,1
+206,FCT Abuja,SME,46,2021-12-07,1
+207,Delta,Retail,68,2015-12-02,1
+208,Lagos,Retail,21,2023-11-03,1
+209,Enugu,Retail,51,2015-02-04,1
+210,Enugu,SME,41,2020-05-01,0
+211,Oyo,Retail,27,2023-01-03,1
+212,Lagos,Retail,62,2023-12-28,0
+213,Oyo,Premium,50,2016-03-15,1
+214,Lagos,Retail,26,2020-06-18,1
+215,Lagos,Premium,65,2016-10-12,0
+216,Enugu,Retail,63,2019-01-17,1
+217,FCT Abuja,Retail,38,2023-01-27,1
+218,Lagos,Retail,34,2019-08-25,0
+219,Enugu,Retail,43,2017-12-16,1
+220,FCT Abuja,Retail,52,2018-10-04,1
+221,Oyo,SME,47,2015-03-21,0
+222,Lagos,Retail,47,2015-12-17,0
+223,Lagos,Retail,54,2020-12-24,1
+224,Lagos,SME,22,2016-06-14,1
+225,Lagos,Retail,72,2023-09-30,1
+226,Rivers,Premium,22,2017-02-18,0
+227,Kano,Retail,23,2020-08-06,1
+228,Anambra,Retail,40,2019-09-08,1
+229,Oyo,SME,33,2017-02-27,1
+230,Anambra,Retail,20,2024-08-02,1
+231,Lagos,Retail,49,2019-02-05,0
+232,Lagos,Retail,30,2022-12-06,1
+233,Lagos,Retail,61,2020-10-10,0
+234,FCT Abuja,Retail,48,2024-02-01,1
+235,FCT Abuja,Retail,51,2018-07-19,1
+236,Kaduna,Retail,66,2016-08-28,1
+237,Lagos,Retail,24,2024-11-05,1
+238,Oyo,Premium,27,2015-10-22,0
+239,Anambra,Retail,43,2021-07-26,1
+240,FCT Abuja,Retail,33,2021-04-30,0
+241,Rivers,Retail,25,2019-07-28,1
+242,Oyo,Retail,22,2020-03-28,1
+243,Oyo,Retail,56,2015-12-05,0
+244,Rivers,Retail,68,2019-07-07,1
+245,FCT Abuja,Retail,37,2017-08-20,1
+246,FCT Abuja,Retail,28,2020-08-21,1
+247,Lagos,Retail,36,2023-05-16,1
+248,Kaduna,Retail,41,2023-03-05,1
+249,Ogun,Retail,50,2018-01-25,1
+250,Lagos,Retail,27,2016-08-24,1
+251,Lagos,Retail,20,2020-01-21,1
+252,Anambra,Retail,56,2022-04-04,0
+253,Lagos,Retail,60,2018-11-24,1
+254,Delta,SME,42,2024-05-10,1
+255,Anambra,Retail,46,2022-09-05,0
+256,Enugu,Retail,69,2020-03-29,1
+257,Lagos,Retail,69,2017-07-11,1
+258,Kaduna,Retail,63,2017-08-11,1
+259,Oyo,Retail,38,2020-10-05,0
+260,Enugu,Premium,33,2024-05-10,0
+261,Rivers,SME,64,2015-07-01,0
+262,Lagos,Retail,21,2015-04-17,0
+263,Ogun,Retail,60,2016-11-06,0
+264,Oyo,Retail,73,2016-02-18,0
+265,FCT Abuja,SME,51,2015-05-30,1
+266,Lagos,Retail,60,2021-05-27,1
+267,Kano,Retail,39,2021-11-27,1
+268,Lagos,Retail,49,2023-09-23,1
+269,Oyo,SME,63,2017-03-05,1
+270,Rivers,Retail,28,2019-03-03,1
+271,Anambra,Retail,34,2019-03-20,1
+272,Kaduna,Retail,67,2024-06-19,0
+273,FCT Abuja,Retail,18,2018-05-24,1
+274,Rivers,Premium,22,2015-05-23,0
+275,Anambra,Retail,61,2024-07-10,1
+276,Delta,Premium,18,2019-08-01,1
+277,Lagos,Retail,66,2015-01-15,1
+278,Enugu,Retail,18,2021-09-18,0
+279,Kaduna,Retail,69,2015-11-09,0
+280,Anambra,Retail,69,2017-04-12,1
+281,Kaduna,Retail,70,2020-01-17,1
+282,Ogun,Retail,65,2022-06-25,1
+283,Anambra,Retail,61,2019-02-16,1
+284,Lagos,Retail,25,2023-11-25,1
+285,Ogun,Retail,30,2019-09-15,1
+286,Lagos,SME,28,2021-01-19,1
+287,Kano,Retail,60,2015-12-18,1
+288,Delta,Retail,25,2017-05-18,1
+289,FCT Abuja,SME,22,2015-06-07,1
+290,Delta,Retail,45,2016-08-20,1
+291,Kano,Retail,19,2023-08-21,1
+292,Kano,Retail,57,2015-08-22,1
+293,Oyo,SME,53,2020-05-26,1
+294,Lagos,Retail,50,2017-12-03,1
+295,Anambra,Retail,27,2019-08-20,1
+296,Kano,Retail,33,2016-07-09,1
+297,Delta,Retail,52,2019-11-19,0
+298,FCT Abuja,Retail,67,2023-12-11,1
+299,Lagos,Retail,28,2022-03-24,0
+300,Kano,Retail,55,2018-04-17,1
+301,Lagos,Retail,33,2020-09-20,0
+302,Enugu,SME,24,2015-08-01,1
+303,Oyo,Retail,19,2021-11-07,1
+304,Ogun,Retail,69,2024-03-10,1
+305,Delta,SME,52,2017-10-30,1
+306,FCT Abuja,Retail,30,2017-01-26,1
+307,Lagos,Retail,60,2017-02-18,0
+308,Lagos,Retail,67,2024-11-04,0
+309,Rivers,Retail,27,2023-02-05,0
+310,Lagos,Retail,68,2020-02-08,0
+311,Rivers,Retail,22,2023-10-23,1
+312,FCT Abuja,Retail,39,2019-08-09,1
+313,FCT Abuja,Retail,69,2015-10-18,1
+314,Delta,Retail,69,2018-10-25,0
+315,Enugu,Premium,73,2024-05-21,1
+316,Kano,SME,22,2020-06-28,1
+317,FCT Abuja,Retail,48,2020-04-14,1
+318,Oyo,Retail,39,2023-01-30,0
+319,Oyo,Retail,26,2016-04-07,1
+320,Lagos,SME,22,2020-09-30,1
+321,Kaduna,Retail,66,2020-07-15,0
+322,Lagos,Retail,43,2015-06-26,0
+323,Lagos,Retail,64,2022-01-02,1
+324,Lagos,Retail,63,2023-10-14,1
+325,Ogun,Retail,68,2016-08-01,1
+326,Lagos,Retail,27,2024-10-07,0
+327,Lagos,Retail,31,2020-10-26,1
+328,Oyo,Retail,59,2015-04-14,1
+329,Kano,Retail,57,2016-12-19,1
+330,Lagos,Retail,42,2021-10-20,1
+331,Anambra,Premium,68,2023-08-30,1
+332,Lagos,Retail,72,2019-12-13,1
+333,FCT Abuja,Retail,25,2021-05-27,0
+334,Oyo,SME,38,2021-03-06,1
+335,Kano,Retail,21,2022-07-25,1
+336,FCT Abuja,Retail,70,2018-12-08,1
+337,Lagos,Retail,72,2022-08-31,1
+338,FCT Abuja,SME,59,2022-03-10,1
+339,FCT Abuja,Premium,50,2018-02-20,1
+340,Kano,SME,22,2015-12-31,1
+341,Ogun,SME,56,2016-11-17,0
+342,Anambra,Retail,48,2021-01-01,1
+343,Anambra,Retail,42,2017-01-17,1
+344,Rivers,Retail,72,2015-09-22,1
+345,Lagos,Retail,51,2021-03-22,1
+346,Rivers,Retail,64,2024-01-30,1
+347,FCT Abuja,Retail,73,2015-06-22,1
+348,Rivers,Retail,50,2018-10-01,0
+349,Oyo,Retail,49,2017-03-16,1
+350,Enugu,Retail,64,2021-04-15,0
+351,Oyo,Retail,68,2024-09-23,1
+352,Lagos,Retail,41,2016-06-30,1
+353,Anambra,Retail,54,2023-04-15,0
+354,FCT Abuja,Retail,42,2015-02-25,1
+355,Anambra,Retail,74,2016-12-28,1
+356,Lagos,Retail,25,2024-07-10,1
+357,Lagos,Retail,18,2017-10-13,1
+358,Kaduna,Retail,71,2019-09-17,1
+359,Lagos,Premium,29,2018-10-06,1
+360,Lagos,Retail,50,2020-09-04,1
+361,FCT Abuja,SME,66,2023-10-02,1
+362,Anambra,Retail,71,2022-07-01,1
+363,Lagos,Retail,46,2018-12-29,0
+364,FCT Abuja,Retail,25,2021-10-11,1
+365,Rivers,Retail,66,2017-10-04,0
+366,Oyo,Retail,73,2020-07-04,1
+367,Lagos,Retail,57,2020-10-02,0
+368,Enugu,Retail,40,2015-01-12,1
+369,Kano,Retail,29,2018-04-10,1
+370,Ogun,Retail,73,2020-01-13,0
+371,Anambra,Retail,69,2024-07-19,1
+372,FCT Abuja,Retail,43,2018-01-22,1
+373,Lagos,Premium,56,2020-08-29,1
+374,Lagos,Premium,46,2022-01-19,0
+375,Enugu,Retail,44,2021-08-30,0
+376,FCT Abuja,Retail,56,2022-03-10,1
+377,Rivers,SME,30,2017-10-05,1
+378,Anambra,Retail,34,2023-07-10,1
+379,Enugu,SME,30,2015-03-04,1
+380,Lagos,Retail,68,2019-05-03,1
+381,Anambra,Retail,61,2017-11-04,0
+382,Lagos,Retail,58,2022-05-27,1
+383,Enugu,Retail,44,2021-02-12,1
+384,FCT Abuja,Retail,48,2021-11-25,0
+385,Enugu,Retail,57,2018-07-05,1
+386,Rivers,Retail,30,2024-04-09,1
+387,Rivers,Premium,47,2015-12-30,1
+388,FCT Abuja,Retail,48,2018-10-07,1
+389,Rivers,Retail,72,2019-09-17,1
+390,Anambra,SME,58,2017-03-07,1
+391,Lagos,Retail,63,2022-10-17,1
+392,Delta,Retail,37,2023-01-10,1
+393,Lagos,Retail,40,2018-10-04,0
+394,Lagos,Retail,30,2015-08-20,1
+395,Delta,Premium,68,2022-09-14,1
+396,Ogun,Retail,52,2018-08-27,1
+397,FCT Abuja,Retail,24,2020-11-10,1
+398,Lagos,Retail,54,2022-03-09,0
+399,Enugu,Premium,34,2015-11-14,1
+400,Kaduna,Retail,39,2019-06-13,0
+401,Lagos,Retail,57,2018-05-31,1
+402,Rivers,Retail,68,2016-05-11,1
+403,Lagos,Retail,67,2020-12-29,0
+404,Oyo,Retail,29,2015-05-17,0
+405,Enugu,Retail,20,2020-10-26,1
+406,Lagos,Premium,35,2021-08-21,1
+407,Delta,SME,70,2021-11-03,1
+408,Lagos,SME,63,2019-09-17,0
+409,Lagos,SME,72,2017-11-14,1
+410,Lagos,Retail,66,2024-08-22,1
+411,Anambra,Retail,36,2015-10-12,0
+412,Rivers,Retail,40,2015-11-03,1
+413,Kaduna,Premium,39,2019-09-29,0
+414,Kaduna,Retail,43,2018-06-02,1
+415,Kano,Retail,61,2021-07-15,0
+416,Kaduna,Retail,72,2019-08-26,1
+417,FCT Abuja,SME,69,2016-05-16,0
+418,FCT Abuja,SME,51,2024-08-19,1
+419,Kaduna,Retail,38,2015-03-12,0
+420,FCT Abuja,Retail,20,2016-02-24,0
+421,Lagos,Retail,57,2024-09-05,1
+422,Enugu,Retail,30,2023-01-31,1
+423,Lagos,Retail,60,2016-08-16,1
+424,Kaduna,Retail,35,2016-09-28,0
+425,Anambra,Retail,42,2017-07-19,1
+426,Lagos,Retail,51,2023-11-22,1
+427,Lagos,Premium,73,2022-05-01,1
+428,FCT Abuja,Retail,18,2020-06-25,1
+429,Lagos,Retail,35,2016-01-25,0
+430,Lagos,Premium,32,2016-11-19,1
+431,Lagos,Retail,28,2020-02-06,1
+432,Kano,Retail,67,2022-02-22,0
+433,Kaduna,Retail,42,2024-04-13,0
+434,Kano,SME,65,2017-05-17,1
+435,Kano,Retail,22,2023-10-27,1
+436,Kaduna,Retail,59,2021-10-03,1
+437,FCT Abuja,Retail,40,2019-03-11,1
+438,Oyo,Retail,18,2015-07-27,1
+439,Delta,Retail,69,2021-12-30,1
+440,Lagos,Retail,23,2024-04-26,0
+441,Kano,Retail,28,2015-06-27,1
+442,Rivers,Retail,19,2024-01-03,1
+443,Rivers,SME,51,2019-10-05,0
+444,Rivers,Retail,50,2016-03-19,1
+445,FCT Abuja,Retail,68,2016-06-13,0
+446,Enugu,Retail,71,2019-05-04,1
+447,FCT Abuja,Premium,59,2018-03-07,1
+448,Lagos,Retail,35,2023-03-04,1
+449,Rivers,Retail,33,2020-09-08,0
+450,Kaduna,Retail,19,2017-11-09,1
+451,Delta,Retail,28,2019-07-20,1
+452,Lagos,Retail,65,2024-03-06,1
+453,FCT Abuja,Premium,43,2016-12-19,1
+454,Lagos,Retail,23,2019-10-08,1
+455,Lagos,Premium,54,2023-08-08,1
+456,Lagos,SME,69,2017-07-01,0
+457,Lagos,Retail,34,2020-12-02,1
+458,Delta,SME,48,2018-12-28,1
+459,Lagos,Retail,35,2018-07-05,1
+460,Anambra,SME,68,2024-06-23,1
+461,Lagos,Retail,57,2024-03-15,1
+462,Lagos,Retail,61,2017-01-25,1
+463,Kaduna,Retail,23,2021-06-19,1
+464,Lagos,Retail,38,2015-03-15,1
+465,Lagos,SME,66,2023-09-15,1
+466,Ogun,Retail,20,2018-10-30,1
+467,Ogun,Retail,54,2024-04-20,1
+468,Lagos,Retail,53,2022-02-25,1
+469,FCT Abuja,Premium,69,2020-08-18,1
+470,Lagos,SME,28,2024-07-09,1
+471,Kano,Retail,38,2019-11-12,1
+472,Anambra,Retail,22,2024-07-06,0
+473,Lagos,Retail,63,2017-07-02,1
+474,Lagos,Retail,51,2017-03-06,1
+475,Lagos,Retail,65,2024-07-30,0
+476,Kano,Retail,55,2016-10-05,0
+477,FCT Abuja,SME,30,2020-06-19,1
+478,Anambra,Retail,69,2024-05-14,1
+479,Ogun,Retail,72,2016-05-30,1
+480,Lagos,Premium,25,2020-01-28,1
+481,Anambra,Retail,48,2023-06-23,1
+482,Ogun,Retail,45,2017-09-20,1
+483,FCT Abuja,SME,67,2020-12-22,1
+484,Kano,Retail,45,2022-11-08,1
+485,Oyo,Retail,21,2024-01-03,1
+486,Oyo,Retail,72,2020-07-26,1
+487,Lagos,Retail,23,2022-08-04,1
+488,Delta,Retail,40,2023-01-23,1
+489,Lagos,Retail,73,2019-09-03,0
+490,Delta,Retail,34,2019-12-30,1
+491,Lagos,SME,72,2017-05-19,0
+492,Enugu,Retail,52,2022-06-16,0
+493,Delta,Retail,52,2022-12-24,1
+494,Ogun,Retail,48,2015-09-04,0
+495,Oyo,Retail,51,2018-12-04,1
+496,Lagos,Retail,33,2018-08-08,1
+497,Rivers,Retail,30,2019-03-12,1
+498,Lagos,Retail,56,2017-02-02,1
+499,Anambra,Retail,40,2015-08-12,1
+500,Lagos,Retail,35,2016-05-22,0
+501,Oyo,Premium,73,2021-02-19,1
+502,Lagos,Premium,64,2022-10-10,1
+503,Lagos,Retail,64,2017-07-15,0
+504,Lagos,SME,65,2016-11-13,0
+505,Lagos,Retail,22,2021-12-12,1
+506,Enugu,Retail,49,2022-04-18,1
+507,Oyo,Retail,59,2018-11-23,0
+508,FCT Abuja,Retail,62,2019-11-18,1
+509,Enugu,Retail,43,2018-03-13,1
+510,Lagos,Premium,25,2018-04-26,1
+511,Oyo,Retail,65,2016-04-07,0
+512,Oyo,Retail,48,2016-08-06,1
+513,Lagos,Retail,50,2022-09-28,0
+514,Ogun,SME,68,2024-07-17,1
+515,FCT Abuja,SME,23,2024-06-01,0
+516,Lagos,Retail,34,2022-07-30,1
+517,Lagos,Retail,59,2018-10-29,0
+518,Oyo,Retail,32,2016-12-02,1
+519,Enugu,Retail,28,2017-01-11,0
+520,FCT Abuja,Retail,61,2017-06-20,1
+521,Lagos,SME,34,2022-03-29,1
+522,Enugu,SME,50,2018-02-11,1
+523,Enugu,Retail,68,2021-06-22,1
+524,Rivers,Retail,54,2018-12-02,1
+525,FCT Abuja,SME,50,2020-01-21,1
+526,Enugu,Retail,23,2022-10-05,1
+527,Lagos,Retail,35,2022-01-31,1
+528,Lagos,SME,66,2021-02-05,1
+529,FCT Abuja,Premium,62,2019-03-06,1
+530,Ogun,Retail,29,2020-07-30,0
+531,Lagos,Retail,70,2015-12-31,1
+532,Lagos,Retail,66,2021-02-05,0
+533,Lagos,Retail,66,2016-12-16,1
+534,Delta,Retail,39,2015-12-08,1
+535,Rivers,Premium,73,2023-01-27,1
+536,Delta,Retail,73,2021-04-07,1
+537,Enugu,Premium,48,2017-10-19,1
+538,FCT Abuja,Retail,21,2015-03-16,0
+539,Enugu,SME,41,2016-08-10,0
+540,Kaduna,Retail,57,2015-01-03,1
+541,Delta,Retail,60,2016-09-02,1
+542,Oyo,Retail,66,2017-01-14,1
+543,Kaduna,Retail,64,2020-02-12,1
+544,Oyo,Retail,20,2023-07-30,0
+545,FCT Abuja,SME,61,2017-05-26,1
+546,Delta,Retail,28,2017-07-10,1
+547,Lagos,Retail,71,2023-06-09,1
+548,Lagos,SME,65,2020-05-26,1
+549,FCT Abuja,Retail,44,2019-05-12,1
+550,Oyo,Retail,68,2017-10-18,0
+551,Lagos,Retail,65,2016-06-03,1
+552,Delta,Retail,74,2019-01-12,0
+553,FCT Abuja,Retail,29,2019-07-11,0
+554,Lagos,Premium,26,2015-05-22,0
+555,Ogun,Retail,56,2015-10-21,0
+556,Lagos,Retail,52,2021-06-22,1
+557,Lagos,Retail,46,2020-11-16,0
+558,FCT Abuja,Retail,31,2018-12-03,1
+559,Delta,Retail,55,2017-11-13,0
+560,Enugu,Retail,27,2023-05-02,1
+561,Delta,Premium,57,2022-03-22,1
+562,FCT Abuja,SME,64,2016-04-18,1
+563,Enugu,Retail,18,2015-12-28,1
+564,FCT Abuja,Retail,47,2020-04-01,0
+565,Lagos,Premium,67,2017-04-27,0
+566,Lagos,Premium,46,2023-12-05,1
+567,Ogun,Retail,24,2023-12-14,1
+568,Kano,Premium,21,2015-08-19,1
+569,FCT Abuja,Retail,39,2022-07-26,1
+570,Lagos,Retail,53,2016-03-06,1
+571,Kaduna,SME,48,2015-11-21,1
+572,Lagos,Retail,24,2019-06-23,1
+573,Oyo,Retail,46,2017-06-22,1
+574,Oyo,SME,53,2018-06-23,1
+575,Ogun,Retail,48,2016-12-15,1
+576,Delta,SME,53,2020-09-10,1
+577,Anambra,Retail,35,2021-10-24,1
+578,Oyo,Retail,64,2022-07-22,1
+579,Kano,Retail,35,2018-09-19,1
+580,Lagos,Retail,72,2023-06-09,1
+581,Kano,Retail,55,2018-03-31,1
+582,Delta,Retail,45,2021-03-03,1
+583,Lagos,SME,74,2019-09-25,1
+584,Kano,Retail,68,2018-10-21,1
+585,Oyo,Retail,48,2016-12-24,0
+586,Delta,Retail,28,2022-09-02,0
+587,Delta,Retail,73,2020-01-31,1
+588,Rivers,Retail,26,2018-09-23,0
+589,FCT Abuja,Retail,58,2015-11-20,1
+590,Oyo,Retail,52,2020-10-14,1
+591,Enugu,Retail,41,2023-10-24,1
+592,Rivers,Retail,28,2020-01-24,1
+593,Delta,Retail,28,2021-12-11,0
+594,FCT Abuja,Retail,37,2019-04-23,1
+595,Kaduna,Retail,53,2020-01-27,1
+596,Rivers,Retail,38,2018-11-23,0
+597,FCT Abuja,Retail,29,2020-11-24,1
+598,Rivers,Retail,45,2020-07-20,1
+599,Delta,Retail,44,2022-01-15,0
+600,Enugu,Retail,41,2019-03-22,1
+601,Rivers,Retail,23,2024-09-21,0
+602,Kano,Retail,70,2018-03-17,1
+603,Lagos,Retail,72,2020-07-28,0
+604,Kaduna,Retail,63,2016-02-08,1
+605,Anambra,Retail,56,2018-04-17,1
+606,Delta,SME,65,2017-03-27,0
+607,Ogun,Retail,26,2024-01-07,1
+608,Lagos,Retail,20,2020-11-16,1
+609,Rivers,Retail,18,2019-01-03,1
+610,Oyo,Retail,61,2016-07-21,1
+611,Kaduna,Retail,24,2015-01-17,1
+612,Anambra,Retail,67,2015-12-20,1
+613,Oyo,Retail,37,2022-03-08,0
+614,Lagos,Retail,49,2024-05-11,0
+615,Anambra,Retail,28,2019-08-25,1
+616,Lagos,Retail,71,2022-08-08,1
+617,Oyo,Retail,53,2017-06-11,1
+618,Kano,Retail,62,2019-02-03,0
+619,Lagos,Retail,24,2020-08-08,0
+620,Anambra,Retail,74,2019-06-01,0
+621,FCT Abuja,Retail,63,2020-07-05,1
+622,FCT Abuja,SME,45,2019-08-14,1
+623,Lagos,SME,52,2016-08-24,1
+624,Lagos,Retail,49,2020-09-08,1
+625,FCT Abuja,Premium,30,2024-08-25,0
+626,Anambra,SME,48,2022-01-26,1
+627,Ogun,Retail,21,2015-04-22,1
+628,FCT Abuja,Premium,58,2020-12-11,1
+629,Ogun,Premium,73,2018-01-24,1
+630,Oyo,SME,35,2021-06-03,0
+631,Kano,Retail,65,2020-10-09,1
+632,FCT Abuja,Retail,67,2015-12-05,0
+633,Ogun,Premium,27,2016-03-23,1
+634,Lagos,Retail,66,2017-01-25,0
+635,Lagos,Retail,28,2016-03-29,0
+636,FCT Abuja,Retail,20,2017-02-25,1
+637,Lagos,Retail,27,2024-09-12,0
+638,FCT Abuja,Retail,37,2023-09-24,1
+639,Lagos,Retail,61,2019-12-14,1
+640,Lagos,Retail,28,2024-01-27,1
+641,FCT Abuja,Retail,70,2020-10-17,0
+642,FCT Abuja,Retail,68,2024-01-03,0
+643,Oyo,Retail,52,2016-08-13,0
+644,Kaduna,Retail,36,2023-10-30,1
+645,FCT Abuja,Retail,35,2021-01-22,1
+646,Ogun,Retail,52,2019-10-19,1
+647,Lagos,Retail,61,2017-04-18,0
+648,Enugu,Retail,55,2018-02-28,1
+649,FCT Abuja,Retail,30,2021-07-10,1
+650,Oyo,SME,74,2017-08-01,1
+651,FCT Abuja,Retail,19,2020-01-12,1
+652,Anambra,Retail,63,2021-09-09,1
+653,Lagos,Premium,24,2016-07-16,1
+654,FCT Abuja,SME,37,2015-02-17,0
+655,FCT Abuja,Retail,29,2020-04-23,1
+656,Kano,Retail,49,2020-05-14,1
+657,Delta,Retail,68,2023-08-11,1
+658,Anambra,SME,41,2015-03-08,1
+659,Oyo,SME,58,2022-05-17,1
+660,Rivers,SME,57,2019-07-27,1
+661,Ogun,Retail,56,2018-02-25,1
+662,Kano,Retail,40,2022-08-29,1
+663,Lagos,Retail,49,2016-03-16,0
+664,Anambra,Retail,33,2017-12-28,1
+665,FCT Abuja,Retail,25,2021-10-19,0
+666,FCT Abuja,Retail,43,2021-01-17,1
+667,Kaduna,Premium,53,2024-12-24,1
+668,Lagos,Retail,47,2022-04-19,0
+669,Anambra,Retail,48,2018-10-20,1
+670,Kano,Retail,46,2018-12-23,0
+671,Enugu,Retail,63,2024-05-19,1
+672,Kaduna,Retail,34,2021-02-10,0
+673,Oyo,SME,49,2024-02-21,1
+674,Kaduna,Retail,32,2018-12-03,1
+675,Ogun,SME,25,2023-07-06,1
+676,Delta,Retail,70,2024-11-15,0
+677,Kano,Retail,55,2017-02-20,1
+678,Lagos,Premium,57,2019-01-11,0
+679,FCT Abuja,Retail,33,2021-03-17,1
+680,FCT Abuja,Retail,58,2019-01-26,1
+681,FCT Abuja,Retail,47,2016-05-07,1
+682,Enugu,Retail,22,2022-07-15,1
+683,Lagos,Retail,63,2018-10-19,1
+684,Oyo,Retail,35,2022-03-15,1
+685,Delta,Retail,72,2016-09-17,1
+686,Oyo,Premium,37,2015-06-28,1
+687,Enugu,Premium,57,2018-08-27,1
+688,FCT Abuja,Retail,25,2019-10-27,1
+689,Lagos,Retail,57,2020-05-25,0
+690,Enugu,Retail,60,2017-02-14,1
+691,Kaduna,SME,33,2022-09-29,1
+692,Ogun,Premium,42,2017-02-23,1
+693,Oyo,Retail,51,2018-07-30,0
+694,FCT Abuja,SME,63,2018-02-01,1
+695,Ogun,Retail,39,2021-08-11,0
+696,Ogun,Retail,53,2020-05-26,0
+697,Lagos,Retail,65,2019-03-08,0
+698,Delta,Premium,61,2021-02-22,1
+699,Lagos,SME,43,2021-02-14,1
+700,Oyo,Retail,39,2017-06-18,1
+701,Lagos,SME,35,2022-07-09,1
+702,Lagos,SME,71,2015-07-20,1
+703,Lagos,Retail,53,2019-05-22,1
+704,Oyo,Premium,48,2020-03-22,0
+705,Oyo,SME,69,2017-05-18,1
+706,Anambra,Retail,51,2015-03-12,0
+707,Lagos,Retail,45,2018-11-01,1
+708,Kano,SME,53,2017-07-14,1
+709,Kaduna,Retail,29,2015-01-26,0
+710,Delta,Retail,50,2021-06-12,1
+711,Lagos,Retail,44,2017-02-14,0
+712,Lagos,Retail,62,2016-01-12,1
+713,FCT Abuja,Retail,53,2019-07-25,1
+714,Rivers,SME,50,2021-09-22,0
+715,FCT Abuja,Retail,64,2024-06-26,0
+716,Anambra,Retail,39,2023-10-07,0
+717,Kano,Retail,63,2019-09-19,1
+718,Lagos,Retail,40,2020-04-29,1
+719,Anambra,Retail,55,2021-04-30,1
+720,Kaduna,Retail,56,2020-12-18,1
+721,Kaduna,Premium,28,2019-05-24,1
+722,FCT Abuja,Retail,34,2017-01-25,1
+723,Ogun,Retail,50,2020-02-02,0
+724,Enugu,Premium,67,2015-07-28,1
+725,Lagos,SME,53,2018-08-07,0
+726,Kaduna,Retail,58,2024-07-17,1
+727,Anambra,Retail,27,2020-01-24,1
+728,Enugu,Retail,73,2016-05-26,0
+729,Rivers,Retail,54,2022-12-23,0
+730,Ogun,Retail,69,2020-03-06,0
+731,Rivers,Retail,68,2015-05-08,1
+732,Kano,Retail,53,2020-02-10,0
+733,Anambra,Retail,42,2019-04-03,1
+734,Lagos,Retail,56,2018-06-15,1
+735,Ogun,Retail,41,2024-03-22,0
+736,FCT Abuja,Retail,37,2023-11-11,1
+737,Kano,Premium,72,2023-06-30,1
+738,Enugu,Premium,67,2019-04-21,1
+739,Oyo,Retail,61,2017-04-04,0
+740,Kano,Retail,66,2021-01-18,1
+741,FCT Abuja,Premium,73,2023-09-16,1
+742,Rivers,Retail,74,2022-10-25,0
+743,Kaduna,Retail,24,2022-06-04,1
+744,Ogun,Retail,25,2019-12-29,1
+745,Lagos,Retail,21,2019-07-28,1
+746,Rivers,Retail,35,2021-11-05,1
+747,Lagos,SME,34,2023-11-19,0
+748,Kano,Retail,39,2015-08-26,1
+749,Lagos,Retail,59,2024-05-01,0
+750,Lagos,SME,65,2022-11-04,0
+751,Lagos,Retail,31,2022-12-15,0
+752,Delta,Retail,52,2018-05-10,1
+753,Lagos,Retail,72,2024-02-06,0
+754,FCT Abuja,Retail,62,2017-08-01,1
+755,Lagos,Retail,20,2016-01-03,0
+756,Enugu,Retail,55,2024-02-09,1
+757,FCT Abuja,Premium,19,2015-04-19,1
+758,Ogun,SME,52,2022-05-01,1
+759,Lagos,Retail,40,2016-10-27,1
+760,Lagos,Retail,39,2018-03-22,1
+761,Kano,Retail,33,2018-12-12,1
+762,Rivers,Retail,27,2021-10-30,0
+763,Lagos,SME,27,2022-01-15,1
+764,Lagos,SME,72,2020-12-01,1
+765,Delta,Retail,51,2018-06-27,1
+766,Rivers,Retail,23,2018-03-01,0
+767,Lagos,Retail,45,2018-05-30,1
+768,Lagos,SME,21,2016-10-03,1
+769,Anambra,Premium,67,2017-10-31,1
+770,Kano,Retail,32,2019-05-06,1
+771,Lagos,Retail,35,2024-05-06,1
+772,Kaduna,Retail,48,2020-01-27,1
+773,Ogun,SME,54,2018-11-19,0
+774,Kano,Retail,46,2023-02-24,0
+775,Lagos,Retail,24,2019-03-20,0
+776,Delta,Retail,34,2018-01-24,0
+777,Anambra,SME,56,2021-09-27,1
+778,FCT Abuja,SME,63,2023-02-23,1
+779,Enugu,Retail,58,2023-08-17,1
+780,Oyo,Retail,28,2015-06-27,1
+781,Kano,Premium,24,2021-07-05,1
+782,Enugu,Retail,72,2024-02-22,1
+783,Enugu,Retail,19,2021-04-03,1
+784,Lagos,Retail,39,2022-04-28,1
+785,Oyo,Retail,59,2021-08-26,1
+786,FCT Abuja,SME,26,2016-12-18,1
+787,Lagos,Retail,61,2019-11-16,1
+788,Ogun,Retail,58,2016-05-05,0
+789,Anambra,Retail,30,2022-04-15,0
+790,Lagos,Retail,69,2020-06-03,1
+791,Lagos,Retail,51,2015-05-13,1
+792,Ogun,SME,72,2015-10-02,0
+793,Lagos,Retail,33,2020-10-24,0
+794,Enugu,Retail,20,2015-05-30,0
+795,Lagos,Premium,74,2022-04-24,1
+796,Oyo,SME,44,2020-03-11,1
+797,Kano,Retail,50,2022-03-30,0
+798,Oyo,SME,42,2016-12-10,1
+799,Ogun,Retail,64,2024-09-30,1
+800,Lagos,Retail,37,2015-04-01,1
+801,Lagos,Retail,52,2019-02-17,1
+802,Lagos,Premium,48,2019-06-15,0
+803,Lagos,Retail,30,2015-04-29,1
+804,Kano,SME,22,2023-04-12,0
+805,Lagos,Retail,39,2020-03-11,0
+806,Kaduna,SME,22,2024-08-27,0
+807,Lagos,Retail,74,2017-07-14,1
+808,Lagos,Retail,43,2023-03-17,0
+809,Lagos,Retail,63,2016-09-01,1
+810,Lagos,Retail,25,2023-12-27,0
+811,FCT Abuja,Premium,33,2021-09-12,1
+812,Kano,SME,56,2018-08-05,1
+813,Ogun,Retail,50,2020-12-21,0
+814,Lagos,Retail,70,2016-01-29,0
+815,Delta,Premium,21,2019-04-24,1
+816,Oyo,Premium,42,2024-03-28,1
+817,Lagos,Retail,47,2023-12-03,1
+818,Oyo,Retail,19,2015-07-12,1
+819,Oyo,Retail,20,2024-09-22,1
+820,Oyo,Retail,40,2020-10-05,0
+821,Lagos,Premium,48,2024-02-01,0
+822,Lagos,Retail,44,2024-08-18,1
+823,Oyo,Retail,27,2022-06-02,1
+824,Delta,Retail,40,2018-06-04,0
+825,Kaduna,Retail,40,2022-01-03,1
+826,FCT Abuja,Retail,25,2020-06-20,1
+827,Anambra,Retail,56,2018-08-13,1
+828,Lagos,Retail,73,2018-04-26,1
+829,FCT Abuja,Premium,58,2024-07-25,0
+830,Rivers,Retail,57,2023-07-06,0
+831,Lagos,Retail,39,2020-06-13,1
+832,Oyo,Retail,59,2019-08-06,1
+833,Ogun,SME,57,2015-06-30,1
+834,FCT Abuja,Retail,51,2023-11-28,1
+835,Enugu,Retail,74,2019-11-28,1
+836,Oyo,Retail,49,2016-07-19,1
+837,Lagos,Retail,66,2022-05-20,1
+838,Lagos,Retail,40,2016-04-28,1
+839,Rivers,Retail,57,2021-10-18,1
+840,Kaduna,Retail,56,2016-03-30,1
+841,Ogun,Premium,18,2015-10-28,0
+842,Rivers,Retail,34,2019-11-15,1
+843,Ogun,Retail,28,2021-10-05,1
+844,Lagos,Retail,68,2015-03-16,1
+845,FCT Abuja,Premium,63,2017-08-17,0
+846,FCT Abuja,Retail,33,2023-11-04,0
+847,Kaduna,SME,60,2020-03-24,0
+848,FCT Abuja,SME,55,2020-09-22,1
+849,Delta,Retail,48,2015-09-12,1
+850,Lagos,Retail,18,2019-02-26,0
+851,Lagos,Retail,21,2019-02-25,1
+852,Delta,Retail,42,2018-01-29,1
+853,Lagos,Premium,24,2024-11-14,1
+854,Enugu,Retail,26,2015-06-23,1
+855,FCT Abuja,SME,45,2017-04-14,0
+856,Lagos,Retail,29,2024-07-08,1
+857,Kaduna,Retail,55,2017-03-19,1
+858,Kaduna,Retail,58,2022-02-25,0
+859,Lagos,Retail,39,2015-09-28,0
+860,Lagos,Retail,37,2021-01-27,0
+861,Lagos,Retail,26,2016-09-10,0
+862,Delta,SME,60,2021-07-16,0
+863,Lagos,Retail,48,2019-03-26,1
+864,Oyo,Retail,69,2022-02-21,0
+865,Lagos,Retail,18,2024-05-29,0
+866,Ogun,Premium,60,2016-01-16,0
+867,Oyo,SME,37,2019-11-30,0
+868,Delta,Retail,26,2015-03-27,1
+869,Rivers,Retail,47,2020-11-13,1
+870,Enugu,Retail,67,2024-05-13,1
+871,Enugu,Premium,20,2021-06-06,1
+872,FCT Abuja,Retail,58,2015-01-04,0
+873,Anambra,SME,58,2022-05-25,1
+874,FCT Abuja,Retail,49,2021-06-11,1
+875,FCT Abuja,Retail,50,2022-01-21,1
+876,Enugu,Retail,47,2021-08-07,0
+877,Lagos,Retail,18,2022-07-10,1
+878,Enugu,Retail,40,2018-12-01,1
+879,Lagos,Retail,73,2022-03-27,1
+880,Lagos,Premium,65,2020-04-03,1
+881,Oyo,Retail,38,2023-09-19,1
+882,Lagos,Retail,35,2016-01-10,0
+883,Lagos,Retail,67,2018-04-03,0
+884,FCT Abuja,SME,32,2020-02-24,1
+885,Kano,SME,57,2015-04-05,1
+886,Lagos,Retail,29,2019-10-09,1
+887,Rivers,SME,36,2024-10-11,1
+888,Lagos,Retail,45,2020-07-28,1
+889,Kano,Retail,31,2019-02-03,0
+890,Lagos,SME,34,2016-10-30,1
+891,Lagos,Retail,72,2016-09-02,0
+892,Kano,Retail,55,2017-07-06,1
+893,Rivers,Retail,19,2016-06-06,1
+894,FCT Abuja,SME,58,2020-05-12,1
+895,Oyo,Retail,41,2016-03-29,1
+896,Kano,SME,62,2021-05-10,0
+897,Lagos,Retail,62,2016-07-16,1
+898,Rivers,Premium,57,2016-04-14,0
+899,Lagos,Retail,34,2019-05-24,0
+900,Lagos,Premium,71,2024-01-10,1
+901,Enugu,Retail,39,2021-03-15,1
+902,Lagos,Retail,24,2015-01-09,1
+903,Rivers,Retail,21,2023-06-09,0
+904,Delta,Retail,45,2024-02-11,1
+905,Oyo,SME,40,2020-05-14,1
+906,Lagos,Retail,25,2017-06-25,1
+907,FCT Abuja,Retail,50,2022-03-28,1
+908,FCT Abuja,Retail,65,2021-11-14,1
+909,FCT Abuja,Retail,40,2015-04-23,0
+910,Lagos,Premium,44,2018-06-24,0
+911,Kano,Retail,31,2021-10-07,0
+912,Delta,Retail,37,2019-08-26,1
+913,Kano,Retail,27,2023-10-30,1
+914,Ogun,Retail,40,2024-07-12,1
+915,Oyo,SME,67,2016-06-11,1
+916,Lagos,Retail,68,2020-01-23,0
+917,Anambra,SME,25,2017-06-30,0
+918,Lagos,Retail,67,2017-05-30,1
+919,FCT Abuja,Retail,48,2018-08-12,1
+920,FCT Abuja,SME,67,2021-04-01,0
+921,FCT Abuja,Retail,73,2021-06-13,1
+922,Rivers,Retail,69,2019-11-13,0
+923,Lagos,Retail,37,2024-04-17,0
+924,Lagos,Retail,61,2022-12-19,1
+925,Kano,Premium,57,2017-01-09,1
+926,Lagos,Retail,21,2016-07-27,1
+927,Kaduna,Retail,24,2019-12-09,0
+928,Lagos,Retail,69,2019-09-11,1
+929,Kano,Retail,58,2020-12-14,1
+930,Lagos,Retail,23,2021-07-12,1
+931,Oyo,Retail,61,2021-04-06,0
+932,Ogun,Retail,71,2021-01-13,0
+933,Ogun,Retail,29,2021-06-29,1
+934,Rivers,SME,72,2022-10-22,1
+935,Kaduna,Retail,30,2020-04-01,1
+936,Rivers,Retail,73,2016-08-05,1
+937,Oyo,Retail,45,2018-04-05,1
+938,Lagos,Retail,73,2016-12-17,1
+939,Lagos,Retail,19,2023-07-13,1
+940,Lagos,Premium,51,2017-12-10,0
+941,Enugu,Retail,45,2020-01-31,1
+942,FCT Abuja,Retail,45,2018-05-06,0
+943,Lagos,Retail,60,2015-10-20,0
+944,Ogun,Retail,49,2017-04-26,1
+945,Lagos,Retail,63,2015-02-18,1
+946,FCT Abuja,Retail,33,2023-08-15,1
+947,Lagos,Retail,68,2020-05-11,1
+948,Lagos,Retail,54,2019-07-03,1
+949,Lagos,SME,45,2018-07-20,0
+950,Kano,Retail,70,2019-04-02,1
+951,FCT Abuja,Premium,48,2016-12-20,0
+952,Rivers,Retail,26,2015-12-03,0
+953,FCT Abuja,Retail,54,2023-05-12,1
+954,FCT Abuja,SME,66,2022-09-13,1
+955,Kano,SME,62,2021-06-19,1
+956,Anambra,Retail,56,2021-10-02,1
+957,FCT Abuja,Retail,21,2023-10-08,1
+958,Lagos,Retail,21,2024-03-03,0
+959,Lagos,Retail,38,2024-12-05,0
+960,Rivers,SME,45,2020-01-09,0
+961,Kaduna,Retail,37,2018-11-26,0
+962,Delta,Retail,24,2024-04-28,0
+963,Rivers,Retail,29,2023-06-22,1
+964,Lagos,Premium,21,2024-05-20,0
+965,Enugu,Retail,47,2021-12-03,1
+966,Lagos,Retail,62,2024-03-17,0
+967,Lagos,Retail,73,2021-08-15,1
+968,Lagos,Retail,36,2023-12-03,1
+969,Oyo,SME,46,2018-08-11,1
+970,FCT Abuja,SME,20,2024-10-10,0
+971,Kaduna,SME,70,2024-05-16,0
+972,Oyo,Retail,27,2018-02-02,0
+973,FCT Abuja,Retail,18,2019-12-25,0
+974,Lagos,SME,73,2024-10-19,1
+975,Delta,Retail,42,2022-10-11,0
+976,Lagos,Retail,38,2024-11-27,1
+977,Anambra,Retail,39,2023-03-15,1
+978,Rivers,Retail,19,2024-02-25,0
+979,Oyo,SME,43,2017-08-02,0
+980,Anambra,Retail,19,2021-02-12,1
+981,Ogun,Retail,30,2016-05-25,0
+982,FCT Abuja,Retail,18,2015-11-21,1
+983,Ogun,Retail,51,2023-08-13,0
+984,FCT Abuja,Retail,64,2020-05-28,0
+985,Lagos,Retail,43,2021-12-28,1
+986,Lagos,Retail,27,2023-08-04,0
+987,Kano,Retail,34,2015-07-31,1
+988,Rivers,Premium,39,2017-08-25,1
+989,Ogun,Retail,72,2017-05-15,1
+990,Rivers,Retail,42,2022-06-19,0
+991,Kaduna,SME,32,2020-05-23,1
+992,Anambra,Retail,48,2018-09-13,1
+993,Anambra,Retail,64,2022-03-25,1
+994,Lagos,SME,41,2024-06-23,0
+995,Anambra,Retail,51,2018-06-04,1
+996,Rivers,Retail,68,2017-12-03,0
+997,FCT Abuja,Retail,47,2021-04-27,1
+998,Kaduna,Premium,64,2017-05-22,0
+999,Kaduna,Retail,20,2016-10-03,0
+1000,Delta,Retail,33,2024-01-14,1
+1001,Oyo,Retail,25,2015-02-03,0
+1002,Kano,Retail,60,2019-08-27,1
+1003,Oyo,Retail,55,2017-05-14,1
+1004,Ogun,Retail,66,2018-02-26,0
+1005,Rivers,Retail,30,2019-09-21,1
+1006,Lagos,Retail,57,2017-03-27,1
+1007,Lagos,Retail,43,2016-01-31,0
+1008,FCT Abuja,Retail,63,2016-12-14,0
+1009,Lagos,Retail,33,2023-10-18,0
+1010,Lagos,Retail,38,2018-08-02,0
+1011,Lagos,Retail,69,2015-02-22,1
+1012,Lagos,Retail,38,2021-03-31,1
+1013,Rivers,Retail,53,2021-08-20,1
+1014,Kaduna,Retail,33,2023-01-18,0
+1015,Anambra,Retail,49,2024-11-19,0
+1016,Enugu,Retail,34,2016-09-13,1
+1017,Oyo,Retail,62,2015-05-24,0
+1018,Kano,Retail,72,2021-06-26,1
+1019,Rivers,Retail,32,2019-03-12,0
+1020,Oyo,SME,42,2015-07-05,1
+1021,FCT Abuja,Retail,57,2019-12-24,1
+1022,Lagos,Retail,73,2015-09-08,1
+1023,Lagos,Retail,70,2021-01-10,0
+1024,Lagos,Retail,29,2024-12-16,1
+1025,Lagos,Retail,56,2020-02-10,0
+1026,Oyo,Retail,57,2017-07-11,1
+1027,Rivers,Retail,37,2023-03-17,1
+1028,Enugu,Retail,70,2017-11-24,1
+1029,Anambra,Premium,53,2022-01-28,1
+1030,Lagos,Retail,59,2017-01-19,1
+1031,Kaduna,Retail,48,2024-03-22,1
+1032,Enugu,Retail,21,2023-06-18,1
+1033,Kaduna,Retail,32,2017-01-20,0
+1034,Delta,Retail,36,2022-10-28,1
+1035,Enugu,Retail,55,2015-02-06,0
+1036,Enugu,Retail,72,2021-02-28,1
+1037,Lagos,Premium,37,2022-06-02,0
+1038,Rivers,Premium,53,2019-12-17,1
+1039,FCT Abuja,SME,68,2020-11-23,1
+1040,Lagos,Retail,47,2023-08-23,1
+1041,Rivers,SME,43,2019-09-19,1
+1042,Delta,Retail,54,2017-06-09,1
+1043,Kano,Retail,56,2022-08-04,1
+1044,Lagos,Retail,32,2024-10-04,0
+1045,Kano,Premium,54,2017-03-09,1
+1046,Rivers,Retail,65,2018-10-30,1
+1047,Lagos,SME,29,2023-03-10,1
+1048,Lagos,Premium,61,2021-03-24,0
+1049,FCT Abuja,Retail,56,2016-11-09,1
+1050,Oyo,Retail,63,2024-10-24,1
+1051,Delta,Premium,62,2017-12-04,1
+1052,Lagos,Retail,68,2017-04-12,1
+1053,Kaduna,Retail,31,2020-07-21,1
+1054,Lagos,Retail,69,2017-09-25,1
+1055,FCT Abuja,SME,18,2015-06-29,1
+1056,Lagos,Retail,39,2023-06-25,1
+1057,FCT Abuja,Retail,25,2015-09-10,1
+1058,Lagos,Retail,47,2018-08-21,0
+1059,Enugu,Retail,37,2022-09-04,1
+1060,Kaduna,Retail,73,2024-06-28,0
+1061,Oyo,Retail,28,2016-05-28,1
+1062,Oyo,Retail,62,2017-04-01,1
+1063,Lagos,Retail,25,2022-09-24,0
+1064,Ogun,Premium,55,2019-05-15,1
+1065,Anambra,Retail,74,2023-10-01,0
+1066,Rivers,Premium,28,2015-01-29,1
+1067,Anambra,Retail,72,2021-12-16,1
+1068,Lagos,Retail,29,2021-09-14,1
+1069,Lagos,Retail,30,2015-08-31,1
+1070,Ogun,Retail,39,2021-03-22,1
+1071,Lagos,Retail,24,2024-05-30,1
+1072,Lagos,Retail,40,2023-12-25,0
+1073,Lagos,Retail,43,2022-10-10,1
+1074,Enugu,Retail,68,2019-02-17,1
+1075,Lagos,Retail,36,2015-04-11,0
+1076,Lagos,SME,48,2023-08-02,1
+1077,Lagos,Retail,52,2018-09-04,0
+1078,Lagos,Retail,46,2021-05-29,1
+1079,Delta,Retail,54,2023-10-30,1
+1080,Oyo,SME,21,2021-11-05,0
+1081,Rivers,Retail,66,2017-04-15,0
+1082,FCT Abuja,Retail,60,2023-03-18,1
+1083,Anambra,Retail,72,2022-10-04,0
+1084,Lagos,SME,59,2017-05-28,1
+1085,Lagos,Retail,35,2016-03-25,1
+1086,Kano,Retail,37,2022-07-17,0
+1087,Lagos,Premium,71,2022-03-22,1
+1088,Lagos,Premium,69,2020-03-22,1
+1089,Rivers,Retail,19,2022-08-23,0
+1090,FCT Abuja,Retail,69,2016-01-29,1
+1091,Oyo,SME,44,2019-06-24,1
+1092,FCT Abuja,Retail,21,2017-10-05,0
+1093,FCT Abuja,Retail,59,2016-06-29,1
+1094,Rivers,Retail,53,2022-09-22,0
+1095,FCT Abuja,Retail,58,2016-11-28,1
+1096,Rivers,SME,72,2015-03-25,1
+1097,FCT Abuja,Retail,61,2022-11-19,1
+1098,Lagos,Retail,63,2020-01-28,1
+1099,Rivers,Premium,38,2017-11-12,1
+1100,Lagos,Retail,41,2019-10-09,0
+1101,Lagos,Retail,51,2022-02-10,0
+1102,Kano,Retail,46,2021-11-12,1
+1103,Lagos,Premium,66,2022-05-27,1
+1104,Kano,Retail,36,2015-05-22,1
+1105,Anambra,Retail,58,2020-01-19,1
+1106,Lagos,Retail,24,2023-09-04,1
+1107,FCT Abuja,Retail,22,2019-06-06,0
+1108,Kano,Retail,35,2020-10-16,1
+1109,Oyo,Retail,74,2020-07-05,1
+1110,Lagos,Retail,52,2023-06-11,0
+1111,Oyo,SME,69,2024-07-09,1
+1112,Lagos,Retail,69,2021-12-28,1
+1113,FCT Abuja,Premium,28,2019-10-31,1
+1114,Kano,Retail,25,2021-06-18,0
+1115,Lagos,Retail,59,2024-04-22,0
+1116,Kano,SME,50,2019-01-17,1
+1117,Anambra,Premium,62,2017-07-31,1
+1118,Lagos,Retail,40,2020-09-21,1
+1119,Lagos,Retail,27,2019-04-15,1
+1120,Kano,Premium,33,2023-10-28,0
+1121,Lagos,Retail,40,2015-11-22,0
+1122,Rivers,SME,55,2017-08-07,1
+1123,Rivers,Retail,58,2023-02-15,1
+1124,Rivers,Retail,52,2015-12-14,1
+1125,Anambra,Retail,24,2019-09-03,1
+1126,Oyo,Premium,48,2016-07-28,1
+1127,Lagos,Retail,32,2024-01-14,1
+1128,Lagos,Retail,52,2016-12-06,0
+1129,Lagos,Retail,49,2018-12-07,1
+1130,Kano,Retail,68,2017-09-19,1
+1131,FCT Abuja,Retail,49,2023-10-04,1
+1132,Kano,Retail,31,2019-05-07,0
+1133,Enugu,Retail,60,2020-12-08,1
+1134,Ogun,SME,29,2018-05-23,1
+1135,Kano,Retail,71,2022-08-27,1
+1136,FCT Abuja,Retail,36,2018-08-23,1
+1137,FCT Abuja,Retail,29,2019-03-29,1
+1138,Enugu,Retail,49,2022-11-05,1
+1139,Lagos,Retail,58,2016-03-14,1
+1140,Delta,Retail,54,2015-05-21,0
+1141,FCT Abuja,Premium,48,2017-02-19,0
+1142,Kano,Premium,21,2023-09-27,1
+1143,Rivers,Retail,62,2022-08-29,0
+1144,Kano,Premium,69,2017-08-26,1
+1145,Lagos,Retail,49,2018-06-22,1
+1146,Rivers,Retail,27,2016-03-31,0
+1147,Anambra,Retail,64,2017-03-08,1
+1148,Lagos,Retail,67,2023-12-26,0
+1149,Ogun,Retail,55,2023-11-09,1
+1150,Kaduna,SME,40,2018-03-16,0
+1151,Lagos,Retail,69,2024-02-05,1
+1152,Kano,SME,56,2015-12-22,0
+1153,Oyo,Retail,66,2024-09-01,0
+1154,Kaduna,Retail,63,2020-08-11,1
+1155,Rivers,Retail,73,2016-09-04,0
+1156,Lagos,Retail,26,2017-12-04,1
+1157,Lagos,Retail,26,2019-05-10,1
+1158,FCT Abuja,Retail,51,2019-06-06,1
+1159,FCT Abuja,Retail,30,2018-04-25,1
+1160,Delta,Retail,61,2016-01-13,0
+1161,Rivers,SME,30,2020-05-16,0
+1162,Kano,Retail,29,2016-04-13,1
+1163,Lagos,Retail,22,2016-06-02,1
+1164,Rivers,SME,58,2024-01-28,1
+1165,Oyo,Retail,27,2016-11-01,1
+1166,Kano,Retail,73,2022-12-02,0
+1167,Lagos,Retail,67,2018-07-31,1
+1168,Lagos,Retail,22,2023-04-29,1
+1169,Enugu,Retail,37,2018-10-12,1
+1170,Lagos,Retail,47,2023-12-16,1
+1171,Oyo,Retail,27,2021-02-03,0
+1172,Delta,Retail,72,2021-01-15,1
+1173,Anambra,Premium,40,2023-04-01,1
+1174,Enugu,Retail,18,2015-12-31,0
+1175,FCT Abuja,Retail,31,2020-01-25,1
+1176,FCT Abuja,Retail,57,2018-09-06,0
+1177,Rivers,Retail,52,2016-11-15,1
+1178,Lagos,Retail,53,2019-05-10,1
+1179,Delta,Premium,23,2018-04-04,1
+1180,Anambra,Retail,37,2017-11-05,1
+1181,Rivers,Retail,30,2023-02-03,1
+1182,Kano,Retail,34,2017-10-21,0
+1183,FCT Abuja,Retail,37,2021-04-26,1
+1184,Lagos,Retail,41,2024-12-18,1
+1185,Kano,Retail,54,2020-12-19,1
+1186,Anambra,SME,28,2018-09-06,1
+1187,Lagos,Retail,71,2019-10-26,1
+1188,Enugu,Retail,59,2017-01-11,1
+1189,FCT Abuja,Retail,42,2018-05-21,1
+1190,Lagos,Retail,29,2024-05-25,1
+1191,Lagos,Retail,28,2022-03-22,0
+1192,FCT Abuja,Retail,20,2020-05-12,0
+1193,Kano,Retail,74,2015-04-16,1
+1194,Ogun,SME,74,2019-03-06,1
+1195,Ogun,Retail,44,2020-12-19,0
+1196,Kano,SME,34,2019-02-08,1
+1197,Lagos,Retail,63,2020-02-14,0
+1198,Lagos,Retail,19,2017-10-02,0
+1199,Delta,Retail,20,2021-10-27,1
+1200,Lagos,Retail,55,2021-04-22,1
+1201,Lagos,Retail,35,2018-11-30,1
+1202,Kano,Retail,51,2021-05-31,1
+1203,Lagos,Retail,36,2017-09-16,0
+1204,Ogun,Retail,33,2021-10-10,1
+1205,FCT Abuja,Retail,21,2022-01-25,0
+1206,Oyo,Retail,25,2024-11-28,0
+1207,Lagos,Retail,23,2019-09-10,1
+1208,Kaduna,Premium,56,2016-03-05,0
+1209,Kaduna,Premium,41,2023-10-11,0
+1210,Kano,Retail,69,2015-08-14,1
+1211,Oyo,Retail,28,2017-11-24,1
+1212,Lagos,Retail,66,2017-03-22,1
+1213,Enugu,Retail,46,2018-07-15,0
+1214,Kaduna,Retail,74,2020-10-02,0
+1215,Lagos,Premium,27,2024-01-19,1
+1216,Oyo,Retail,68,2020-06-25,0
+1217,Lagos,Retail,51,2015-08-17,1
+1218,Lagos,Retail,32,2024-11-09,1
+1219,Rivers,SME,64,2021-01-08,1
+1220,Delta,Retail,55,2015-04-03,1
+1221,Lagos,Retail,69,2017-10-17,1
+1222,Ogun,Retail,57,2021-10-14,1
+1223,Lagos,Retail,67,2023-08-01,0
+1224,Anambra,SME,26,2018-11-02,0
+1225,Lagos,Premium,26,2020-10-31,1
+1226,FCT Abuja,Retail,21,2019-02-23,1
+1227,Lagos,Retail,35,2018-12-19,1
+1228,Enugu,Premium,38,2016-03-24,1
+1229,Lagos,Retail,55,2015-05-20,1
+1230,Ogun,Retail,40,2021-01-05,1
+1231,Lagos,Retail,73,2018-07-09,1
+1232,Lagos,Retail,70,2018-05-18,1
+1233,Ogun,Retail,66,2017-07-14,1
+1234,Enugu,Retail,71,2023-08-18,1
+1235,Lagos,Retail,40,2023-10-09,1
+1236,FCT Abuja,Retail,32,2024-10-29,0
+1237,Rivers,Retail,43,2020-11-12,0
+1238,Ogun,SME,59,2019-04-21,1
+1239,Oyo,Retail,51,2016-12-14,1
+1240,Lagos,Retail,41,2016-11-01,0
+1241,Kano,Retail,26,2022-07-04,0
+1242,FCT Abuja,Retail,39,2022-06-16,1
+1243,Kano,Retail,53,2022-08-08,1
+1244,FCT Abuja,Retail,31,2015-12-24,1
+1245,Rivers,Retail,51,2018-06-07,0
+1246,Lagos,Retail,41,2021-08-25,1
+1247,Lagos,Premium,53,2017-04-09,1
+1248,FCT Abuja,Retail,73,2021-05-09,0
+1249,Oyo,Premium,67,2015-01-21,1
+1250,Lagos,Retail,58,2017-10-25,1
+1251,Lagos,Retail,53,2022-05-25,1
+1252,Kaduna,Retail,30,2019-07-07,1
+1253,Lagos,Retail,28,2018-12-17,1
+1254,Anambra,SME,74,2021-11-02,0
+1255,Oyo,Retail,41,2022-05-12,1
+1256,Enugu,Retail,47,2022-06-05,1
+1257,Delta,Retail,32,2017-08-25,1
+1258,FCT Abuja,Retail,21,2015-05-19,1
+1259,Enugu,Retail,52,2017-05-24,1
+1260,FCT Abuja,Retail,21,2022-04-26,1
+1261,Ogun,Retail,60,2017-11-09,1
+1262,Anambra,Retail,22,2020-06-19,0
+1263,Oyo,Retail,29,2016-05-23,1
+1264,Lagos,Retail,66,2019-04-20,1
+1265,Enugu,Premium,69,2022-10-06,1
+1266,Enugu,Retail,65,2018-09-20,1
+1267,Lagos,Retail,70,2023-09-27,1
+1268,Lagos,Retail,28,2015-08-25,1
+1269,Delta,SME,72,2022-01-13,0
+1270,Lagos,Retail,54,2023-08-30,1
+1271,Anambra,Retail,63,2018-07-03,1
+1272,Ogun,Retail,53,2024-05-31,0
+1273,Oyo,Retail,69,2024-09-21,0
+1274,Lagos,Retail,24,2015-09-09,1
+1275,Lagos,Premium,48,2019-01-13,1
+1276,Lagos,Retail,59,2022-09-08,0
+1277,FCT Abuja,Retail,65,2022-12-29,1
+1278,Enugu,Premium,38,2023-07-09,0
+1279,Anambra,SME,41,2016-01-23,0
+1280,Kano,Retail,66,2018-09-24,1
+1281,Enugu,Retail,34,2015-05-07,1
+1282,Ogun,Retail,71,2023-03-26,1
+1283,Rivers,Retail,63,2020-04-30,1
+1284,Enugu,Retail,61,2024-02-18,1
+1285,Lagos,Retail,22,2024-01-28,1
+1286,Lagos,Retail,64,2024-10-10,1
+1287,Rivers,Retail,21,2019-03-26,1
+1288,Kano,Retail,18,2022-05-15,0
+1289,Delta,Premium,27,2022-08-05,1
+1290,Enugu,SME,58,2017-02-17,1
+1291,Kano,SME,60,2015-03-09,0
+1292,Lagos,Retail,41,2016-08-14,1
+1293,Lagos,Retail,20,2023-01-29,0
+1294,Lagos,Retail,40,2015-08-30,1
+1295,Enugu,Retail,69,2015-11-05,1
+1296,Rivers,Retail,45,2024-12-10,1
+1297,Oyo,Retail,54,2022-08-24,0
+1298,Anambra,Retail,63,2022-03-16,0
+1299,Lagos,Retail,27,2016-08-27,1
+1300,Lagos,Retail,26,2023-11-29,1
+1301,Kano,Retail,59,2020-05-13,1
+1302,Anambra,Premium,51,2021-05-01,0
+1303,FCT Abuja,Retail,35,2016-03-09,0
+1304,Enugu,Retail,30,2024-02-06,0
+1305,Ogun,Retail,60,2024-06-15,0
+1306,FCT Abuja,Retail,68,2023-02-03,1
+1307,Lagos,Retail,52,2019-03-11,1
+1308,FCT Abuja,SME,58,2024-03-07,0
+1309,Lagos,Retail,25,2020-10-01,0
+1310,Lagos,Retail,68,2020-11-11,1
+1311,Delta,Retail,68,2019-12-25,0
+1312,Kano,Retail,69,2020-02-17,1
+1313,Lagos,Retail,53,2023-03-11,1
+1314,Lagos,Retail,72,2016-10-22,1
+1315,Lagos,SME,60,2021-07-11,1
+1316,Kano,Premium,41,2017-08-11,1
+1317,Rivers,SME,73,2016-05-23,1
+1318,Rivers,SME,19,2016-02-26,1
+1319,Lagos,Premium,46,2018-01-21,1
+1320,FCT Abuja,Retail,44,2021-04-03,0
+1321,Lagos,Retail,48,2019-07-21,1
+1322,Lagos,Retail,36,2024-12-19,0
+1323,FCT Abuja,Retail,55,2019-04-12,1
+1324,Lagos,SME,58,2017-02-03,1
+1325,Enugu,Retail,23,2018-02-12,1
+1326,Enugu,Retail,22,2016-02-29,1
+1327,Rivers,SME,56,2020-01-01,1
+1328,Ogun,Retail,52,2017-01-23,1
+1329,Ogun,Retail,30,2024-12-23,0
+1330,Rivers,Retail,47,2021-08-09,0
+1331,Lagos,Retail,54,2018-08-11,1
+1332,Delta,SME,19,2016-06-24,1
+1333,Rivers,SME,67,2022-12-25,1
+1334,FCT Abuja,Retail,74,2023-03-17,0
+1335,Lagos,Retail,57,2018-12-27,1
+1336,Kaduna,Premium,22,2024-11-28,0
+1337,Rivers,Retail,49,2020-10-14,1
+1338,Ogun,SME,70,2024-05-13,1
+1339,Lagos,Retail,34,2022-03-03,1
+1340,FCT Abuja,Premium,45,2018-11-18,1
+1341,Oyo,Retail,63,2022-10-13,1
+1342,Lagos,SME,37,2019-10-11,0
+1343,Lagos,Retail,31,2023-02-24,1
+1344,Kaduna,Retail,70,2024-02-06,1
+1345,Oyo,SME,35,2020-04-27,0
+1346,Rivers,Retail,41,2018-04-29,0
+1347,Lagos,SME,72,2024-07-05,1
+1348,FCT Abuja,Retail,44,2016-04-13,1
+1349,Ogun,Retail,35,2021-05-18,1
+1350,Anambra,SME,45,2017-07-06,1
+1351,Lagos,Retail,42,2016-08-21,0
+1352,Lagos,Retail,32,2022-10-08,1
+1353,Enugu,Retail,41,2020-12-17,0
+1354,Delta,SME,69,2019-12-02,1
+1355,Rivers,SME,19,2019-12-18,1
+1356,Lagos,Retail,65,2023-01-31,1
+1357,Rivers,Retail,46,2016-10-30,1
+1358,Lagos,Retail,53,2015-02-21,0
+1359,Kano,Retail,40,2017-09-26,0
+1360,Lagos,Retail,18,2024-06-06,1
+1361,Kaduna,Retail,46,2021-06-20,1
+1362,Anambra,SME,71,2015-11-23,0
+1363,Lagos,Retail,66,2020-08-25,1
+1364,Lagos,Retail,50,2018-08-17,1
+1365,Lagos,Retail,25,2021-11-13,1
+1366,Lagos,Premium,71,2018-04-25,1
+1367,Delta,Retail,58,2023-01-05,1
+1368,Lagos,Premium,47,2015-11-08,1
+1369,Oyo,Retail,22,2024-08-28,1
+1370,Kaduna,Retail,22,2019-12-05,1
+1371,Lagos,Retail,33,2015-12-06,1
+1372,Lagos,Retail,47,2017-12-19,0
+1373,Kaduna,Retail,65,2024-11-13,1
+1374,Oyo,Retail,46,2023-11-30,1
+1375,Lagos,Retail,36,2021-03-05,0
+1376,FCT Abuja,Retail,44,2022-01-27,1
+1377,Enugu,Retail,55,2022-02-18,0
+1378,Oyo,Retail,53,2023-11-28,0
+1379,Ogun,Retail,67,2017-11-20,1
+1380,Lagos,Retail,47,2022-01-24,1
+1381,Lagos,Retail,39,2024-03-14,0
+1382,Lagos,Retail,22,2019-06-04,1
+1383,Kano,Retail,59,2020-01-03,1
+1384,Kano,Retail,22,2022-06-04,0
+1385,FCT Abuja,Retail,59,2017-03-03,1
+1386,Delta,Retail,52,2024-03-13,1
+1387,Enugu,Premium,18,2021-09-05,1
+1388,Rivers,SME,54,2018-06-03,1
+1389,Kano,Retail,22,2017-08-04,0
+1390,FCT Abuja,Retail,45,2015-10-13,1
+1391,Kaduna,Premium,41,2016-05-19,0
+1392,Lagos,Retail,30,2021-11-03,1
+1393,Lagos,Retail,20,2023-01-30,1
+1394,Delta,Retail,65,2020-03-12,1
+1395,Delta,Retail,58,2015-08-20,1
+1396,Lagos,Retail,51,2019-05-06,1
+1397,Rivers,Retail,32,2017-07-11,0
+1398,Oyo,Retail,37,2020-05-06,1
+1399,FCT Abuja,Premium,42,2023-08-20,1
+1400,Oyo,Retail,49,2019-07-03,1
+1401,Kaduna,Premium,73,2018-02-24,0
+1402,Kaduna,Premium,34,2020-06-28,0
+1403,Kano,SME,61,2016-03-23,1
+1404,Anambra,Retail,72,2020-10-06,1
+1405,Lagos,Retail,24,2024-07-21,1
+1406,Kano,Retail,68,2020-06-18,0
+1407,Lagos,Premium,59,2020-07-07,0
+1408,Lagos,Retail,62,2018-01-16,1
+1409,FCT Abuja,SME,73,2023-08-29,0
+1410,Lagos,Retail,25,2020-06-28,0
+1411,Oyo,Retail,57,2022-10-23,1
+1412,Rivers,Retail,61,2016-11-01,0
+1413,Rivers,Retail,26,2021-12-27,0
+1414,Kaduna,SME,70,2020-08-28,0
+1415,Lagos,Retail,74,2016-07-09,1
+1416,FCT Abuja,SME,28,2015-12-07,0
+1417,Kano,Retail,35,2022-08-01,0
+1418,Rivers,Retail,69,2021-10-21,1
+1419,Lagos,Premium,29,2023-06-17,1
+1420,Oyo,Retail,35,2018-09-09,1
+1421,Delta,Retail,19,2021-11-23,1
+1422,Delta,Retail,21,2024-04-02,1
+1423,Ogun,Premium,28,2022-04-14,1
+1424,FCT Abuja,Retail,60,2016-06-02,1
+1425,Ogun,SME,42,2016-05-27,0
+1426,FCT Abuja,Retail,34,2017-08-23,1
+1427,Lagos,SME,71,2023-04-29,1
+1428,Kaduna,Retail,72,2023-11-11,1
+1429,Ogun,Retail,54,2023-06-15,1
+1430,Oyo,SME,25,2020-09-18,0
+1431,Lagos,SME,39,2022-06-11,0
+1432,Lagos,Retail,30,2024-10-13,0
+1433,FCT Abuja,Retail,41,2022-01-22,0
+1434,Rivers,SME,43,2024-02-03,1
+1435,Oyo,Retail,32,2021-12-31,0
+1436,Delta,Retail,39,2017-04-21,1
+1437,Lagos,Retail,67,2023-07-07,1
+1438,Enugu,Retail,51,2021-02-23,0
+1439,Rivers,Retail,42,2017-07-10,1
+1440,Oyo,Retail,39,2024-01-03,0
+1441,Lagos,SME,49,2022-12-18,1
+1442,Lagos,Retail,70,2022-02-25,0
+1443,FCT Abuja,Retail,73,2024-12-21,1
+1444,Anambra,Retail,67,2021-01-25,1
+1445,Kano,SME,62,2016-11-07,1
+1446,Kano,Retail,57,2021-06-04,1
+1447,Oyo,Retail,55,2021-02-12,0
+1448,Lagos,Retail,53,2018-01-09,0
+1449,Rivers,Retail,62,2021-10-31,1
+1450,FCT Abuja,Retail,52,2017-07-07,0
+1451,Delta,Retail,44,2017-12-27,1
+1452,Kano,Retail,42,2022-10-27,1
+1453,Oyo,SME,50,2021-05-12,1
+1454,Kano,SME,71,2024-01-25,1
+1455,Lagos,Retail,18,2017-07-14,0
+1456,FCT Abuja,Premium,53,2020-06-27,0
+1457,Lagos,Retail,56,2019-07-01,1
+1458,Ogun,Retail,69,2016-05-08,0
+1459,Lagos,SME,70,2019-12-13,0
+1460,Oyo,Retail,57,2016-09-24,1
+1461,Kano,Premium,56,2017-10-30,1
+1462,Lagos,Retail,42,2021-09-23,0
+1463,Oyo,Retail,21,2024-03-17,0
+1464,Kaduna,Premium,47,2019-07-06,1
+1465,Ogun,Retail,54,2022-07-26,1
+1466,Enugu,Retail,27,2017-07-31,1
+1467,Delta,Retail,33,2017-03-15,1
+1468,Delta,Retail,55,2016-10-03,1
+1469,Rivers,Retail,45,2020-12-24,1
+1470,FCT Abuja,Retail,46,2020-08-08,1
+1471,Kaduna,Retail,67,2019-09-21,0
+1472,Kano,Retail,36,2024-06-07,0
+1473,Enugu,SME,25,2016-10-15,1
+1474,Enugu,Retail,36,2023-12-09,1
+1475,Kaduna,SME,48,2018-02-16,1
+1476,Enugu,Retail,25,2017-02-15,1
+1477,FCT Abuja,Premium,49,2020-07-26,0
+1478,Kaduna,Retail,63,2024-05-08,1
+1479,FCT Abuja,Retail,32,2022-10-30,1
+1480,Ogun,Retail,29,2018-03-16,1
+1481,Enugu,Retail,68,2023-05-11,1
+1482,Lagos,Retail,61,2023-08-07,1
+1483,Rivers,Retail,23,2021-03-10,1
+1484,Lagos,Retail,65,2020-06-05,1
+1485,Enugu,Retail,68,2022-01-20,1
+1486,FCT Abuja,Retail,35,2017-05-17,1
+1487,Ogun,Retail,27,2017-03-02,1
+1488,Lagos,Retail,27,2022-01-22,1
+1489,Lagos,Retail,46,2015-11-29,0
+1490,FCT Abuja,SME,61,2017-07-06,1
+1491,Lagos,Retail,63,2021-06-17,1
+1492,Kano,Premium,23,2015-12-14,1
+1493,Anambra,Retail,34,2021-03-23,1
+1494,Enugu,Retail,62,2015-02-09,1
+1495,Oyo,SME,69,2024-02-28,1
+1496,Lagos,Premium,63,2016-01-10,1
+1497,Anambra,Retail,71,2021-10-09,1
+1498,FCT Abuja,Retail,42,2015-11-19,0
+1499,Kaduna,SME,52,2022-03-14,1
+1500,Lagos,Retail,27,2020-03-10,1
+1501,Enugu,SME,23,2019-12-23,1
+1502,Anambra,Retail,35,2022-07-02,1
+1503,Kano,Retail,71,2017-11-28,1
+1504,Kaduna,Retail,62,2019-07-02,1
+1505,Lagos,Premium,50,2016-02-21,1
+1506,Lagos,Retail,56,2020-12-30,1
+1507,Kano,Retail,57,2015-06-17,0
+1508,Anambra,Retail,72,2023-02-06,0
+1509,Kano,SME,61,2015-03-23,1
+1510,Lagos,SME,19,2024-11-30,1
+1511,Lagos,Retail,23,2024-10-26,1
+1512,FCT Abuja,Retail,38,2024-08-08,1
+1513,Oyo,Retail,45,2015-01-02,1
+1514,Lagos,Retail,58,2016-09-24,1
+1515,Oyo,Retail,29,2024-03-05,0
+1516,FCT Abuja,Premium,64,2016-06-19,0
+1517,Lagos,Retail,25,2018-09-21,1
+1518,Ogun,Premium,61,2019-05-21,1
+1519,Lagos,SME,65,2016-12-25,1
+1520,Kano,Retail,58,2015-07-23,0
+1521,Rivers,Retail,33,2019-09-20,0
+1522,Rivers,Retail,57,2019-05-31,1
+1523,Anambra,Retail,63,2021-01-29,1
+1524,Lagos,Retail,32,2024-07-24,1
+1525,Kaduna,Retail,57,2015-12-18,1
+1526,Lagos,Retail,66,2016-03-02,1
+1527,Rivers,Premium,53,2020-02-28,1
+1528,FCT Abuja,Retail,44,2018-10-02,1
+1529,Lagos,Retail,65,2020-07-23,1
+1530,Kano,Retail,34,2022-05-09,0
+1531,Rivers,Retail,30,2023-02-22,1
+1532,FCT Abuja,Retail,74,2015-09-11,0
+1533,Rivers,Retail,56,2022-05-04,1
+1534,Kano,Retail,29,2021-07-18,1
+1535,Kaduna,Retail,68,2023-05-17,1
+1536,Lagos,SME,39,2022-01-02,0
+1537,Lagos,Premium,68,2018-07-06,1
+1538,Kano,Retail,67,2015-05-27,0
+1539,Kano,Retail,38,2024-12-25,1
+1540,Lagos,Retail,59,2018-07-14,0
+1541,Rivers,Retail,23,2018-09-09,0
+1542,Ogun,Retail,42,2024-03-27,1
+1543,Anambra,Premium,63,2016-12-28,0
+1544,Kano,Retail,38,2020-10-23,0
+1545,Delta,Retail,32,2024-05-28,1
+1546,Rivers,Retail,68,2020-02-26,1
+1547,FCT Abuja,Retail,57,2018-10-09,0
+1548,Rivers,Retail,23,2022-12-20,0
+1549,Lagos,Premium,29,2021-04-10,0
+1550,Kano,Premium,36,2019-04-08,1
+1551,Enugu,SME,63,2019-10-20,0
+1552,Lagos,Retail,59,2022-02-28,1
+1553,Rivers,Retail,27,2017-11-27,1
+1554,Lagos,Retail,53,2015-09-09,0
+1555,Lagos,Retail,43,2020-01-09,1
+1556,Kaduna,Retail,27,2017-07-28,1
+1557,Lagos,Retail,74,2024-09-09,1
+1558,Ogun,Retail,47,2018-08-31,1
+1559,Kano,Retail,56,2021-02-20,1
+1560,Lagos,Retail,40,2018-06-24,1
+1561,Anambra,SME,27,2017-05-31,1
+1562,Kaduna,Premium,52,2020-03-30,1
+1563,Lagos,Retail,61,2022-12-31,0
+1564,Lagos,Premium,54,2020-05-25,0
+1565,Kano,SME,56,2017-05-16,1
+1566,Oyo,SME,71,2021-08-28,0
+1567,FCT Abuja,Retail,25,2022-06-01,1
+1568,Kaduna,Retail,40,2023-02-02,0
+1569,Lagos,Retail,66,2018-12-20,1
+1570,Kano,Retail,35,2017-03-26,1
+1571,Lagos,Retail,69,2015-09-06,0
+1572,Enugu,Retail,32,2018-01-12,0
+1573,Ogun,Retail,28,2018-09-25,0
+1574,Rivers,Retail,47,2016-12-24,1
+1575,Lagos,Retail,57,2023-02-01,0
+1576,Lagos,SME,35,2019-12-23,1
+1577,FCT Abuja,Retail,59,2019-06-06,1
+1578,Lagos,SME,61,2018-07-27,0
+1579,Delta,Retail,73,2017-02-09,1
+1580,Lagos,SME,62,2018-12-02,0
+1581,Lagos,Retail,37,2017-08-18,1
+1582,Kaduna,Retail,19,2023-06-15,1
+1583,Anambra,Retail,25,2018-03-20,1
+1584,FCT Abuja,Retail,58,2019-07-26,0
+1585,Lagos,Retail,66,2019-04-04,1
+1586,FCT Abuja,Retail,37,2024-06-03,0
+1587,Enugu,Retail,52,2019-07-01,1
+1588,Kaduna,Retail,69,2023-02-05,1
+1589,Rivers,Retail,44,2018-01-25,1
+1590,Kano,Retail,23,2020-12-31,0
+1591,Kaduna,Retail,48,2020-06-30,1
+1592,Anambra,SME,65,2016-10-27,1
+1593,Lagos,Retail,65,2022-06-21,1
+1594,Enugu,Retail,24,2021-04-07,0
+1595,Oyo,Retail,32,2018-12-09,0
+1596,FCT Abuja,Retail,50,2023-02-09,0
+1597,Delta,Retail,20,2016-11-18,1
+1598,Lagos,Retail,74,2022-05-14,0
+1599,Oyo,Retail,70,2023-03-18,1
+1600,Lagos,Retail,36,2017-07-09,1
+1601,Lagos,Retail,38,2020-10-04,1
+1602,Lagos,Retail,52,2024-12-15,1
+1603,Oyo,Retail,68,2018-01-19,1
+1604,Lagos,SME,73,2019-11-01,0
+1605,Delta,Premium,66,2017-07-21,1
+1606,Rivers,Retail,36,2019-06-06,1
+1607,Enugu,Retail,49,2024-04-07,1
+1608,Ogun,Retail,60,2022-01-09,1
+1609,Anambra,SME,67,2019-02-15,0
+1610,Ogun,Premium,39,2023-03-04,0
+1611,Lagos,Premium,74,2023-08-27,1
+1612,Anambra,Retail,72,2015-11-13,0
+1613,Lagos,Retail,32,2016-03-30,1
+1614,Enugu,Premium,71,2017-04-20,1
+1615,FCT Abuja,Retail,39,2017-04-28,1
+1616,FCT Abuja,Premium,73,2022-02-15,0
+1617,Lagos,Retail,46,2021-04-07,1
+1618,Rivers,Retail,54,2024-02-12,1
+1619,Delta,Retail,65,2017-11-01,1
+1620,Enugu,Retail,49,2023-07-14,1
+1621,Delta,Retail,36,2023-11-30,1
+1622,Ogun,Retail,36,2018-03-19,1
+1623,Ogun,Retail,73,2024-06-14,1
+1624,Rivers,Retail,51,2018-02-05,0
+1625,FCT Abuja,Retail,26,2022-01-14,1
+1626,Rivers,Retail,59,2020-10-11,0
+1627,Lagos,Retail,56,2015-12-13,1
+1628,Rivers,Retail,32,2024-08-09,1
+1629,Lagos,Retail,26,2023-03-08,1
+1630,FCT Abuja,Retail,31,2019-03-19,1
+1631,Oyo,Retail,70,2015-08-31,1
+1632,FCT Abuja,SME,70,2021-05-16,1
+1633,Kaduna,Retail,26,2017-12-08,1
+1634,Anambra,Retail,33,2023-08-06,0
+1635,FCT Abuja,Retail,23,2015-04-06,0
+1636,Kano,Retail,37,2016-09-13,0
+1637,Enugu,Retail,70,2020-06-07,1
+1638,Enugu,Retail,32,2017-12-25,1
+1639,FCT Abuja,Retail,33,2019-07-07,1
+1640,FCT Abuja,Retail,45,2020-01-04,0
+1641,Kaduna,Retail,48,2022-06-13,1
+1642,Lagos,Retail,26,2023-11-06,1
+1643,Lagos,Retail,58,2020-04-28,1
+1644,Ogun,Retail,26,2024-04-13,1
+1645,Enugu,Retail,39,2020-05-02,0
+1646,Kano,Retail,24,2023-02-12,1
+1647,Anambra,Retail,53,2017-03-19,0
+1648,Lagos,Retail,62,2020-01-20,1
+1649,Enugu,Retail,74,2016-01-11,1
+1650,Lagos,SME,70,2022-11-16,1
+1651,Kaduna,Retail,54,2022-03-10,1
+1652,Lagos,SME,50,2018-10-16,1
+1653,Lagos,Premium,71,2016-05-03,1
+1654,Lagos,Premium,31,2024-01-04,1
+1655,Lagos,Retail,25,2018-12-25,1
+1656,Ogun,SME,48,2015-04-10,1
+1657,Kaduna,Retail,19,2018-03-06,1
+1658,Anambra,Retail,60,2017-09-24,1
+1659,Rivers,Retail,34,2024-11-18,0
+1660,Kano,Retail,28,2016-05-21,1
+1661,FCT Abuja,Premium,24,2018-08-02,0
+1662,FCT Abuja,Retail,57,2024-11-17,1
+1663,Delta,Retail,63,2020-06-12,0
+1664,Lagos,Retail,45,2024-09-05,1
+1665,Rivers,Retail,26,2017-12-15,0
+1666,Rivers,Premium,36,2017-12-31,1
+1667,Lagos,Retail,26,2015-06-01,1
+1668,Lagos,Retail,23,2024-05-01,1
+1669,FCT Abuja,Retail,63,2022-03-29,1
+1670,Anambra,Retail,48,2024-01-12,1
+1671,FCT Abuja,Retail,59,2020-04-08,1
+1672,FCT Abuja,Retail,25,2018-02-17,1
+1673,Enugu,Retail,63,2019-02-27,1
+1674,Lagos,Retail,63,2015-12-11,1
+1675,Kaduna,Retail,55,2021-06-01,0
+1676,FCT Abuja,Retail,56,2020-02-17,1
+1677,Delta,Retail,26,2022-04-24,1
+1678,FCT Abuja,Retail,72,2023-01-14,1
+1679,Kano,SME,23,2018-07-19,1
+1680,Lagos,Premium,45,2022-05-12,1
+1681,Ogun,Retail,61,2017-01-26,1
+1682,Lagos,Retail,74,2019-02-23,1
+1683,Lagos,Retail,33,2019-06-14,1
+1684,FCT Abuja,Retail,54,2020-09-10,1
+1685,Kano,Retail,50,2016-05-24,0
+1686,Enugu,Retail,57,2017-01-23,1
+1687,FCT Abuja,SME,49,2018-01-23,1
+1688,Delta,Premium,32,2015-06-15,1
+1689,Lagos,Retail,39,2022-06-27,1
+1690,Kaduna,Retail,37,2020-01-22,1
+1691,Oyo,Retail,52,2020-05-24,1
+1692,Ogun,Retail,37,2023-01-24,0
+1693,Lagos,Retail,62,2020-08-22,1
+1694,Ogun,Retail,22,2022-09-18,0
+1695,Enugu,Retail,24,2023-02-14,0
+1696,Enugu,Retail,58,2021-10-22,1
+1697,Lagos,SME,43,2023-09-16,0
+1698,FCT Abuja,Retail,66,2024-07-26,0
+1699,FCT Abuja,Retail,38,2020-01-04,1
+1700,FCT Abuja,Premium,51,2023-12-05,1
+1701,FCT Abuja,Retail,38,2015-11-09,0
+1702,Kano,Premium,51,2016-04-19,1
+1703,Enugu,Retail,38,2018-09-10,1
+1704,Ogun,Retail,61,2023-05-03,1
+1705,Lagos,Retail,42,2022-11-01,0
+1706,Lagos,Retail,58,2021-03-12,0
+1707,Kano,Retail,50,2024-07-07,1
+1708,Kano,Retail,29,2019-09-30,1
+1709,Anambra,Premium,29,2019-07-28,1
+1710,Delta,Retail,53,2021-01-13,1
+1711,Lagos,Retail,29,2021-03-15,0
+1712,FCT Abuja,Retail,40,2019-08-18,1
+1713,Lagos,Retail,67,2023-12-28,1
+1714,Delta,Retail,72,2021-05-30,1
+1715,Kano,SME,19,2017-08-22,1
+1716,Lagos,Premium,55,2016-01-18,1
+1717,FCT Abuja,Retail,39,2015-07-09,1
+1718,Anambra,Retail,73,2024-11-29,1
+1719,Delta,Premium,31,2019-08-14,1
+1720,FCT Abuja,Retail,70,2023-05-07,1
+1721,Enugu,Retail,49,2020-11-15,1
+1722,FCT Abuja,Retail,19,2024-09-20,0
+1723,Lagos,Retail,46,2021-12-17,0
+1724,Delta,Retail,27,2023-11-11,1
+1725,Rivers,Retail,60,2022-12-10,0
+1726,Rivers,Retail,24,2020-01-20,1
+1727,Kano,Premium,34,2023-12-01,1
+1728,FCT Abuja,Retail,65,2015-08-28,1
+1729,Kaduna,Retail,58,2021-03-01,1
+1730,Delta,Retail,27,2018-06-01,0
+1731,Oyo,SME,70,2015-10-25,1
+1732,Kaduna,Retail,61,2023-01-11,1
+1733,Enugu,Retail,59,2017-10-26,1
+1734,Kaduna,SME,65,2020-05-20,1
+1735,Ogun,Retail,49,2017-09-18,0
+1736,Oyo,Retail,72,2023-03-23,1
+1737,Lagos,SME,71,2019-06-20,1
+1738,Enugu,Retail,32,2020-01-21,1
+1739,FCT Abuja,Retail,21,2022-06-15,1
+1740,FCT Abuja,Retail,40,2021-03-14,0
+1741,Enugu,Retail,73,2018-08-28,1
+1742,Kaduna,Premium,50,2023-09-16,0
+1743,FCT Abuja,Retail,51,2020-06-23,1
+1744,Lagos,SME,23,2020-12-05,1
+1745,Lagos,Retail,74,2016-01-03,1
+1746,Kano,Retail,62,2024-01-28,1
+1747,Ogun,Retail,37,2024-09-26,1
+1748,Lagos,Retail,28,2021-08-11,0
+1749,Lagos,Retail,39,2018-10-30,1
+1750,Delta,Retail,47,2017-12-15,1
+1751,Lagos,Retail,42,2017-03-22,1
+1752,FCT Abuja,Retail,45,2021-11-30,0
+1753,Kano,Retail,46,2023-09-27,0
+1754,Rivers,Retail,70,2017-04-12,1
+1755,Rivers,Premium,51,2020-03-31,1
+1756,Ogun,Retail,60,2021-04-16,1
+1757,Lagos,Retail,22,2021-03-14,0
+1758,Rivers,Retail,32,2022-02-17,0
+1759,Rivers,Retail,44,2017-10-04,1
+1760,Lagos,Retail,34,2024-01-14,1
+1761,Lagos,Premium,25,2015-05-06,1
+1762,Rivers,Retail,73,2021-01-22,1
+1763,Anambra,SME,71,2022-03-25,1
+1764,Kaduna,Premium,29,2016-12-28,1
+1765,Lagos,Retail,51,2016-02-08,0
+1766,Lagos,Retail,70,2022-03-31,1
+1767,Anambra,Retail,31,2016-02-28,0
+1768,Rivers,Retail,62,2019-06-11,1
+1769,Lagos,SME,53,2015-01-18,0
+1770,Lagos,SME,42,2016-04-28,0
+1771,Lagos,Retail,27,2019-04-12,0
+1772,Kaduna,Retail,46,2021-12-12,1
+1773,Lagos,SME,41,2021-09-30,1
+1774,Lagos,Retail,30,2016-05-04,1
+1775,Lagos,Retail,32,2019-07-24,1
+1776,FCT Abuja,Retail,38,2024-01-22,0
+1777,Lagos,Retail,51,2022-04-22,1
+1778,Lagos,Retail,22,2023-06-14,1
+1779,Anambra,Premium,41,2023-03-03,0
+1780,Lagos,Retail,31,2019-11-27,1
+1781,Anambra,Retail,68,2023-01-16,1
+1782,Kano,SME,41,2021-10-24,1
+1783,Oyo,Retail,20,2023-06-05,1
+1784,Oyo,SME,65,2023-05-19,1
+1785,Lagos,Premium,47,2018-07-07,1
+1786,Anambra,Premium,68,2021-12-08,0
+1787,Lagos,Retail,47,2024-06-15,1
+1788,Lagos,Retail,71,2017-06-03,1
+1789,Lagos,Retail,55,2023-06-11,1
+1790,Rivers,Retail,71,2015-06-24,1
+1791,Lagos,Premium,34,2018-11-21,0
+1792,Rivers,Retail,19,2023-10-11,1
+1793,Anambra,Retail,38,2019-07-30,0
+1794,Kano,Retail,65,2016-03-18,1
+1795,Delta,SME,21,2021-08-31,0
+1796,Lagos,Retail,64,2015-06-25,1
+1797,FCT Abuja,Retail,55,2021-06-11,1
+1798,Delta,Retail,26,2015-12-10,1
+1799,Lagos,Retail,28,2020-05-06,0
+1800,Kaduna,Premium,27,2016-01-28,1
+1801,Oyo,SME,53,2023-01-10,0
+1802,Lagos,Premium,46,2016-06-08,1
+1803,Delta,Premium,62,2015-05-05,1
+1804,Lagos,SME,29,2015-09-10,1
+1805,Enugu,Retail,43,2015-06-20,1
+1806,Delta,Premium,32,2024-04-24,1
+1807,Lagos,Retail,43,2016-09-21,0
+1808,Ogun,SME,60,2015-02-19,0
+1809,Ogun,Retail,40,2018-08-10,1
+1810,FCT Abuja,Retail,25,2021-03-08,1
+1811,FCT Abuja,Retail,64,2022-08-25,1
+1812,Oyo,Retail,27,2016-11-22,1
+1813,Kaduna,Retail,19,2019-06-13,1
+1814,Lagos,Retail,26,2015-02-16,1
+1815,Lagos,Retail,23,2023-02-09,1
+1816,Lagos,Retail,45,2017-08-23,1
+1817,Lagos,Retail,55,2018-11-15,1
+1818,Lagos,Retail,62,2020-04-22,1
+1819,Lagos,Retail,36,2022-01-30,0
+1820,Anambra,Retail,24,2017-08-28,1
+1821,Kaduna,Retail,45,2023-07-03,1
+1822,Anambra,Retail,74,2020-12-17,1
+1823,Enugu,Retail,34,2023-12-28,0
+1824,Rivers,Retail,43,2021-03-14,0
+1825,Kaduna,Retail,21,2015-05-14,0
+1826,Lagos,Retail,65,2019-11-29,1
+1827,Lagos,Retail,36,2016-06-28,1
+1828,Enugu,Retail,64,2023-03-05,1
+1829,Kaduna,Premium,47,2021-10-05,1
+1830,FCT Abuja,Retail,21,2024-09-07,1
+1831,Oyo,SME,27,2018-10-13,0
+1832,Lagos,SME,63,2021-04-23,0
+1833,Enugu,SME,20,2015-02-01,1
+1834,Oyo,Retail,72,2016-04-01,1
+1835,Ogun,Premium,24,2021-09-12,0
+1836,Lagos,Retail,30,2023-01-15,1
+1837,Ogun,Premium,53,2018-03-02,0
+1838,Oyo,Retail,56,2015-05-24,1
+1839,Ogun,Retail,67,2017-12-02,1
+1840,FCT Abuja,Retail,32,2024-08-13,0
+1841,Oyo,Retail,19,2018-01-25,0
+1842,Ogun,Retail,67,2017-10-13,0
+1843,Lagos,Retail,42,2018-09-24,1
+1844,Anambra,SME,26,2021-01-08,0
+1845,Kaduna,Retail,20,2020-06-19,0
+1846,Anambra,Retail,18,2022-11-03,1
+1847,Lagos,Retail,57,2015-03-01,0
+1848,Lagos,Retail,32,2017-06-05,0
+1849,Rivers,Retail,74,2017-12-31,1
+1850,Oyo,Premium,40,2020-11-17,1
+1851,Rivers,Premium,46,2018-01-27,1
+1852,Kano,Retail,51,2022-08-02,1
+1853,Lagos,Premium,66,2015-01-30,1
+1854,Kano,Retail,59,2017-05-14,0
+1855,Lagos,Retail,41,2018-08-29,1
+1856,FCT Abuja,Retail,30,2019-03-01,0
+1857,Enugu,Retail,42,2024-06-03,1
+1858,Lagos,Retail,65,2015-10-14,1
+1859,Lagos,Retail,27,2017-01-03,0
+1860,Kano,Retail,52,2021-10-30,1
+1861,Lagos,Retail,29,2015-08-07,0
+1862,Lagos,SME,46,2015-05-02,0
+1863,Delta,Retail,43,2024-08-18,1
+1864,Anambra,Retail,25,2020-07-28,0
+1865,FCT Abuja,Retail,54,2021-01-13,1
+1866,Lagos,Retail,30,2019-03-03,1
+1867,Lagos,Retail,67,2017-03-25,1
+1868,Ogun,Retail,58,2020-11-29,1
+1869,FCT Abuja,Retail,29,2020-01-08,1
+1870,Enugu,Retail,51,2023-05-27,1
+1871,Ogun,SME,54,2017-07-17,1
+1872,Delta,Retail,57,2023-10-05,0
+1873,Oyo,Retail,37,2016-06-27,1
+1874,Lagos,SME,54,2017-10-15,1
+1875,Oyo,Retail,23,2017-12-17,1
+1876,Ogun,Premium,63,2023-11-15,1
+1877,Anambra,Retail,37,2021-01-28,0
+1878,FCT Abuja,Retail,43,2021-01-31,1
+1879,Lagos,Retail,65,2021-09-04,1
+1880,Anambra,Retail,31,2019-02-01,1
+1881,Oyo,Retail,47,2021-07-05,1
+1882,FCT Abuja,Retail,44,2023-05-27,1
+1883,Ogun,Retail,26,2021-08-04,1
+1884,Oyo,Retail,62,2018-01-10,1
+1885,Lagos,SME,27,2024-04-17,1
+1886,Delta,Premium,27,2024-05-22,0
+1887,FCT Abuja,Retail,33,2016-09-11,0
+1888,Ogun,Retail,23,2015-02-18,0
+1889,Lagos,Retail,51,2015-12-16,1
+1890,Anambra,Retail,29,2019-08-01,1
+1891,Anambra,Retail,42,2019-02-05,1
+1892,Oyo,Retail,67,2021-04-28,1
+1893,Enugu,Retail,56,2022-03-06,0
+1894,Anambra,Premium,30,2019-10-17,0
+1895,Lagos,Retail,22,2017-12-01,1
+1896,Lagos,Retail,43,2022-09-27,1
+1897,Lagos,Retail,63,2019-04-11,1
+1898,Lagos,Retail,56,2017-06-25,0
+1899,Ogun,Premium,29,2019-06-07,1
+1900,Lagos,Retail,48,2016-09-28,1
+1901,Kano,Retail,55,2021-07-23,0
+1902,Lagos,Retail,47,2015-10-30,1
+1903,FCT Abuja,Retail,20,2024-08-02,0
+1904,Lagos,Retail,65,2022-09-04,1
+1905,Lagos,Retail,44,2020-11-15,1
+1906,Anambra,Retail,39,2022-11-04,1
+1907,Kano,Retail,74,2016-05-12,1
+1908,Enugu,Retail,71,2017-12-21,1
+1909,Lagos,Retail,21,2021-07-06,1
+1910,Kano,Retail,46,2024-06-11,1
+1911,FCT Abuja,SME,31,2023-08-09,1
+1912,Rivers,Retail,31,2017-03-12,1
+1913,Kaduna,Retail,67,2024-04-15,1
+1914,FCT Abuja,Retail,35,2019-08-08,1
+1915,FCT Abuja,SME,34,2018-12-28,0
+1916,Ogun,Retail,47,2020-07-19,0
+1917,Ogun,Retail,30,2020-06-05,1
+1918,Delta,Retail,67,2017-05-24,1
+1919,Lagos,Retail,41,2022-07-08,0
+1920,FCT Abuja,Retail,65,2016-07-22,0
+1921,Delta,Retail,65,2016-07-30,1
+1922,Delta,SME,38,2024-01-31,1
+1923,Lagos,Retail,36,2017-10-10,0
+1924,Delta,Retail,25,2017-11-20,1
+1925,FCT Abuja,Retail,41,2017-03-10,1
+1926,Lagos,SME,50,2023-04-07,1
+1927,Kano,Retail,25,2023-06-03,1
+1928,Lagos,Retail,51,2016-05-07,1
+1929,FCT Abuja,SME,18,2022-11-17,0
+1930,Lagos,Premium,51,2024-10-24,1
+1931,Kano,Retail,41,2015-04-30,0
+1932,Lagos,Premium,20,2015-05-05,0
+1933,Kaduna,Retail,51,2016-09-11,0
+1934,Enugu,Retail,44,2019-10-22,1
+1935,Oyo,SME,45,2021-12-26,1
+1936,Lagos,Retail,74,2024-11-30,1
+1937,Rivers,Retail,71,2023-12-09,1
+1938,Oyo,Retail,44,2024-06-10,1
+1939,Lagos,Retail,27,2022-11-22,1
+1940,Enugu,Retail,48,2023-11-25,0
+1941,Ogun,Premium,19,2024-06-13,0
+1942,Lagos,Premium,51,2023-02-21,1
+1943,Lagos,Retail,55,2016-11-25,1
+1944,Oyo,Retail,26,2020-09-30,0
+1945,Lagos,Retail,33,2016-12-27,0
+1946,Delta,SME,49,2020-12-03,1
+1947,Kano,Retail,27,2019-07-11,1
+1948,Delta,Premium,70,2021-03-26,1
+1949,Ogun,Retail,24,2022-12-11,1
+1950,Lagos,Retail,62,2021-03-22,1
+1951,Lagos,Retail,52,2023-03-16,1
+1952,Lagos,SME,51,2019-09-05,1
+1953,Oyo,SME,45,2016-09-16,1
+1954,Kano,Retail,55,2018-08-09,1
+1955,Delta,Retail,35,2018-11-30,1
+1956,Rivers,Retail,37,2020-06-29,1
+1957,Oyo,Retail,63,2024-05-23,1
+1958,FCT Abuja,SME,46,2018-09-16,0
+1959,Lagos,Retail,59,2016-10-03,1
+1960,Oyo,Retail,62,2022-04-09,1
+1961,Lagos,Retail,19,2021-07-17,1
+1962,Rivers,Retail,30,2024-03-10,0
+1963,FCT Abuja,Retail,39,2023-08-12,1
+1964,Lagos,Retail,63,2015-11-20,1
+1965,Lagos,Retail,37,2023-01-06,1
+1966,FCT Abuja,SME,70,2015-06-20,1
+1967,Oyo,Retail,64,2019-12-31,0
+1968,Lagos,Retail,61,2018-11-09,1
+1969,Kano,Retail,56,2017-08-01,0
+1970,Kano,Retail,29,2015-08-10,1
+1971,Oyo,Retail,57,2019-01-14,1
+1972,Lagos,Retail,31,2018-05-03,1
+1973,FCT Abuja,Retail,53,2023-08-23,1
+1974,Lagos,Premium,21,2015-04-27,1
+1975,Lagos,Premium,63,2021-07-22,1
+1976,Lagos,Retail,26,2024-02-03,1
+1977,Anambra,Retail,62,2016-02-10,1
+1978,Lagos,Retail,21,2015-07-28,1
+1979,Kano,Retail,65,2020-11-28,0
+1980,Lagos,SME,72,2018-03-23,0
+1981,Kano,SME,61,2024-11-07,0
+1982,Lagos,SME,53,2022-04-05,1
+1983,Lagos,Retail,45,2022-08-08,1
+1984,FCT Abuja,Retail,66,2024-08-28,1
+1985,FCT Abuja,Retail,19,2021-12-11,1
+1986,Enugu,Retail,61,2016-06-16,1
+1987,Kaduna,Retail,32,2024-02-09,0
+1988,Ogun,Premium,60,2022-03-15,1
+1989,Oyo,Retail,18,2023-05-20,1
+1990,Enugu,Retail,29,2016-09-18,0
+1991,Oyo,Retail,51,2023-10-05,1
+1992,Rivers,Retail,71,2016-11-14,0
+1993,FCT Abuja,Retail,35,2022-08-03,1
+1994,FCT Abuja,Retail,55,2019-01-15,1
+1995,Oyo,Retail,34,2023-06-19,0
+1996,Rivers,Retail,27,2024-08-29,1
+1997,Kano,Retail,36,2023-10-05,1
+1998,Enugu,Retail,42,2017-11-26,1
+1999,FCT Abuja,Retail,44,2016-09-02,0
+2000,Oyo,Retail,37,2024-09-20,1
+2001,Lagos,Retail,55,2021-08-11,0
+2002,Lagos,Retail,42,2017-04-14,1
+2003,Lagos,Premium,67,2024-11-17,0
+2004,Lagos,Retail,50,2020-01-16,1
+2005,Lagos,Premium,25,2019-12-13,1
+2006,Oyo,Retail,37,2022-12-03,1
+2007,Rivers,Retail,39,2023-07-06,1
+2008,Oyo,Retail,47,2015-07-09,0
+2009,Oyo,Retail,71,2016-06-17,1
+2010,FCT Abuja,Retail,49,2024-11-27,1
+2011,Lagos,Retail,23,2017-11-21,0
+2012,Lagos,Retail,19,2023-08-26,0
+2013,Lagos,Retail,39,2016-06-15,0
+2014,Oyo,Retail,50,2017-07-26,0
+2015,FCT Abuja,Retail,41,2022-05-14,1
+2016,Lagos,Retail,66,2022-04-27,1
+2017,Lagos,Retail,40,2023-03-26,1
+2018,Rivers,Retail,64,2023-05-04,0
+2019,FCT Abuja,Retail,44,2019-09-19,1
+2020,Kano,Retail,30,2016-04-20,0
+2021,Kano,Retail,25,2024-01-20,1
+2022,Kaduna,Retail,68,2021-03-02,0
+2023,Lagos,Retail,43,2021-05-13,1
+2024,Rivers,Retail,18,2023-09-26,0
+2025,Kano,SME,20,2019-11-11,0
+2026,Lagos,SME,30,2018-05-25,1
+2027,FCT Abuja,SME,46,2015-11-15,1
+2028,Lagos,Retail,49,2015-01-25,1
+2029,Lagos,Retail,63,2020-01-31,1
+2030,Enugu,SME,20,2022-12-17,1
+2031,Kano,Retail,43,2023-08-05,1
+2032,Anambra,Retail,41,2018-12-02,1
+2033,Kaduna,SME,47,2017-06-23,0
+2034,Anambra,Retail,19,2020-01-16,1
+2035,Anambra,Retail,33,2022-11-29,1
+2036,Rivers,Retail,30,2018-12-24,0
+2037,Lagos,Retail,38,2018-12-10,0
+2038,Lagos,Premium,50,2022-11-08,1
+2039,Lagos,Retail,69,2024-08-01,0
+2040,Lagos,Retail,29,2024-09-28,1
+2041,Anambra,Premium,20,2024-02-26,0
+2042,FCT Abuja,Retail,62,2017-09-21,1
+2043,Oyo,Retail,51,2017-07-01,1
+2044,Lagos,Retail,54,2018-11-12,1
+2045,Delta,SME,32,2022-01-31,1
+2046,Oyo,Retail,26,2022-04-02,1
+2047,Oyo,Retail,32,2019-09-11,1
+2048,Kano,Retail,34,2017-12-23,0
+2049,Oyo,Retail,24,2017-12-19,1
+2050,Ogun,Retail,34,2016-04-12,1
+2051,Kaduna,Retail,45,2021-08-24,0
+2052,FCT Abuja,Premium,64,2023-08-12,1
+2053,Lagos,SME,26,2020-10-10,0
+2054,Lagos,Retail,65,2018-08-14,0
+2055,FCT Abuja,Retail,56,2018-03-15,1
+2056,Rivers,Retail,55,2022-02-24,1
+2057,FCT Abuja,SME,73,2022-10-10,0
+2058,Lagos,Retail,53,2016-01-01,1
+2059,Lagos,Retail,18,2023-10-23,1
+2060,Kaduna,Retail,21,2023-02-22,0
+2061,FCT Abuja,Retail,50,2018-07-08,1
+2062,Lagos,Retail,57,2022-01-14,1
+2063,Kano,Retail,54,2018-04-13,0
+2064,Lagos,Retail,35,2021-04-28,1
+2065,Anambra,Retail,49,2017-08-22,1
+2066,Oyo,Retail,26,2016-03-21,1
+2067,Enugu,SME,40,2024-01-27,1
+2068,FCT Abuja,Retail,67,2016-09-01,0
+2069,FCT Abuja,Retail,68,2017-03-30,1
+2070,Delta,Retail,69,2015-08-28,1
+2071,Rivers,SME,53,2018-07-01,1
+2072,Anambra,SME,40,2016-06-22,1
+2073,Enugu,SME,19,2021-06-27,0
+2074,FCT Abuja,SME,52,2024-04-30,1
+2075,Lagos,Retail,71,2017-03-16,0
+2076,Lagos,Retail,57,2019-08-09,1
+2077,Lagos,Premium,49,2020-10-14,0
+2078,Lagos,SME,67,2021-03-13,1
+2079,Lagos,Retail,47,2019-06-03,1
+2080,Delta,Retail,71,2019-01-01,1
+2081,Kano,Retail,34,2022-08-09,1
+2082,Oyo,Retail,64,2017-12-07,1
+2083,Enugu,Retail,34,2015-03-07,0
+2084,Rivers,Premium,56,2018-01-19,1
+2085,Lagos,Retail,61,2015-06-28,1
+2086,Rivers,Retail,26,2015-11-09,0
+2087,Oyo,Retail,55,2021-07-18,1
+2088,Kaduna,Retail,62,2019-07-08,1
+2089,Oyo,Retail,58,2024-05-02,1
+2090,FCT Abuja,Retail,37,2017-11-25,1
+2091,Lagos,Retail,39,2018-04-07,1
+2092,FCT Abuja,SME,58,2018-12-08,0
+2093,Lagos,Retail,59,2018-05-14,1
+2094,Lagos,Retail,56,2017-11-25,0
+2095,Lagos,SME,51,2021-11-23,0
+2096,Kano,Retail,69,2024-02-26,0
+2097,Rivers,Retail,73,2020-08-17,1
+2098,FCT Abuja,Retail,43,2018-03-23,1
+2099,Delta,Retail,66,2016-07-26,1
+2100,Oyo,Retail,60,2019-07-23,1
+2101,Lagos,Retail,61,2015-01-02,1
+2102,FCT Abuja,Retail,72,2017-04-09,1
+2103,Oyo,Retail,66,2024-06-22,1
+2104,Enugu,Retail,68,2020-03-09,0
+2105,Kaduna,Premium,70,2023-03-22,1
+2106,Kaduna,SME,57,2016-12-04,1
+2107,FCT Abuja,Retail,71,2015-09-14,0
+2108,Anambra,Retail,32,2021-11-02,0
+2109,FCT Abuja,Retail,18,2020-10-01,1
+2110,FCT Abuja,SME,37,2018-12-27,0
+2111,Oyo,Retail,25,2022-04-17,1
+2112,Lagos,Retail,72,2015-07-24,1
+2113,Ogun,Retail,38,2021-12-06,1
+2114,Ogun,Retail,39,2024-03-27,1
+2115,Lagos,Retail,34,2018-08-27,1
+2116,Rivers,Retail,58,2017-11-21,1
+2117,Lagos,Retail,21,2020-05-20,1
+2118,Lagos,Retail,69,2017-02-11,1
+2119,Ogun,SME,69,2017-05-02,1
+2120,Rivers,Retail,27,2019-07-08,0
+2121,Kaduna,Retail,27,2024-10-27,1
+2122,Kaduna,Premium,72,2020-07-19,1
+2123,Lagos,Retail,71,2015-04-20,1
+2124,FCT Abuja,Premium,21,2019-04-26,1
+2125,FCT Abuja,Retail,24,2024-11-08,1
+2126,Rivers,Retail,64,2017-08-24,1
+2127,Ogun,Retail,69,2018-01-20,1
+2128,Rivers,Premium,42,2018-07-12,0
+2129,Lagos,SME,73,2018-10-03,0
+2130,Delta,SME,43,2023-10-18,1
+2131,Lagos,Retail,69,2019-02-14,0
+2132,Kaduna,Retail,45,2020-04-30,0
+2133,Kaduna,Retail,57,2019-07-23,1
+2134,Oyo,Premium,43,2019-04-02,1
+2135,Lagos,Retail,70,2021-05-20,1
+2136,Kano,Retail,40,2020-05-10,1
+2137,Lagos,Retail,38,2020-12-31,1
+2138,Oyo,Retail,19,2019-09-27,0
+2139,Lagos,Retail,24,2023-10-25,1
+2140,Kaduna,Retail,66,2017-08-10,0
+2141,Delta,Retail,40,2017-01-09,1
+2142,Lagos,Retail,28,2020-10-19,1
+2143,Kano,Retail,65,2019-01-15,1
+2144,FCT Abuja,Retail,54,2022-08-18,0
+2145,Lagos,Retail,61,2022-07-01,0
+2146,Enugu,Retail,73,2017-09-20,1
+2147,Lagos,Retail,24,2017-03-04,0
+2148,Enugu,Premium,25,2017-03-29,0
+2149,Kano,Retail,33,2024-06-19,1
+2150,FCT Abuja,SME,26,2024-03-06,1
+2151,Lagos,Retail,68,2024-08-02,1
+2152,Kano,Premium,33,2019-07-01,0
+2153,Kaduna,Retail,44,2023-05-01,1
+2154,Anambra,Retail,24,2018-06-01,1
+2155,Anambra,Retail,43,2018-01-24,0
+2156,FCT Abuja,Retail,50,2024-02-01,0
+2157,FCT Abuja,Retail,27,2022-09-11,1
+2158,Rivers,Retail,50,2019-12-13,1
+2159,Lagos,Retail,64,2017-02-27,1
+2160,Ogun,Retail,62,2023-12-30,0
+2161,Anambra,Retail,56,2020-10-20,1
+2162,Kaduna,Premium,73,2023-06-22,0
+2163,Oyo,Retail,58,2022-12-21,1
+2164,Ogun,Retail,31,2017-11-28,1
+2165,Kano,Premium,40,2017-12-13,1
+2166,Kano,Premium,49,2023-12-08,1
+2167,Lagos,Retail,64,2018-10-07,0
+2168,Kano,Retail,26,2022-06-15,1
+2169,Lagos,Retail,27,2019-10-13,1
+2170,Anambra,Retail,22,2017-01-29,1
+2171,Kano,Retail,54,2016-02-24,0
+2172,Lagos,Retail,23,2018-07-15,1
+2173,FCT Abuja,Retail,35,2018-02-19,1
+2174,Lagos,Retail,31,2022-07-25,1
+2175,Kano,Retail,62,2015-10-20,1
+2176,Lagos,Retail,44,2019-10-17,0
+2177,Lagos,Retail,33,2016-01-14,1
+2178,Lagos,Retail,31,2023-06-14,0
+2179,Delta,Retail,67,2018-06-03,0
+2180,Lagos,Retail,52,2023-04-24,0
+2181,Delta,Retail,24,2015-08-14,1
+2182,Delta,Retail,28,2018-02-27,1
+2183,Lagos,Retail,36,2018-05-20,1
+2184,Kano,Retail,40,2018-03-27,1
+2185,Lagos,Retail,28,2016-05-16,1
+2186,Kano,SME,39,2015-02-19,0
+2187,Kano,Premium,72,2020-07-11,0
+2188,FCT Abuja,Retail,70,2018-04-24,1
+2189,Lagos,Premium,73,2020-09-25,0
+2190,Lagos,Retail,30,2022-01-16,1
+2191,Anambra,Retail,21,2024-07-26,1
+2192,Lagos,Retail,54,2017-02-20,1
+2193,Anambra,Retail,32,2019-06-20,0
+2194,Oyo,Retail,51,2017-03-22,0
+2195,Lagos,Retail,53,2016-07-03,1
+2196,Kano,Retail,62,2021-07-23,1
+2197,Kano,Retail,47,2024-04-17,1
+2198,Lagos,Retail,72,2016-08-05,0
+2199,Oyo,Retail,71,2018-02-23,1
+2200,FCT Abuja,Retail,22,2023-12-27,1
+2201,Lagos,Retail,21,2018-06-01,1
+2202,Lagos,Retail,42,2024-03-10,1
+2203,Oyo,Retail,51,2024-07-10,1
+2204,Anambra,Retail,36,2019-10-18,1
+2205,FCT Abuja,Retail,18,2022-02-15,1
+2206,FCT Abuja,Retail,49,2024-03-20,1
+2207,Enugu,Retail,21,2023-02-23,1
+2208,Lagos,Retail,56,2022-08-31,1
+2209,Ogun,SME,21,2020-09-18,1
+2210,Lagos,Retail,53,2021-02-28,0
+2211,Oyo,Retail,68,2019-11-27,0
+2212,Oyo,Retail,38,2024-11-19,1
+2213,FCT Abuja,Retail,74,2021-01-11,0
+2214,Lagos,Premium,54,2018-08-25,1
+2215,Lagos,SME,34,2017-10-07,0
+2216,Oyo,SME,53,2019-05-28,0
+2217,Lagos,Retail,20,2019-06-07,1
+2218,Kano,Premium,36,2021-03-13,1
+2219,Anambra,Retail,61,2016-09-22,0
+2220,Kano,Retail,28,2018-05-24,1
+2221,Lagos,Retail,66,2022-10-06,1
+2222,FCT Abuja,Premium,52,2016-09-19,1
+2223,Kaduna,Retail,30,2024-08-31,0
+2224,Ogun,Retail,35,2019-05-20,1
+2225,Ogun,Retail,67,2016-03-07,0
+2226,Delta,Retail,21,2019-11-19,1
+2227,FCT Abuja,Retail,67,2016-10-20,1
+2228,Ogun,SME,48,2018-05-05,0
+2229,FCT Abuja,Retail,24,2020-02-17,0
+2230,Oyo,Premium,51,2017-05-06,1
+2231,Lagos,Premium,38,2022-12-28,0
+2232,Anambra,Retail,24,2022-10-08,1
+2233,FCT Abuja,Retail,64,2018-03-19,1
+2234,Lagos,Retail,23,2021-09-22,1
+2235,Rivers,Retail,61,2021-09-10,0
+2236,Rivers,Retail,44,2022-07-01,1
+2237,Lagos,Retail,51,2020-03-10,0
+2238,Enugu,Retail,58,2018-05-22,1
+2239,Lagos,Premium,54,2019-02-08,1
+2240,Rivers,Retail,42,2022-11-16,1
+2241,Ogun,Retail,70,2024-06-30,1
+2242,Oyo,Retail,55,2017-03-01,1
+2243,Enugu,SME,61,2022-12-22,1
+2244,Rivers,Retail,72,2016-04-30,1
+2245,Kano,Retail,65,2024-11-23,1
+2246,Ogun,Retail,27,2022-02-25,0
+2247,Anambra,Retail,44,2020-01-08,1
+2248,Lagos,Retail,53,2015-07-03,1
+2249,Lagos,SME,44,2023-01-09,1
+2250,Lagos,SME,24,2022-05-27,1
+2251,FCT Abuja,Retail,33,2017-10-27,1
+2252,Kano,Retail,52,2023-11-28,1
+2253,Oyo,Retail,48,2023-04-29,1
+2254,Enugu,Retail,34,2017-05-26,1
+2255,Anambra,Retail,57,2019-10-29,1
+2256,Lagos,Premium,22,2024-03-18,0
+2257,Kaduna,Retail,26,2019-12-31,0
+2258,FCT Abuja,SME,40,2021-03-15,1
+2259,Lagos,Retail,42,2020-02-15,1
+2260,Lagos,SME,42,2015-10-09,1
+2261,FCT Abuja,SME,21,2023-08-23,0
+2262,Oyo,Retail,64,2024-09-09,1
+2263,Rivers,Premium,50,2021-04-02,0
+2264,Lagos,Retail,21,2023-04-20,1
+2265,Lagos,Retail,35,2019-07-04,0
+2266,Lagos,Retail,51,2015-07-09,1
+2267,Oyo,Retail,35,2019-02-25,1
+2268,Lagos,Retail,53,2021-12-16,1
+2269,Lagos,Retail,48,2018-05-23,1
+2270,FCT Abuja,Retail,56,2020-08-08,0
+2271,FCT Abuja,Retail,28,2016-01-16,1
+2272,Enugu,Retail,50,2018-04-24,0
+2273,Lagos,Retail,41,2024-10-17,1
+2274,Kano,Retail,30,2021-11-29,0
+2275,Oyo,Premium,45,2016-04-04,1
+2276,Lagos,SME,41,2016-10-04,1
+2277,Lagos,Retail,53,2021-03-12,0
+2278,Ogun,Retail,71,2015-12-26,1
+2279,Lagos,Premium,42,2022-01-31,1
+2280,Rivers,SME,45,2022-10-03,1
+2281,Kano,SME,67,2023-06-10,1
+2282,Anambra,Retail,66,2024-10-09,1
+2283,FCT Abuja,Retail,65,2018-04-17,1
+2284,Kano,Retail,32,2023-03-14,1
+2285,Lagos,Retail,23,2023-02-01,1
+2286,Oyo,Premium,32,2015-05-13,1
+2287,FCT Abuja,Premium,72,2023-03-07,0
+2288,Lagos,SME,18,2022-01-24,1
+2289,Rivers,Retail,33,2023-12-19,0
+2290,Lagos,Retail,30,2020-09-10,1
+2291,Lagos,Retail,61,2016-01-06,1
+2292,Enugu,SME,33,2018-04-20,1
+2293,Lagos,Retail,71,2016-03-04,1
+2294,Lagos,Retail,50,2020-08-18,1
+2295,Delta,Retail,21,2021-09-16,1
+2296,Lagos,Retail,27,2015-08-04,0
+2297,Oyo,Retail,36,2017-12-05,1
+2298,FCT Abuja,SME,61,2019-11-25,0
+2299,Delta,Retail,31,2023-11-27,1
+2300,Lagos,Retail,68,2021-06-27,1
+2301,Ogun,Retail,70,2020-12-15,0
+2302,Enugu,Retail,61,2019-10-05,1
+2303,Kaduna,Retail,70,2021-10-29,1
+2304,Rivers,Retail,51,2024-07-19,1
+2305,Lagos,SME,70,2019-06-24,1
+2306,Rivers,Retail,47,2021-09-22,1
+2307,Enugu,Premium,33,2018-08-19,0
+2308,Oyo,Retail,42,2018-12-29,1
+2309,Lagos,Retail,51,2016-07-02,0
+2310,Lagos,Retail,18,2024-06-14,1
+2311,Kaduna,Retail,56,2018-11-18,1
+2312,Rivers,Retail,56,2021-02-09,1
+2313,Ogun,Retail,36,2018-07-16,1
+2314,Ogun,Retail,19,2022-02-25,0
+2315,Kano,Retail,69,2022-07-03,1
+2316,Delta,Retail,28,2021-03-23,1
+2317,Lagos,Retail,47,2015-02-04,1
+2318,Ogun,Retail,22,2016-03-16,1
+2319,Lagos,Retail,20,2024-02-10,0
+2320,Ogun,Retail,43,2018-12-08,1
+2321,Oyo,Retail,46,2017-03-21,1
+2322,Rivers,Retail,50,2020-05-03,0
+2323,FCT Abuja,Retail,23,2022-11-07,1
+2324,Lagos,Retail,55,2024-04-23,1
+2325,FCT Abuja,SME,61,2018-03-24,0
+2326,Rivers,Retail,34,2015-01-01,0
+2327,Rivers,Retail,18,2019-06-20,1
+2328,FCT Abuja,SME,39,2021-10-26,0
+2329,Lagos,Retail,20,2020-12-05,0
+2330,Enugu,Retail,26,2023-07-20,1
+2331,Enugu,Retail,46,2016-06-12,1
+2332,Lagos,Retail,26,2017-01-23,1
+2333,Oyo,Retail,41,2021-07-10,1
+2334,Kano,Retail,30,2019-11-19,0
+2335,Lagos,Premium,33,2023-12-27,1
+2336,FCT Abuja,Retail,40,2018-03-06,1
+2337,FCT Abuja,Premium,63,2017-08-31,1
+2338,Lagos,Retail,47,2023-01-15,1
+2339,FCT Abuja,Retail,31,2018-11-26,0
+2340,Oyo,SME,29,2016-06-29,1
+2341,Lagos,Retail,55,2022-11-12,1
+2342,Enugu,Retail,39,2022-06-18,1
+2343,Lagos,Retail,18,2021-08-19,0
+2344,Kano,Premium,31,2022-12-22,1
+2345,Rivers,Retail,28,2021-09-09,1
+2346,Kaduna,Retail,49,2018-10-26,0
+2347,Rivers,Retail,60,2020-10-11,0
+2348,Lagos,Retail,38,2018-01-15,1
+2349,Lagos,Premium,69,2022-07-08,1
+2350,Enugu,Retail,31,2024-01-17,1
+2351,Enugu,SME,56,2023-02-05,1
+2352,Lagos,Retail,34,2018-10-17,0
+2353,Lagos,Retail,40,2019-02-06,1
+2354,Rivers,Retail,65,2022-01-12,0
+2355,Delta,SME,22,2016-10-07,1
+2356,Rivers,Retail,59,2016-01-24,1
+2357,Lagos,Retail,29,2015-01-14,1
+2358,Anambra,Retail,32,2015-07-24,1
+2359,Lagos,Retail,62,2018-05-07,1
+2360,FCT Abuja,SME,38,2018-03-22,1
+2361,Delta,Retail,38,2023-09-03,1
+2362,FCT Abuja,SME,27,2020-03-28,1
+2363,Enugu,Premium,64,2018-02-08,1
+2364,Kano,Retail,38,2019-03-13,0
+2365,Rivers,Retail,72,2022-11-06,1
+2366,Kano,Retail,49,2023-10-04,1
+2367,FCT Abuja,Retail,45,2015-01-02,1
+2368,Kaduna,Retail,73,2017-08-12,1
+2369,Lagos,Premium,48,2017-08-21,1
+2370,Lagos,Retail,62,2023-06-17,1
+2371,Lagos,Retail,25,2021-11-24,1
+2372,FCT Abuja,Retail,50,2019-12-29,1
+2373,FCT Abuja,Retail,71,2020-03-13,0
+2374,Kano,Retail,33,2017-05-13,1
+2375,FCT Abuja,SME,49,2015-09-03,1
+2376,Lagos,SME,19,2024-05-07,1
+2377,Lagos,Retail,64,2019-08-10,0
+2378,Lagos,Retail,27,2017-10-25,1
+2379,Rivers,SME,29,2016-12-17,1
+2380,Lagos,Retail,50,2023-09-17,1
+2381,Lagos,Retail,66,2015-08-12,1
+2382,Rivers,Retail,42,2018-11-30,0
+2383,Delta,Retail,71,2017-06-21,0
+2384,Oyo,Retail,27,2024-07-14,1
+2385,Enugu,Retail,69,2021-03-17,1
+2386,Kaduna,Retail,49,2018-04-02,0
+2387,Kano,Retail,34,2023-06-07,1
+2388,Oyo,Retail,73,2023-04-20,1
+2389,Kano,Retail,70,2017-03-25,1
+2390,Anambra,Retail,39,2024-11-03,1
+2391,Lagos,Retail,34,2022-12-20,1
+2392,Lagos,Retail,19,2018-11-10,1
+2393,Delta,Retail,60,2015-03-20,1
+2394,FCT Abuja,Retail,25,2018-09-14,1
+2395,FCT Abuja,Retail,61,2016-06-07,1
+2396,Lagos,Retail,39,2017-01-30,1
+2397,Kano,Retail,68,2019-01-16,1
+2398,Lagos,Retail,53,2023-05-26,1
+2399,Lagos,Retail,38,2022-09-21,1
+2400,Lagos,SME,68,2017-05-28,1
+2401,Lagos,Retail,20,2021-04-08,1
+2402,Kaduna,Retail,60,2016-04-30,0
+2403,Lagos,Retail,68,2019-01-05,1
+2404,Lagos,Retail,48,2021-07-30,1
+2405,Anambra,Premium,57,2018-06-30,1
+2406,Ogun,Retail,38,2021-01-05,0
+2407,Rivers,Retail,58,2016-01-23,1
+2408,Lagos,Retail,68,2019-10-20,0
+2409,Anambra,SME,32,2016-07-30,1
+2410,Kaduna,Retail,31,2024-01-02,1
+2411,Delta,Retail,62,2018-09-28,1
+2412,Oyo,Premium,35,2016-09-26,1
+2413,Lagos,Retail,41,2016-08-24,1
+2414,Anambra,SME,56,2020-10-05,1
+2415,Lagos,Retail,59,2019-04-28,1
+2416,Kaduna,Retail,32,2015-01-20,0
+2417,Delta,Retail,29,2017-07-02,1
+2418,Kaduna,Retail,37,2022-01-03,0
+2419,Lagos,Retail,59,2023-11-16,1
+2420,Delta,Retail,36,2021-06-25,1
+2421,FCT Abuja,Retail,66,2021-04-26,1
+2422,Lagos,Retail,29,2024-09-02,1
+2423,FCT Abuja,Retail,72,2021-06-01,0
+2424,FCT Abuja,SME,35,2018-08-04,0
+2425,Lagos,Retail,53,2018-11-13,1
+2426,Lagos,Retail,19,2021-12-26,1
+2427,FCT Abuja,Retail,63,2015-09-24,0
+2428,Lagos,Retail,72,2021-09-28,1
+2429,Lagos,SME,72,2020-01-13,1
+2430,Delta,SME,49,2023-06-18,1
+2431,FCT Abuja,Retail,42,2019-01-31,1
+2432,FCT Abuja,Retail,69,2022-09-24,1
+2433,Delta,Retail,70,2018-07-18,0
+2434,Lagos,Premium,38,2019-12-06,0
+2435,Lagos,Retail,59,2019-08-16,1
+2436,Lagos,Retail,34,2022-01-18,1
+2437,Enugu,Premium,67,2016-05-12,1
+2438,Lagos,Retail,20,2015-11-17,0
+2439,Anambra,SME,36,2023-08-09,0
+2440,Oyo,Retail,26,2024-05-29,1
+2441,Lagos,Retail,68,2019-06-13,0
+2442,Lagos,Retail,65,2015-04-21,1
+2443,Anambra,Retail,43,2023-01-07,0
+2444,Lagos,Retail,65,2020-02-07,1
+2445,Enugu,Retail,46,2017-02-12,1
+2446,Enugu,Retail,73,2020-12-01,1
+2447,FCT Abuja,Retail,64,2015-11-07,1
+2448,Delta,Retail,66,2018-09-11,1
+2449,FCT Abuja,SME,20,2024-06-17,1
+2450,Kano,Retail,43,2015-10-12,0
+2451,FCT Abuja,Retail,62,2024-12-06,0
+2452,Lagos,Retail,35,2019-05-19,1
+2453,Rivers,Retail,64,2016-06-24,1
+2454,Anambra,Retail,49,2018-03-25,0
+2455,Enugu,Retail,28,2023-07-24,0
+2456,Ogun,Retail,52,2024-02-08,1
+2457,Lagos,Premium,46,2022-07-13,1
+2458,Kano,Retail,52,2020-07-19,0
+2459,FCT Abuja,Retail,60,2024-07-08,1
+2460,Delta,Retail,18,2024-07-30,0
+2461,Anambra,SME,46,2020-08-17,1
+2462,Lagos,Retail,38,2024-07-22,1
+2463,Lagos,Retail,43,2017-01-27,1
+2464,Rivers,Retail,33,2021-12-03,1
+2465,Enugu,SME,31,2019-05-13,1
+2466,Lagos,SME,18,2019-03-06,0
+2467,Oyo,Retail,25,2015-11-26,0
+2468,Kano,Premium,35,2019-09-02,1
+2469,Enugu,SME,68,2018-01-22,1
+2470,FCT Abuja,Retail,47,2015-07-17,1
+2471,Lagos,Retail,69,2021-08-23,1
+2472,Rivers,Retail,30,2019-04-30,1
+2473,FCT Abuja,Retail,28,2020-08-27,0
+2474,Lagos,Retail,29,2019-10-28,1
+2475,Oyo,Retail,25,2017-01-16,1
+2476,Lagos,SME,45,2015-05-01,1
+2477,Ogun,Retail,39,2016-09-22,0
+2478,FCT Abuja,Retail,34,2015-11-15,0
+2479,Ogun,Premium,20,2023-10-15,1
+2480,Ogun,Retail,35,2022-11-03,0
+2481,Oyo,Premium,32,2017-09-11,1
+2482,Ogun,Retail,45,2016-11-30,1
+2483,Kano,Premium,51,2020-01-09,1
+2484,Oyo,Retail,43,2017-04-12,1
+2485,Kaduna,Retail,54,2016-11-13,0
+2486,Lagos,Retail,22,2020-09-11,1
+2487,Lagos,Retail,63,2015-11-29,0
+2488,Delta,SME,22,2021-05-07,0
+2489,FCT Abuja,SME,52,2024-04-03,0
+2490,Enugu,Retail,67,2019-08-23,1
+2491,FCT Abuja,SME,50,2018-11-07,0
+2492,Oyo,SME,30,2018-09-06,0
+2493,FCT Abuja,Retail,61,2023-10-10,0
+2494,Ogun,Retail,33,2016-04-25,0
+2495,Delta,Premium,31,2024-06-02,1
+2496,Lagos,Retail,67,2020-02-02,0
+2497,FCT Abuja,Retail,60,2016-01-24,1
+2498,Oyo,Premium,37,2022-01-16,1
+2499,Lagos,Retail,19,2024-05-18,1
+2500,Rivers,Premium,66,2016-02-07,1
+2501,Ogun,Premium,42,2024-02-16,1
+2502,Oyo,SME,19,2020-07-14,1
+2503,Ogun,Premium,64,2019-01-02,1
+2504,Lagos,Retail,24,2023-06-03,1
+2505,Enugu,Retail,33,2024-08-26,1
+2506,Lagos,Retail,66,2018-09-06,0
+2507,Kano,Retail,54,2015-02-21,0
+2508,Ogun,Retail,19,2020-09-23,1
+2509,Lagos,Retail,55,2023-09-03,1
+2510,Oyo,SME,67,2024-01-22,1
+2511,Ogun,Retail,40,2022-07-20,1
+2512,Anambra,SME,60,2023-02-06,1
+2513,Kaduna,Retail,67,2018-03-14,1
+2514,Lagos,Premium,36,2015-01-25,1
+2515,Kaduna,Retail,71,2022-07-01,0
+2516,Kaduna,SME,35,2019-10-13,0
+2517,Ogun,Retail,39,2023-03-07,1
+2518,Lagos,Retail,73,2019-03-10,1
+2519,Kaduna,Retail,55,2016-05-06,1
+2520,Lagos,Retail,51,2022-06-01,1
+2521,Lagos,Retail,24,2016-07-13,1
+2522,Lagos,Retail,71,2016-08-16,0
+2523,Anambra,Retail,30,2018-03-29,1
+2524,Lagos,Retail,29,2023-01-09,1
+2525,Lagos,Retail,34,2015-12-19,0
+2526,Rivers,Retail,68,2022-10-23,1
+2527,Kaduna,SME,48,2017-06-30,1
+2528,Enugu,Retail,71,2018-02-15,1
+2529,Kaduna,Retail,47,2018-09-15,1
+2530,Delta,Premium,69,2024-09-28,1
+2531,Lagos,Retail,39,2015-10-11,1
+2532,Anambra,Retail,40,2021-04-18,1
+2533,Lagos,Retail,53,2018-03-15,0
+2534,FCT Abuja,Premium,42,2019-03-05,1
+2535,Rivers,SME,62,2015-05-22,0
+2536,Lagos,SME,29,2024-11-11,1
+2537,Anambra,Retail,48,2017-06-30,0
+2538,Kano,Retail,34,2016-10-17,1
+2539,Enugu,SME,31,2020-01-22,1
+2540,Rivers,Premium,45,2018-07-20,0
+2541,Lagos,Premium,44,2019-10-14,1
+2542,Ogun,Retail,66,2024-12-13,1
+2543,Rivers,Premium,51,2021-03-16,0
+2544,FCT Abuja,Retail,46,2022-11-05,1
+2545,Rivers,Retail,23,2018-05-27,1
+2546,Oyo,Retail,25,2021-05-15,1
+2547,Kano,SME,65,2019-12-04,0
+2548,Ogun,Retail,19,2015-08-22,1
+2549,Lagos,Retail,22,2023-10-19,0
+2550,FCT Abuja,Retail,37,2017-10-28,0
+2551,Oyo,Retail,60,2015-04-23,1
+2552,Kano,Retail,64,2022-09-07,1
+2553,Kano,Retail,36,2015-07-18,0
+2554,Kaduna,Premium,19,2021-01-09,1
+2555,Lagos,Retail,61,2015-01-30,1
+2556,Lagos,Premium,73,2016-04-08,1
+2557,Enugu,SME,51,2020-07-18,0
+2558,Oyo,Retail,73,2020-01-01,1
+2559,Lagos,Retail,64,2022-07-18,1
+2560,Ogun,Retail,24,2024-08-12,1
+2561,Ogun,Retail,48,2020-04-23,1
+2562,Anambra,Retail,51,2016-01-08,1
+2563,Lagos,Retail,44,2020-03-11,1
+2564,Kaduna,Retail,32,2020-11-17,0
+2565,Lagos,Premium,40,2020-10-08,1
+2566,Lagos,Retail,59,2018-07-31,1
+2567,Oyo,SME,23,2024-11-23,0
+2568,FCT Abuja,SME,30,2022-12-23,1
+2569,Anambra,SME,18,2019-01-31,1
+2570,Lagos,Premium,26,2018-11-22,1
+2571,FCT Abuja,Retail,61,2015-09-14,1
+2572,FCT Abuja,Retail,27,2016-12-21,1
+2573,Delta,Retail,49,2017-06-25,1
+2574,FCT Abuja,Retail,39,2021-12-17,1
+2575,Ogun,Retail,64,2021-06-03,1
+2576,Lagos,Retail,39,2016-07-20,0
+2577,Lagos,Retail,39,2018-08-18,1
+2578,Lagos,Retail,61,2022-05-18,1
+2579,Lagos,Retail,21,2022-04-17,1
+2580,Lagos,Retail,21,2022-09-14,0
+2581,Rivers,Retail,55,2022-10-19,1
+2582,Lagos,Retail,35,2023-03-04,1
+2583,Rivers,SME,38,2019-04-13,1
+2584,Ogun,Retail,40,2021-10-29,0
+2585,Delta,Retail,20,2022-02-04,0
+2586,Lagos,SME,74,2019-02-11,0
+2587,Rivers,SME,24,2022-12-24,1
+2588,Lagos,Retail,35,2020-03-02,1
+2589,Anambra,Retail,37,2024-04-07,0
+2590,Kaduna,Retail,39,2017-12-16,1
+2591,Oyo,Retail,41,2024-02-22,0
+2592,Oyo,Retail,19,2020-11-29,0
+2593,Rivers,Premium,45,2022-03-12,1
+2594,Oyo,Retail,74,2017-01-09,1
+2595,Lagos,Retail,57,2018-05-22,0
+2596,Anambra,Retail,67,2021-05-10,1
+2597,Lagos,Retail,34,2017-06-20,0
+2598,Lagos,Retail,44,2021-06-21,1
+2599,Lagos,Retail,71,2018-07-03,0
+2600,Anambra,Retail,39,2021-03-22,1
+2601,Enugu,Retail,52,2015-03-09,1
+2602,Enugu,Retail,26,2018-02-03,1
+2603,Kano,Retail,54,2024-01-04,1
+2604,Kaduna,Premium,32,2024-07-29,0
+2605,FCT Abuja,Retail,73,2023-01-14,1
+2606,FCT Abuja,Retail,18,2021-10-22,1
+2607,Oyo,Retail,62,2015-07-27,1
+2608,Anambra,Retail,51,2021-04-10,1
+2609,Oyo,SME,58,2017-01-27,0
+2610,Lagos,Retail,40,2016-02-21,1
+2611,Lagos,Retail,43,2019-03-04,1
+2612,Lagos,Retail,61,2016-02-11,1
+2613,FCT Abuja,Retail,70,2019-09-21,1
+2614,Oyo,Retail,33,2024-10-08,1
+2615,FCT Abuja,Retail,58,2018-02-26,0
+2616,Rivers,SME,72,2015-03-23,1
+2617,FCT Abuja,Retail,39,2018-10-10,1
+2618,Kano,Retail,34,2018-09-06,0
+2619,Lagos,Retail,33,2024-02-25,1
+2620,Kaduna,Premium,47,2023-06-29,1
+2621,Oyo,Retail,26,2017-10-09,0
+2622,Rivers,Retail,41,2023-05-11,1
+2623,Lagos,Retail,36,2018-07-18,1
+2624,Rivers,Retail,70,2023-08-20,1
+2625,Ogun,Retail,51,2019-09-22,1
+2626,Kano,Retail,33,2018-03-10,0
+2627,Anambra,SME,49,2023-10-16,1
+2628,FCT Abuja,SME,55,2017-09-09,1
+2629,FCT Abuja,SME,73,2020-07-30,0
+2630,Oyo,Retail,48,2024-07-13,0
+2631,Kaduna,Retail,56,2017-05-15,0
+2632,Lagos,Retail,33,2020-04-20,0
+2633,Kano,Retail,59,2020-04-16,1
+2634,Kano,Retail,67,2015-06-04,1
+2635,FCT Abuja,Retail,35,2018-07-28,1
+2636,Oyo,Retail,69,2018-12-12,1
+2637,Lagos,SME,49,2018-01-22,1
+2638,FCT Abuja,Premium,30,2017-11-30,1
+2639,Kano,Retail,70,2015-01-12,0
+2640,Oyo,Retail,66,2024-11-30,1
+2641,FCT Abuja,Retail,73,2015-09-08,0
+2642,FCT Abuja,Retail,41,2016-03-07,1
+2643,Kaduna,Retail,64,2023-01-16,1
+2644,Rivers,Retail,58,2016-01-10,1
+2645,Oyo,Retail,23,2024-02-07,1
+2646,Rivers,Retail,32,2022-01-04,0
+2647,Delta,Premium,61,2020-05-12,1
+2648,Delta,Retail,68,2017-04-13,0
+2649,Kano,Retail,70,2023-06-26,0
+2650,Lagos,Retail,36,2015-04-27,1
+2651,Delta,Retail,52,2023-02-02,0
+2652,Lagos,SME,55,2021-01-08,1
+2653,Enugu,Retail,63,2022-07-23,1
+2654,Delta,Retail,36,2015-06-19,1
+2655,Lagos,Retail,63,2024-12-04,1
+2656,Kano,Retail,48,2019-12-11,1
+2657,Kaduna,Retail,20,2022-11-07,1
+2658,Kano,Retail,30,2018-12-24,0
+2659,Delta,Retail,63,2015-06-15,0
+2660,Delta,Retail,25,2022-04-28,0
+2661,Anambra,Retail,53,2021-06-09,1
+2662,Anambra,Retail,26,2015-09-30,0
+2663,Rivers,Retail,30,2020-11-23,1
+2664,Rivers,Retail,41,2017-08-28,1
+2665,Enugu,Retail,57,2015-06-16,1
+2666,Lagos,Retail,43,2020-04-21,0
+2667,Lagos,Retail,73,2019-02-06,0
+2668,Lagos,Premium,37,2023-12-03,1
+2669,Kaduna,SME,25,2023-05-30,1
+2670,Kano,Retail,30,2019-05-09,1
+2671,Rivers,Retail,42,2022-08-11,1
+2672,Lagos,Retail,73,2019-11-01,1
+2673,FCT Abuja,SME,28,2018-07-28,0
+2674,Lagos,Retail,64,2024-09-02,1
+2675,Enugu,SME,72,2019-06-11,0
+2676,FCT Abuja,Premium,68,2016-12-03,1
+2677,Oyo,Retail,47,2016-06-28,1
+2678,FCT Abuja,Retail,70,2019-02-16,0
+2679,Rivers,Retail,62,2024-05-09,0
+2680,Enugu,SME,38,2022-07-15,1
+2681,FCT Abuja,SME,45,2022-03-14,1
+2682,Oyo,SME,54,2022-05-17,0
+2683,Enugu,Retail,69,2020-07-23,1
+2684,Lagos,Retail,67,2021-11-29,0
+2685,Lagos,Retail,26,2018-09-01,1
+2686,Anambra,Retail,22,2019-11-06,1
+2687,Lagos,Retail,40,2015-04-30,1
+2688,Delta,Retail,70,2016-07-08,0
+2689,Oyo,Retail,74,2022-07-04,1
+2690,FCT Abuja,Retail,47,2023-05-22,0
+2691,Lagos,SME,44,2022-03-16,0
+2692,Lagos,Retail,35,2023-11-23,1
+2693,Oyo,SME,49,2024-02-29,0
+2694,FCT Abuja,Retail,32,2022-09-11,1
+2695,Oyo,Retail,23,2021-09-21,0
+2696,Lagos,Retail,23,2024-09-23,1
+2697,FCT Abuja,Premium,19,2022-03-26,1
+2698,Lagos,Retail,33,2023-01-17,0
+2699,Lagos,Retail,67,2017-09-11,1
+2700,Kano,Retail,47,2018-11-12,1
+2701,Lagos,Premium,55,2015-05-19,0
+2702,FCT Abuja,Retail,28,2018-08-12,1
+2703,Delta,Retail,72,2016-05-10,1
+2704,Oyo,Retail,53,2020-12-26,1
+2705,Lagos,Retail,47,2022-04-26,0
+2706,Lagos,Retail,35,2022-07-14,1
+2707,FCT Abuja,SME,42,2021-09-25,0
+2708,Lagos,Retail,58,2016-12-21,0
+2709,FCT Abuja,Retail,32,2019-01-25,1
+2710,Lagos,Retail,53,2016-01-20,1
+2711,Anambra,Retail,33,2023-02-08,1
+2712,Oyo,Retail,29,2024-01-22,1
+2713,Kano,Retail,41,2023-08-11,1
+2714,Oyo,Retail,74,2018-07-01,1
+2715,Lagos,SME,46,2021-03-02,0
+2716,Kaduna,SME,40,2023-02-05,1
+2717,Rivers,Retail,52,2021-02-07,1
+2718,Oyo,Retail,38,2015-04-08,1
+2719,Enugu,SME,26,2017-05-04,1
+2720,Lagos,SME,48,2020-02-02,1
+2721,Rivers,Retail,59,2023-08-13,0
+2722,Oyo,SME,31,2023-05-08,1
+2723,Lagos,Retail,23,2022-01-09,0
+2724,Anambra,Retail,56,2019-02-09,1
+2725,FCT Abuja,Retail,32,2024-03-12,0
+2726,Rivers,Premium,72,2020-11-13,0
+2727,Rivers,Retail,60,2019-05-27,0
+2728,FCT Abuja,Premium,40,2021-08-02,0
+2729,Lagos,Retail,63,2024-03-02,1
+2730,Rivers,Retail,59,2016-01-14,1
+2731,Kaduna,Retail,21,2018-04-26,1
+2732,Oyo,Retail,66,2015-04-04,1
+2733,FCT Abuja,Retail,53,2016-02-22,1
+2734,Rivers,Retail,57,2015-07-07,1
+2735,Lagos,Retail,27,2022-05-22,0
+2736,FCT Abuja,Retail,33,2020-01-30,1
+2737,FCT Abuja,Retail,25,2017-05-04,1
+2738,Lagos,Retail,26,2015-08-24,1
+2739,Oyo,Retail,30,2022-11-08,1
+2740,Rivers,SME,36,2017-05-21,1
+2741,Lagos,Premium,63,2022-12-01,1
+2742,Lagos,SME,55,2017-10-13,0
+2743,Anambra,Premium,31,2019-08-13,0
+2744,FCT Abuja,Retail,49,2022-08-28,0
+2745,Kaduna,Retail,28,2019-11-30,0
+2746,Lagos,Retail,36,2024-12-17,0
+2747,Enugu,Retail,34,2023-10-08,1
+2748,Rivers,Retail,30,2018-07-09,1
+2749,Rivers,Retail,40,2016-05-25,1
+2750,Lagos,Retail,36,2024-05-01,1
+2751,Kano,Retail,22,2020-12-27,1
+2752,Enugu,Retail,63,2017-10-09,1
+2753,Kaduna,Retail,52,2018-12-06,0
+2754,FCT Abuja,Retail,27,2018-03-25,0
+2755,Rivers,SME,56,2019-07-09,0
+2756,Lagos,SME,39,2018-12-09,1
+2757,Ogun,Retail,49,2022-04-13,1
+2758,Anambra,Retail,22,2017-01-29,1
+2759,Anambra,Premium,21,2023-08-31,0
+2760,Lagos,Retail,45,2021-03-31,1
+2761,Enugu,SME,50,2024-10-06,1
+2762,Delta,Retail,40,2017-11-10,1
+2763,Delta,Retail,32,2020-03-21,0
+2764,Anambra,SME,50,2015-03-21,0
+2765,Lagos,Retail,32,2019-01-18,0
+2766,Lagos,Premium,67,2020-01-09,1
+2767,Lagos,Retail,39,2023-03-23,1
+2768,FCT Abuja,Retail,63,2022-06-05,1
+2769,Lagos,SME,37,2024-04-26,1
+2770,Rivers,Retail,58,2016-03-18,1
+2771,Kano,Retail,66,2018-11-05,1
+2772,Rivers,Retail,23,2023-06-15,1
+2773,Rivers,Retail,53,2022-06-14,1
+2774,Lagos,SME,26,2019-06-17,1
+2775,Lagos,Retail,67,2020-10-29,1
+2776,Oyo,Retail,49,2024-04-09,1
+2777,Anambra,Retail,37,2019-06-29,0
+2778,Kaduna,Retail,30,2016-02-25,1
+2779,Enugu,Retail,74,2019-04-17,0
+2780,Lagos,Premium,33,2023-06-06,1
+2781,Enugu,SME,58,2019-01-31,1
+2782,Oyo,Retail,33,2024-07-01,1
+2783,FCT Abuja,Retail,45,2019-11-25,1
+2784,Anambra,Retail,74,2016-11-10,1
+2785,Anambra,Retail,51,2020-08-13,1
+2786,Enugu,Retail,23,2021-07-23,0
+2787,Ogun,Retail,29,2016-01-23,1
+2788,FCT Abuja,SME,70,2016-09-26,1
+2789,Enugu,Retail,30,2024-12-09,1
+2790,Lagos,Retail,43,2022-02-28,1
+2791,Rivers,SME,44,2018-02-04,1
+2792,Anambra,SME,39,2022-06-26,0
+2793,Kano,Premium,58,2018-09-22,1
+2794,Rivers,Premium,54,2015-06-16,1
+2795,Rivers,Retail,70,2024-09-01,1
+2796,Rivers,Retail,31,2022-03-28,1
+2797,FCT Abuja,Retail,38,2018-11-17,0
+2798,Ogun,Retail,68,2018-04-24,1
+2799,Enugu,Retail,34,2017-03-16,0
+2800,Oyo,Retail,31,2023-04-18,1
+2801,Enugu,SME,50,2021-07-17,1
+2802,Rivers,Retail,39,2017-11-26,1
+2803,Lagos,Retail,62,2022-09-08,0
+2804,Oyo,SME,50,2017-01-22,0
+2805,FCT Abuja,Premium,57,2018-09-19,1
+2806,Lagos,Retail,69,2017-08-21,0
+2807,Lagos,SME,22,2023-07-25,1
+2808,Lagos,Premium,24,2018-07-20,1
+2809,Delta,Retail,35,2024-03-09,1
+2810,Lagos,Retail,30,2022-06-22,1
+2811,Oyo,Retail,18,2023-07-24,1
+2812,Lagos,Retail,27,2019-11-03,1
+2813,Delta,Retail,22,2021-10-08,1
+2814,Lagos,SME,29,2015-09-27,0
+2815,Lagos,Retail,28,2016-09-05,1
+2816,Anambra,Retail,64,2024-07-09,0
+2817,Kaduna,Retail,52,2023-01-09,0
+2818,Kaduna,Retail,54,2016-01-14,0
+2819,Rivers,Retail,36,2021-12-11,1
+2820,Lagos,Retail,37,2022-06-20,1
+2821,Lagos,Retail,45,2020-12-18,1
+2822,Kano,Retail,26,2018-08-12,1
+2823,Delta,Retail,20,2020-02-09,1
+2824,Lagos,Retail,55,2019-07-26,1
+2825,Rivers,Retail,63,2019-12-26,1
+2826,Lagos,Premium,50,2024-10-23,0
+2827,Lagos,Retail,32,2021-05-31,1
+2828,Oyo,Retail,41,2019-07-13,1
+2829,Enugu,Retail,43,2017-11-25,1
+2830,Kano,Retail,19,2019-08-06,1
+2831,Oyo,Retail,38,2015-06-08,0
+2832,Rivers,Retail,44,2021-02-02,1
+2833,Lagos,Retail,69,2016-08-30,0
+2834,Lagos,SME,69,2015-07-01,1
+2835,Delta,Retail,71,2022-08-26,0
+2836,Rivers,Retail,46,2023-10-06,0
+2837,Anambra,Retail,59,2017-12-04,1
+2838,Ogun,Retail,64,2021-06-05,1
+2839,Lagos,Retail,22,2017-06-02,1
+2840,FCT Abuja,SME,39,2015-07-01,1
+2841,Kano,Premium,68,2016-10-26,0
+2842,Rivers,Premium,36,2024-05-08,1
+2843,Lagos,Retail,55,2016-02-08,1
+2844,Lagos,Retail,44,2015-11-29,1
+2845,Enugu,Retail,22,2018-01-06,1
+2846,Lagos,Retail,24,2020-05-29,1
+2847,Rivers,Retail,41,2019-03-10,1
+2848,Enugu,Retail,36,2020-09-23,0
+2849,Enugu,Premium,33,2020-07-19,1
+2850,Lagos,Retail,38,2018-02-23,1
+2851,FCT Abuja,Retail,57,2021-11-22,1
+2852,Lagos,Retail,70,2024-02-25,0
+2853,Rivers,Retail,39,2017-06-09,1
+2854,Kano,Retail,33,2015-06-07,0
+2855,Lagos,Retail,66,2021-09-15,1
+2856,Lagos,Retail,18,2021-03-29,1
+2857,Lagos,Premium,69,2019-05-14,1
+2858,Kano,SME,61,2016-05-20,1
+2859,Ogun,Retail,54,2021-06-21,0
+2860,Enugu,Retail,22,2023-07-08,1
+2861,Lagos,Retail,67,2021-12-24,1
+2862,Lagos,Retail,64,2024-04-14,0
+2863,FCT Abuja,SME,58,2021-08-09,0
+2864,Enugu,Retail,49,2022-01-05,1
+2865,Oyo,Retail,54,2023-07-15,1
+2866,FCT Abuja,Retail,31,2019-01-12,1
+2867,Delta,Retail,23,2019-12-23,1
+2868,Lagos,Retail,25,2018-09-27,1
+2869,Kano,Retail,66,2020-07-21,0
+2870,Oyo,Retail,62,2021-12-28,1
+2871,FCT Abuja,Retail,27,2020-03-08,1
+2872,Oyo,Retail,52,2020-05-29,1
+2873,FCT Abuja,Retail,73,2024-04-03,1
+2874,Ogun,Retail,43,2019-08-31,1
+2875,Kaduna,Retail,54,2019-04-23,1
+2876,Lagos,Retail,54,2016-07-17,1
+2877,Oyo,Retail,27,2018-07-05,1
+2878,FCT Abuja,Retail,39,2024-11-08,1
+2879,Kano,Retail,54,2015-12-01,1
+2880,Rivers,Retail,38,2022-10-26,1
+2881,Lagos,Retail,64,2024-02-06,1
+2882,Lagos,SME,54,2020-10-25,1
+2883,FCT Abuja,Retail,39,2018-11-22,1
+2884,Ogun,Premium,20,2021-09-25,1
+2885,Lagos,Retail,63,2019-01-14,1
+2886,FCT Abuja,Retail,30,2020-06-18,1
+2887,FCT Abuja,Premium,29,2020-03-07,1
+2888,Lagos,Retail,34,2024-04-07,0
+2889,Delta,Retail,53,2021-10-25,0
+2890,Kano,Retail,49,2021-02-20,0
+2891,Kano,Premium,27,2018-10-24,0
+2892,Lagos,Retail,63,2017-10-10,1
+2893,Kaduna,Retail,39,2023-11-02,1
+2894,Kano,Retail,66,2020-03-17,0
+2895,Kano,Retail,32,2015-01-16,1
+2896,FCT Abuja,Premium,74,2016-01-17,1
+2897,FCT Abuja,Retail,74,2017-07-18,1
+2898,Lagos,Retail,19,2021-05-18,0
+2899,Lagos,Retail,24,2018-09-05,1
+2900,Delta,Retail,52,2022-03-10,1
+2901,Lagos,SME,62,2021-06-07,1
+2902,Rivers,Premium,44,2015-09-09,1
+2903,Lagos,Retail,31,2021-12-14,1
+2904,Anambra,Premium,74,2020-09-26,1
+2905,FCT Abuja,Retail,28,2021-12-23,1
+2906,Lagos,Retail,26,2023-03-28,1
+2907,Lagos,Retail,33,2015-03-25,1
+2908,Rivers,SME,59,2016-02-15,0
+2909,FCT Abuja,Retail,20,2020-10-12,1
+2910,Enugu,Retail,18,2016-03-29,0
+2911,Lagos,Retail,70,2019-04-09,1
+2912,Oyo,Retail,58,2022-03-17,1
+2913,Oyo,Retail,51,2020-05-06,1
+2914,Lagos,Retail,21,2021-03-04,0
+2915,Oyo,Retail,26,2015-01-05,0
+2916,Anambra,Retail,52,2018-05-25,1
+2917,Enugu,Retail,44,2019-01-04,1
+2918,Kaduna,Retail,24,2018-04-07,0
+2919,Enugu,Retail,21,2016-03-02,1
+2920,Lagos,Retail,51,2019-06-06,1
+2921,Ogun,Retail,35,2020-10-15,0
+2922,FCT Abuja,Retail,73,2024-12-03,1
+2923,Oyo,Premium,30,2022-01-10,1
+2924,Oyo,Retail,44,2022-05-23,1
+2925,Oyo,Retail,66,2022-03-30,1
+2926,Lagos,Retail,71,2018-04-07,0
+2927,Lagos,Retail,46,2021-05-03,0
+2928,Lagos,Retail,23,2016-05-27,1
+2929,FCT Abuja,Retail,27,2024-10-14,1
+2930,Anambra,Retail,37,2021-05-01,1
+2931,Kano,Retail,51,2022-03-22,1
+2932,FCT Abuja,Retail,42,2015-07-20,1
+2933,Lagos,Premium,56,2018-12-09,1
+2934,Lagos,Retail,55,2016-11-29,1
+2935,Rivers,Retail,71,2018-04-29,1
+2936,Lagos,Retail,61,2018-05-14,0
+2937,Ogun,Retail,23,2022-08-21,0
+2938,Lagos,Retail,38,2024-09-22,0
+2939,FCT Abuja,Retail,56,2016-03-21,1
+2940,Lagos,SME,56,2024-01-16,0
+2941,Lagos,Retail,49,2024-08-25,0
+2942,Kano,Retail,73,2016-04-30,1
+2943,Ogun,Retail,43,2018-07-11,0
+2944,Kano,Retail,42,2018-03-17,1
+2945,Oyo,Retail,72,2024-06-02,0
+2946,Kaduna,Retail,31,2020-03-28,1
+2947,FCT Abuja,SME,64,2016-04-10,0
+2948,FCT Abuja,Retail,23,2017-01-01,0
+2949,Rivers,Retail,57,2022-09-11,1
+2950,Lagos,Retail,39,2015-08-25,1
+2951,Lagos,Retail,56,2022-05-12,1
+2952,FCT Abuja,Retail,29,2023-11-09,1
+2953,Kaduna,Retail,52,2015-10-02,1
+2954,Oyo,Retail,52,2019-03-24,1
+2955,Enugu,Retail,62,2023-01-20,1
+2956,Lagos,Retail,65,2018-05-25,1
+2957,Lagos,SME,63,2019-03-05,0
+2958,FCT Abuja,Retail,37,2022-05-15,1
+2959,Oyo,SME,41,2016-10-12,0
+2960,Rivers,Retail,55,2021-09-22,1
+2961,Anambra,SME,37,2020-07-06,1
+2962,Lagos,Retail,44,2024-05-20,1
+2963,FCT Abuja,Retail,39,2015-03-02,1
+2964,Anambra,Retail,74,2023-08-13,1
+2965,FCT Abuja,Retail,24,2021-11-23,0
+2966,Rivers,Retail,36,2021-12-21,1
+2967,Lagos,Retail,71,2022-08-31,1
+2968,Kano,Retail,46,2019-08-25,1
+2969,Lagos,Premium,18,2024-04-15,1
+2970,Lagos,Retail,65,2019-03-07,1
+2971,Rivers,Retail,54,2021-02-27,1
+2972,Lagos,Retail,27,2019-09-20,1
+2973,Oyo,Retail,69,2016-07-30,1
+2974,Enugu,Retail,44,2017-09-04,1
+2975,Lagos,Retail,31,2016-12-26,0
+2976,Lagos,SME,48,2019-10-31,0
+2977,Rivers,Retail,40,2024-06-08,0
+2978,Lagos,Retail,18,2024-06-04,1
+2979,Anambra,Retail,70,2015-03-08,1
+2980,Enugu,Retail,64,2015-12-20,1
+2981,Rivers,Retail,64,2018-08-24,1
+2982,FCT Abuja,Retail,65,2024-03-15,0
+2983,Lagos,Retail,49,2019-08-12,1
+2984,Kano,SME,43,2020-08-13,1
+2985,Lagos,Retail,24,2020-03-27,0
+2986,Lagos,SME,32,2023-08-04,0
+2987,Ogun,Retail,41,2015-06-14,1
+2988,Lagos,Retail,49,2019-06-17,0
+2989,Ogun,Retail,54,2017-02-18,1
+2990,Ogun,Retail,72,2021-02-25,0
+2991,Kano,Retail,53,2015-10-08,1
+2992,FCT Abuja,Premium,62,2020-07-03,0
+2993,FCT Abuja,SME,54,2019-08-12,1
+2994,Ogun,SME,26,2024-08-20,0
+2995,Lagos,Retail,21,2024-10-28,1
+2996,Rivers,Retail,45,2019-08-08,1
+2997,Ogun,Retail,21,2015-09-05,1
+2998,Kano,Premium,57,2017-07-28,0
+2999,Rivers,Retail,37,2017-09-12,1
+3000,FCT Abuja,Retail,60,2018-11-15,0

@@ -3,5 +3,10 @@ pandas
 scipy
 scikit-learn
 matplotlib
+seaborn
+statsmodels
+notebook
 pytest
-ipykernel
+imbalanced-learn
+streamlit
+shap
