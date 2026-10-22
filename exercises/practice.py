@@ -103,3 +103,53 @@ def misclassification_cost(y_true, y_pred, fp_cost, fn_cost):
     False positive (pred 1, true 0) costs fp_cost; false negative (pred 0, true 1) costs fn_cost.
     """
     raise NotImplementedError
+
+
+# ============== Level 4: statistical thinking ==============
+def mean_confidence_interval(x, level=0.95):
+    """(lower, upper) confidence interval for the mean using the t-distribution.
+    Business use: "average loan size is ₦1.2m, give or take how much?"
+    Hint: standard error = sample std (ddof=1) / sqrt(n); scipy.stats.t.ppf gives the multiplier.
+    """
+    raise NotImplementedError
+
+
+def two_proportion_ztest(successes_a, n_a, successes_b, n_b):
+    """Return (z, two_sided_p_value) for H0: rate A == rate B, using the pooled proportion.
+    Business use: did the new SMS reminder (A) really lower the default rate vs no reminder (B),
+    or is the gap just noise? e.g. two_proportion_ztest(120, 1000, 150, 1000) -> (-1.963, 0.0496)
+    """
+    raise NotImplementedError
+
+
+def bootstrap_ci(x, stat=np.median, n_boot=5_000, level=0.95, seed=0):
+    """(lower, upper) percentile-bootstrap interval for any statistic (default: median).
+    Resample x WITH replacement n_boot times using np.random.default_rng(seed), compute `stat`
+    each time, then take the quantiles. Business use: incomes are skewed, so the median and its
+    uncertainty describe a "typical" customer better than the mean.
+    """
+    raise NotImplementedError
+
+
+# ============== Level 5: business intelligence ==============
+def loan_book_kpis(loans):
+    """Dict of headline KPIs a credit manager sees on a dashboard:
+    loans (count), total_disbursed, avg_loan, default_rate (share of loans that defaulted),
+    npl_ratio (naira value of defaulted loans / total naira disbursed).
+    """
+    raise NotImplementedError
+
+
+def month_over_month_growth(tx):
+    """Series of month-over-month growth in total transaction value, indexed by pd.Period('M').
+    The first month is NaN. Hint: groupby month, sum, .pct_change().
+    """
+    raise NotImplementedError
+
+
+def category_share_sql(conn):
+    """Write a SQL query (run it with pd.read_sql_query) against the `transactions` table in the
+    sqlite3 connection `conn`. Return a DataFrame with columns category, total, share
+    (category total / grand total), sorted by total, largest first.
+    """
+    raise NotImplementedError

@@ -106,3 +106,46 @@ def test_expected_loss():
 
 def test_misclassification_cost():
     assert ex.misclassification_cost([0, 1, 1, 0], [1, 0, 1, 0], fp_cost=5, fn_cost=100) == 105
+
+
+# ---- Level 4
+def test_mean_confidence_interval():
+    lo, hi = ex.mean_confidence_interval([10, 12, 14, 16, 18])
+    assert (lo, hi) == (pytest.approx(10.073, abs=0.001), pytest.approx(17.927, abs=0.001))
+
+
+def test_two_proportion_ztest():
+    z, p = ex.two_proportion_ztest(120, 1000, 150, 1000)
+    assert z == pytest.approx(-1.963, abs=0.001) and p == pytest.approx(0.0496, abs=0.0001)
+
+
+def test_bootstrap_ci():
+    x = np.random.default_rng(1).lognormal(15, 0.5, 400)
+    lo, hi = ex.bootstrap_ci(x, n_boot=2_000)
+    assert lo < np.median(x) < hi
+    assert (hi - lo) / np.median(x) < 0.2
+    assert ex.bootstrap_ci(x, n_boot=500, seed=3) == ex.bootstrap_ci(x, n_boot=500, seed=3)
+
+
+# ---- Level 5
+def test_loan_book_kpis():
+    loans = pd.DataFrame({"loan_amount": [1_000_000, 3_000_000, 2_000_000, 2_000_000], "default": [0, 1, 0, 0]})
+    k = ex.loan_book_kpis(loans)
+    assert k["loans"] == 4 and k["total_disbursed"] == 8_000_000 and k["avg_loan"] == 2_000_000
+    assert k["default_rate"] == 0.25 and k["npl_ratio"] == pytest.approx(0.375)
+
+
+def test_month_over_month_growth(raw_tx):
+    g = ex.month_over_month_growth(raw_tx.dropna().drop_duplicates("tx_id"))
+    assert np.isnan(g.iloc[0])
+    assert g[pd.Period("2025-02", "M")] == pytest.approx(12_000 / 3_000 - 1)
+
+
+def test_category_share_sql(raw_tx):
+    import sqlite3
+    conn = sqlite3.connect(":memory:")
+    raw_tx.dropna().drop_duplicates("tx_id").to_sql("transactions", conn, index=False)
+    out = ex.category_share_sql(conn)
+    assert list(out.columns) == ["category", "total", "share"]
+    assert out["category"].tolist() == ["grocery", "fuel"]
+    assert out["share"].tolist() == [pytest.approx(0.8), pytest.approx(0.2)]

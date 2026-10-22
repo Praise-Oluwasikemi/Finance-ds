@@ -74,3 +74,57 @@ def misclassification_cost(y_true, y_pred, fp_cost, fn_cost):
     fp = ((y_pred == 1) & (y_true == 0)).sum()
     fn = ((y_pred == 0) & (y_true == 1)).sum()
     return fp * fp_cost + fn * fn_cost
+
+
+# ---------------- Level 4: statistical thinking ----------------
+def mean_confidence_interval(x, level=0.95):
+    from scipy import stats
+    x = np.asarray(x, dtype=float)
+    se = x.std(ddof=1) / np.sqrt(len(x))
+    margin = stats.t.ppf((1 + level) / 2, len(x) - 1) * se
+    return x.mean() - margin, x.mean() + margin
+
+
+def two_proportion_ztest(successes_a, n_a, successes_b, n_b):
+    from scipy import stats
+    p_a, p_b = successes_a / n_a, successes_b / n_b
+    pooled = (successes_a + successes_b) / (n_a + n_b)
+    se = np.sqrt(pooled * (1 - pooled) * (1 / n_a + 1 / n_b))
+    z = (p_a - p_b) / se
+    return z, 2 * stats.norm.sf(abs(z))
+
+
+def bootstrap_ci(x, stat=np.median, n_boot=5_000, level=0.95, seed=0):
+    rng = np.random.default_rng(seed)
+    x = np.asarray(x)
+    boots = np.array([stat(rng.choice(x, len(x), replace=True)) for _ in range(n_boot)])
+    alpha = (1 - level) / 2
+    return np.quantile(boots, alpha), np.quantile(boots, 1 - alpha)
+
+
+# ---------------- Level 5: business intelligence ----------------
+def loan_book_kpis(loans):
+    return {
+        "loans": len(loans),
+        "total_disbursed": loans["loan_amount"].sum(),
+        "avg_loan": loans["loan_amount"].mean(),
+        "default_rate": loans["default"].mean(),
+        "npl_ratio": loans.loc[loans["default"] == 1, "loan_amount"].sum() / loans["loan_amount"].sum(),
+    }
+
+
+def month_over_month_growth(tx):
+    monthly = tx.groupby(pd.to_datetime(tx["timestamp"]).dt.to_period("M"))["amount"].sum()
+    return monthly.pct_change()
+
+
+def category_share_sql(conn):
+    query = """
+        SELECT category,
+               SUM(amount) AS total,
+               SUM(amount) * 1.0 / (SELECT SUM(amount) FROM transactions) AS share
+        FROM transactions
+        GROUP BY category
+        ORDER BY total DESC
+    """
+    return pd.read_sql_query(query, conn)

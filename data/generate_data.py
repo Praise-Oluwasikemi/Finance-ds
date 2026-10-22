@@ -59,11 +59,12 @@ def make_loans(n: int = 20_000) -> pd.DataFrame:
     return df
 
 
-def make_prices(start: str = "2019-01-01", years: int = 6, seed: int = 21) -> pd.DataFrame:
+def make_prices(start: str = "2019-01-01", years: int = 6, seed: int = 5) -> pd.DataFrame:
     """Daily close prices (NGN) for 6 assets via correlated geometric Brownian motion."""
-    tickers = ["BANK_A", "BANK_B", "TECH", "ENERGY", "BOND_ETF", "GOLD"]
-    mu = np.array([0.08, 0.07, 0.15, 0.06, 0.03, 0.05])      # annual drift
-    sigma = np.array([0.25, 0.28, 0.35, 0.30, 0.06, 0.15])  # annual vol
+    tickers = ["BANK_A", "BANK_B", "TECH", "ENERGY", "FGN_BOND", "GOLD"]
+    # Nominal naira returns: inflation and FX moves keep NGN asset returns high
+    mu = np.array([0.28, 0.25, 0.30, 0.22, 0.17, 0.24])      # annual drift
+    sigma = np.array([0.30, 0.32, 0.38, 0.33, 0.08, 0.20])  # annual vol
     corr = np.array([
         [1.0, 0.8, 0.5, 0.4, -0.1, 0.0],
         [0.8, 1.0, 0.5, 0.4, -0.1, 0.0],

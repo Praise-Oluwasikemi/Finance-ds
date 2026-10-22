@@ -22,7 +22,7 @@ from fintools import (TRADING_DAYS, annualized_return, annualized_vol, historica
                       historical_var, max_drawdown, naira, returns, sharpe_ratio)
 from fintools.plotting import SERIES, apply_style, plt, save  # noqa: E402
 
-RF = 0.03                # risk-free rate
+RF = 0.159               # risk-free rate: 364-day Nigerian T-bill stop rate (DMO auction, 14 Oct 2026)
 PORTFOLIO_VALUE = 100_000_000   # ₦100m
 
 
