@@ -19,11 +19,11 @@ import pandas as pd  # noqa: E402
 from scipy.stats import norm  # noqa: E402
 
 from fintools import (TRADING_DAYS, annualized_return, annualized_vol, historical_cvar,  # noqa: E402
-                      historical_var, max_drawdown, returns, sharpe_ratio)
+                      historical_var, max_drawdown, naira, returns, sharpe_ratio)
 from fintools.plotting import SERIES, apply_style, plt, save  # noqa: E402
 
 RF = 0.03                # risk-free rate
-PORTFOLIO_VALUE = 1_000_000
+PORTFOLIO_VALUE = 100_000_000   # ₦100m
 
 
 def main() -> None:
@@ -71,8 +71,8 @@ def main() -> None:
     pr = r @ best_w
     hist_var, hist_cvar = historical_var(pr), historical_cvar(pr)
     param_var = -(pr.mean() + norm.ppf(0.05) * pr.std())
-    print(f"1-day 95% VaR on ${PORTFOLIO_VALUE:,}: historical ${hist_var * PORTFOLIO_VALUE:,.0f}, "
-          f"parametric ${param_var * PORTFOLIO_VALUE:,.0f}; CVaR ${hist_cvar * PORTFOLIO_VALUE:,.0f}")
+    print(f"1-day 95% VaR on {naira(PORTFOLIO_VALUE, 0)}: historical {naira(hist_var * PORTFOLIO_VALUE, 2)}, "
+          f"parametric {naira(param_var * PORTFOLIO_VALUE, 2)}; CVaR {naira(hist_cvar * PORTFOLIO_VALUE, 2)}")
 
     # Backtest: rolling 1-year VaR, count breaches (expect ~5%)
     rolling_var = -pr.rolling(TRADING_DAYS).quantile(0.05).shift(1)
@@ -92,7 +92,7 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=(9, 4))
     for i, col in enumerate(prices.columns):
         ax.plot(prices.index, prices[col] / prices[col].iloc[0] * 100, color=SERIES[i], label=col)
-    ax.set(title="Growth of 100 invested", ylabel="Indexed value")
+    ax.set(title="Growth of ₦100 invested", ylabel="Indexed value")
     ax.legend(ncol=3)
     save(fig, "portfolio_growth.png")
 

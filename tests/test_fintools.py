@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 
 from fintools import (amortization_schedule, historical_cvar, historical_var, irr, ks_statistic,
-                      loan_payment, max_drawdown, npv, sharpe_ratio)
+                      loan_payment, max_drawdown, naira, npv, sharpe_ratio)
 
 
 def test_amortization_pays_off_loan():
@@ -31,3 +31,10 @@ def test_max_drawdown_and_sharpe():
 
 def test_ks_perfect_separation():
     assert ks_statistic([0, 0, 1, 1], [0.1, 0.2, 0.8, 0.9]) == pytest.approx(1.0)
+
+
+def test_naira_formatting():
+    assert naira(240_512_000) == "₦240.5m"
+    assert naira(-60_000_000) == "-₦60.0m"
+    assert naira(2_179_748, 2) == "₦2.18m"
+    assert naira(950) == "₦950"

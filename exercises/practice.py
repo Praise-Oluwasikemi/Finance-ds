@@ -1,4 +1,5 @@
 """Practice exercises - Python for finance & banking data science.
+All money amounts are in Nigerian naira (₦).
 
 Replace each `raise NotImplementedError` with your code, then run:
 
@@ -13,21 +14,21 @@ import pandas as pd  # noqa: F401
 # ============== Level 1: finance maths with plain Python / NumPy ==============
 def compound_interest(principal, annual_rate, years, periods_per_year=12):
     """Future value of `principal` compounded `periods_per_year` times a year.
-    e.g. compound_interest(1000, 0.05, 10, 1) -> 1628.89
+    e.g. ₦1m in an 18% fixed deposit for 5 years: compound_interest(1_000_000, 0.18, 5, 1) -> 2_287_757.76
     """
     raise NotImplementedError
 
 
 def monthly_payment(principal, annual_rate, months):
     """Fixed monthly instalment of an amortising loan (handle a 0% rate!).
-    e.g. monthly_payment(200_000, 0.06, 360) -> 1199.10
+    e.g. ₦5m car loan at 24% over 3 years: monthly_payment(5_000_000, 0.24, 36) -> 196_164.26
     """
     raise NotImplementedError
 
 
 def npv(rate, cashflows):
     """Net present value. cashflows[0] happens today (t=0), cashflows[1] in one period, ...
-    e.g. npv(0.1, [-100, 60, 60]) -> 4.13
+    e.g. npv(0.2, [-10_000_000, 6_000_000, 7_000_000]) -> -138_888.89  (negative: reject the project)
     """
     raise NotImplementedError
 
@@ -93,7 +94,7 @@ def historical_var(returns, level=0.95):
 
 
 def expected_loss(pd_, lgd, ead):
-    """Basel expected loss = PD x LGD x EAD. Must work on scalars and on NumPy arrays / Series."""
+    """Basel expected loss = PD x LGD x EAD, e.g. expected_loss(0.02, 0.45, 10_000_000) -> ₦90,000. Must work on scalars and on NumPy arrays / Series."""
     raise NotImplementedError
 
 

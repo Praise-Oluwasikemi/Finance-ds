@@ -18,6 +18,9 @@ from sklearn.cluster import KMeans  # noqa: E402
 from sklearn.metrics import silhouette_score  # noqa: E402
 from sklearn.preprocessing import StandardScaler  # noqa: E402
 
+from matplotlib.ticker import FuncFormatter  # noqa: E402
+
+from fintools import naira  # noqa: E402
 from fintools.plotting import SERIES, apply_style, plt, save  # noqa: E402
 
 
@@ -61,7 +64,8 @@ def main() -> None:
     for i, (seg, d) in enumerate(rfm.groupby("segment")):
         ax.scatter(d["frequency"], d["monetary"], s=10, color=SERIES[i], alpha=0.7, label=f"Segment {seg}")
     ax.set(title="Customer segments - frequency vs spend", xlabel="Transactions per year",
-           ylabel="Annual spend ($)", yscale="log")
+           ylabel="Annual spend", yscale="log")
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: naira(v, 0)))
     ax.legend()
     save(fig, "segments_scatter.png")
 

@@ -18,6 +18,7 @@ import pandas as pd  # noqa: E402
 from sklearn.ensemble import HistGradientBoostingClassifier  # noqa: E402
 from sklearn.metrics import average_precision_score, precision_recall_curve  # noqa: E402
 
+from fintools import naira  # noqa: E402
 from fintools.plotting import SERIES, apply_style, plt, save  # noqa: E402
 
 DAILY_REVIEW_CAPACITY = 3    # alerts an analyst team can work per day
@@ -42,7 +43,7 @@ def main() -> None:
     apply_style()
     tx = pd.read_csv(ROOT / "data" / "transactions.csv", parse_dates=["timestamp"])
     print(f"Transactions: {len(tx):,} | fraud rate {tx['is_fraud'].mean():.2%} "
-          f"| fraud $ share {tx.loc[tx.is_fraud == 1, 'amount'].sum() / tx['amount'].sum():.1%}")
+          f"| fraud ₦ share {tx.loc[tx.is_fraud == 1, 'amount'].sum() / tx['amount'].sum():.1%}")
     print(tx.groupby("category")["is_fraud"].mean().sort_values(ascending=False).map("{:.2%}".format)
           .to_string(), "\n")
 
@@ -68,8 +69,8 @@ def main() -> None:
     total = test["is_fraud"].sum()
     saved = flagged.loc[flagged.is_fraud == 1, "amount"].sum()
     print(f"Reviewing {DAILY_REVIEW_CAPACITY}/day ({budget:,} alerts): precision {caught / budget:.1%}, "
-          f"recall {caught / total:.1%}, fraud $ intercepted ${saved:,.0f} of "
-          f"${test.loc[test.is_fraud == 1, 'amount'].sum():,.0f}")
+          f"recall {caught / total:.1%}, fraud intercepted {naira(saved)} of "
+          f"{naira(test.loc[test.is_fraud == 1, 'amount'].sum())}")
 
     prec, rec, _ = precision_recall_curve(test["is_fraud"], score)
     fig, ax = plt.subplots(figsize=(6, 5))

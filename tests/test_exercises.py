@@ -19,24 +19,24 @@ def raw_tx():
         "tx_id": [3, 1, 2, 2, 4],
         "customer_id": [10, 10, 20, 20, 20],
         "timestamp": ["2025-02-03", "2025-01-15", "2025-01-20", "2025-01-20", "2025-02-10"],
-        "amount": [50.0, np.nan, 30.0, 30.0, 70.0],
+        "amount": [5_000.0, np.nan, 3_000.0, 3_000.0, 7_000.0],
         "category": ["grocery", "grocery", "fuel", "fuel", "grocery"],
     })
 
 
 # ---- Level 1
 def test_compound_interest():
-    assert ex.compound_interest(1000, 0.05, 10, 1) == pytest.approx(1628.89, abs=0.01)
-    assert ex.compound_interest(1000, 0.05, 10) == pytest.approx(1647.01, abs=0.01)
+    assert ex.compound_interest(1_000_000, 0.18, 5, 1) == pytest.approx(2_287_757.76, abs=0.01)
+    assert ex.compound_interest(1_000_000, 0.18, 5) == pytest.approx(2_443_219.78, abs=0.01)
 
 
 def test_monthly_payment():
-    assert ex.monthly_payment(200_000, 0.06, 360) == pytest.approx(1199.10, abs=0.01)
-    assert ex.monthly_payment(12_000, 0.0, 12) == pytest.approx(1000)
+    assert ex.monthly_payment(5_000_000, 0.24, 36) == pytest.approx(196_164.26, abs=0.01)
+    assert ex.monthly_payment(1_200_000, 0.0, 12) == pytest.approx(100_000)
 
 
 def test_npv():
-    assert ex.npv(0.1, [-100, 60, 60]) == pytest.approx(4.132, abs=0.001)
+    assert ex.npv(0.2, [-10_000_000, 6_000_000, 7_000_000]) == pytest.approx(-138_888.89, abs=0.01)
 
 
 # ---- Level 2
@@ -46,19 +46,19 @@ def test_clean_transactions(raw_tx):
     pd.testing.assert_frame_equal(raw_tx, before)  # input untouched
     assert list(out["tx_id"]) == [1, 2, 3, 4]
     assert pd.api.types.is_datetime64_any_dtype(out["timestamp"])
-    assert out.loc[out.tx_id == 1, "amount"].item() == pytest.approx(60.0)  # grocery median of 50, 70
+    assert out.loc[out.tx_id == 1, "amount"].item() == pytest.approx(6_000.0)  # grocery median of 5,000 and 7,000
 
 
 def test_monthly_spend(raw_tx):
     out = ex.monthly_spend(raw_tx.dropna().drop_duplicates("tx_id"))
-    assert out.loc[20, pd.Period("2025-01", "M")] == 30
-    assert out.loc[20, pd.Period("2025-02", "M")] == 70
+    assert out.loc[20, pd.Period("2025-01", "M")] == 3_000
+    assert out.loc[20, pd.Period("2025-02", "M")] == 7_000
     assert out.loc[10, pd.Period("2025-01", "M")] == 0
 
 
 def test_top_customers(raw_tx):
     out = ex.top_customers(raw_tx.fillna(0), n=1)
-    assert out.index.tolist() == [20] and out.iloc[0] == 130
+    assert out.index.tolist() == [20] and out.iloc[0] == 13_000
 
 
 def test_default_rate_by_band():
@@ -100,7 +100,7 @@ def test_historical_var():
 
 
 def test_expected_loss():
-    assert ex.expected_loss(0.02, 0.45, 10_000) == pytest.approx(90)
+    assert ex.expected_loss(0.02, 0.45, 10_000_000) == pytest.approx(90_000)
     np.testing.assert_allclose(ex.expected_loss(np.array([0.1, 0.2]), 0.5, np.array([100, 100])), [5, 10])
 
 

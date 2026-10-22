@@ -1,4 +1,4 @@
-"""Generate realistic synthetic banking & market datasets.
+"""Generate realistic synthetic banking & market datasets (all money in Nigerian naira, NGN).
 
 Everything is seeded, so results are reproducible and no external data or
 API keys are needed. Swap in real data later (e.g. Kaggle "Give Me Some
@@ -18,8 +18,8 @@ RNG = np.random.default_rng(42)
 def make_loans(n: int = 20_000) -> pd.DataFrame:
     """Loan applications with a default flag driven by plausible risk factors."""
     age = RNG.integers(21, 70, n)
-    income = np.round(RNG.lognormal(mean=10.8, sigma=0.5, size=n), -2)
-    loan_amount = np.round(income * RNG.uniform(0.1, 0.8, n), -2)
+    income = np.round(RNG.lognormal(mean=15.1, sigma=0.5, size=n), -3)    # median ~N3.6m a year
+    loan_amount = np.round(income * RNG.uniform(0.1, 0.8, n), -3)
     term_months = RNG.choice([12, 24, 36, 48, 60], n, p=[0.1, 0.2, 0.35, 0.15, 0.2])
     credit_score = np.clip(RNG.normal(680, 70, n), 300, 850).round()
     dti = np.clip(RNG.normal(0.32, 0.12, n), 0.01, 0.95).round(3)
@@ -60,7 +60,7 @@ def make_loans(n: int = 20_000) -> pd.DataFrame:
 
 
 def make_prices(start: str = "2019-01-01", years: int = 6, seed: int = 21) -> pd.DataFrame:
-    """Daily close prices for 6 assets via correlated geometric Brownian motion."""
+    """Daily close prices (NGN) for 6 assets via correlated geometric Brownian motion."""
     tickers = ["BANK_A", "BANK_B", "TECH", "ENERGY", "BOND_ETF", "GOLD"]
     mu = np.array([0.08, 0.07, 0.15, 0.06, 0.03, 0.05])      # annual drift
     sigma = np.array([0.25, 0.28, 0.35, 0.30, 0.06, 0.15])  # annual vol
@@ -90,12 +90,12 @@ def make_transactions(n_customers: int = 3_000, n_tx: int = 120_000) -> pd.DataF
         ["grocery", "fuel", "restaurant", "online_retail", "travel", "electronics", "atm"],
         n_tx, p=[0.3, 0.15, 0.2, 0.15, 0.05, 0.05, 0.1],
     )
-    amount = np.round(RNG.lognormal(3.5, 0.9, n_tx), 2)
+    amount = np.round(RNG.lognormal(9.3, 0.9, n_tx), 2)                   # median ~N11,000
     is_foreign = RNG.random(n_tx) < 0.04
     is_fraud = RNG.random(n_tx) < 0.008
 
     # Fraud: larger amounts, odd hours, foreign, electronics/online
-    amount[is_fraud] = np.round(RNG.lognormal(5.5, 1.0, is_fraud.sum()), 2)
+    amount[is_fraud] = np.round(RNG.lognormal(11.3, 1.0, is_fraud.sum()), 2)
     is_foreign[is_fraud] = RNG.random(is_fraud.sum()) < 0.45
     category[is_fraud] = RNG.choice(["online_retail", "electronics", "atm", "travel"], is_fraud.sum())
     night = pd.to_timedelta(RNG.integers(0, 5, is_fraud.sum()), unit="h")

@@ -24,7 +24,7 @@ from sklearn.model_selection import train_test_split  # noqa: E402
 from sklearn.pipeline import Pipeline  # noqa: E402
 from sklearn.preprocessing import OneHotEncoder, StandardScaler  # noqa: E402
 
-from fintools import gini, information_value, ks_statistic  # noqa: E402
+from fintools import gini, information_value, ks_statistic, naira  # noqa: E402
 from fintools.plotting import SERIES, apply_style, plt, save  # noqa: E402
 
 LGD = 0.45          # loss given default (Basel foundation IRB unsecured)
@@ -101,15 +101,15 @@ def main() -> None:
     res = pd.DataFrame(results, columns=["cutoff", "approval_rate", "bad_rate", "profit"])
     best = res.loc[res["profit"].idxmax()]
     print(f"\nOptimal PD cut-off {best.cutoff:.2f}: approve {best.approval_rate:.1%}, "
-          f"bad rate {best.bad_rate:.1%}, profit ${best.profit:,.0f} "
-          f"(vs approve-all ${res['profit'].iloc[-1]:,.0f} at cut-off 0.60)")
+          f"bad rate {best.bad_rate:.1%}, profit {naira(best.profit)} "
+          f"(vs approve-all {naira(res['profit'].iloc[-1])} at cut-off 0.60)")
 
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.plot(res["cutoff"], res["profit"] / 1e6, color=SERIES[0])
     ax.axvline(best.cutoff, color="#52514e", lw=1, ls="--")
     ax.annotate(f"best cut-off {best.cutoff:.2f}", (best.cutoff, best.profit / 1e6),
                 xytext=(10, -15), textcoords="offset points")
-    ax.set(title="Portfolio profit by approval cut-off (test set)", xlabel="Max PD approved", ylabel="Profit ($M)")
+    ax.set(title="Portfolio profit by approval cut-off (test set)", xlabel="Max PD approved", ylabel="Profit (₦m)")
     save(fig, "credit_profit_curve.png")
 
 

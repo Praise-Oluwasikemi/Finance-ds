@@ -1,13 +1,14 @@
 # Finance-ds
 
 This repository contains four projects that answer practical business questions in finance and banking, and my approach to answering them as a data scientist. It also has a graded set of practice exercises.
-Every project starts with a business question and ends with a decision and a dollar figure, not just a model score.
+Every project starts with a business question and ends with a decision and a naira (₦) figure, not just a model score.
+All data is set in a Nigerian retail-banking context: incomes, loans, card spend and portfolio values are in naira.
 
 | # | Project | Business question | Key techniques | Headline result |
 |---|---------|-------------------|----------------|-----------------|
-| 1 | [Credit risk PD model](projects/p01_credit_risk.py) | Which loans should we approve? | IV screening, logistic regression vs gradient boosting, AUC/Gini/KS, profit-based cut-off | AUC 0.73 · cut-off at PD 0.15 turns a **-$0.5M** book into **+$3.3M** |
-| 2 | [Portfolio & market risk](projects/p02_portfolio_risk.py) | Best risk-adjusted mix, and how much can we lose? | Sharpe, drawdown, efficient frontier, historical/parametric VaR & CVaR, VaR backtest | Max-Sharpe portfolio 0.96 · VaR breach rate 5.2% vs 5% target |
-| 3 | [Card fraud detection](projects/p03_fraud_detection.py) | Which transactions do analysts review? | Leak-free behavioural features, time-ordered split, imbalanced learning, capacity-based threshold | 3 alerts/day → **75% of fraud caught at 65% precision** (base rate 0.8%) |
+| 1 | [Credit risk PD model](projects/p01_credit_risk.py) | Which loans should we approve? | IV screening, logistic regression vs gradient boosting, AUC/Gini/KS, profit-based cut-off | AUC 0.73 · cut-off at PD 0.16 turns a **-₦55.8m** book into **+₦244.4m** |
+| 2 | [Portfolio & market risk](projects/p02_portfolio_risk.py) | Best risk-adjusted mix, and how much can we lose? | Sharpe, drawdown, efficient frontier, historical/parametric VaR & CVaR, VaR backtest | Max-Sharpe portfolio 0.96 · 1-day 95% VaR ₦2.18m on ₦100m · breach rate 5.2% vs 5% target |
+| 3 | [Card fraud detection](projects/p03_fraud_detection.py) | Which transactions do analysts review? | Leak-free behavioural features, time-ordered split, imbalanced learning, capacity-based threshold | 3 alerts/day → **75% of fraud caught at 65% precision** (₦28.8m of ₦31.1m intercepted) |
 | 4 | [Customer segmentation](projects/p04_customer_segmentation.py) | Who do we target with which offer? | RFM, scaling, K-Means, silhouette selection, segment profiling | 4 segments; 51% of customers drive 78% of spend |
 
 <p>
@@ -29,9 +30,9 @@ pytest                                       # library tests + exercise grader
 ## Layout
 
 ```
-data/generate_data.py   seeded synthetic loans, prices (correlated GBM) and card transactions
+data/generate_data.py   seeded synthetic (₦) loans, prices (correlated GBM) and card transactions
 fintools/               reusable library: TVM (loan payment, NPV, IRR), returns, Sharpe, drawdown,
-                        VaR/CVaR, KS, Gini, Information Value + shared chart style
+                        VaR/CVaR, KS, Gini, Information Value, naira formatting + shared chart style
 projects/               the four portfolio projects
 exercises/practice.py   14 exercises to complete (Levels 1-3)
 exercises/solutions.py  reference answers
