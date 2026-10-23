@@ -2,7 +2,7 @@
 
 This repository contains projects that answer practical business questions in finance and banking, and my approach to answering them as a data scientist.
 
-It is also my training ground. After completing the TS Academy Data Science programme, I'm rebuilding every skill from the course by **writing the code myself**, applied to realistic Nigerian banking problems (all money in ₦).
+I'm continuing my data science journey through constant practice, on the way to becoming a go-to, highly skilled data scientist. Building on the TS Academy Data Science programme, I write the code myself and apply it to realistic Nigerian banking problems (all money in ₦).
 
 ## My builds
 
@@ -18,7 +18,7 @@ Each build is a project I write from a blank notebook. The progress table below 
 | B6 | Spending forecast | What will next quarter's card volume be? | Time series, lags, ARIMA (9) | ⬜ |
 | B7 | Explainable & fair credit model | Why was this applicant declined, and is the model fair? | SHAP, LIME, fairness (11) | ⬜ |
 | B8 | Loan decision app | Can a loan officer use the model? | joblib, Streamlit, deployment (10) | ⬜ |
-| B9 | HR attrition, solo rebuild | Who is about to resign? | End-to-end project outside finance (12) | ⬜ |
+| B9 | HR attrition, solo project | Who is about to resign? | End-to-end project outside finance (12) | ⬜ |
 
 Practice workbooks (20 graded exercises): `notebooks/exercises/`, with progress kept in my [learning log](journal/LEARNING_LOG.md).
 

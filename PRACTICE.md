@@ -149,7 +149,7 @@ Use SELECT, GROUP BY/HAVING, INNER and LEFT JOINs, subqueries and time trends. F
 - Deploy it free on Streamlit Community Cloud and link it in the README.
 - This is also your **dashboard** skill: add a second page of loan-book KPI charts.
 
-**B9: HR attrition, solo rebuild** · TS 12
+**B9: HR attrition, solo project** · TS 12
 Rebuild your capstone **alone, from a blank notebook**, using the IBM HR dataset. You know the problem; now prove you can solve it yourself. Then compare it with the group version. It shows employers your skills work outside finance too.
 
 ### After each build
