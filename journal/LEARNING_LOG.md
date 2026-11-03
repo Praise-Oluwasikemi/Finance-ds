@@ -3,6 +3,39 @@
 One short entry per session, newest at the top. Keep it honest. This is your evidence of progress, and good material for interview stories.
 
 <!-- Copy this template for each session -->
+## Session 3: 2_pandas_wrangling · 2026-11-03
+
+**What I did:**
+Worked through data-cleaning and customer-analysis exercises: cleaning
+transactions, monthly spend grid, top customers, and default rate by
+credit band.
+
+**What clicked:**
+The pattern groupby → sum/mean → sort → head. Reading each docstring as
+a manager's question ("who are our top customers?") instead of a puzzle.
+Also learned how lambda works inside groupby.
+
+**What was hard / where I got stuck:**
+- monthly_spend crashed because timestamp was text, not a date. Fixed by
+  adding pd.to_datetime at the start.
+- default_rate_by_band failed with KeyError 'Very good'. Still need to
+  debug why some band labels go missing.
+
+**New skills I can explain:**
+- groupby + transform with a lambda → applies a function per group and
+  returns one column.
+- Group-specific fillna → fills each category's missing amounts with that
+  category's own median, not the global median.
+
+**My answer to a question I'm proud of:**
+top_customers answers "who are our biggest spenders?" — it adds up each
+customer's spending and lists the top 5, biggest first. Useful for
+rewarding loyal customers or spotting concentration risk.
+
+**One thing I can do now that I couldn't before:**
+Group data and summarise it — total spend per customer, default rate per
+segment — instead of just looking at raw rows.
+
 ## Session 2: 1_finance_maths.ipynb · 2026-10-23
 
 **What I did:**
